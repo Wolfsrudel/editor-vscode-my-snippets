@@ -10,7 +10,6 @@
 	//
 	// shipyard (https://shipyard.run)
 	//
-	// [blueprint]
 	"shipyard blueprint": {
 		"prefix": ["shipyard-blueprint"],
 		"body": [
@@ -27,9 +26,8 @@
 			"---",
 			"$0"
 		],
-		"description": "blueprint"
+		"description": "shipyard blueprint"
 	},
-	// [container]
 	"shipyard resource 'container' - empty": {
 		"prefix": ["shipyard-resource-container-empty"],
 		"body": [
@@ -39,7 +37,7 @@
 			"}",
 			""
 		],
-		"description": "empty 'container' resource"
+		"description": "shipyard empty 'container' resource"
 	},
 	"shipyard resource 'container' - full": {
 		"prefix": ["shipyard-resource-container-full"],
@@ -118,7 +116,7 @@
 			"}",
 			"$0"
 		],
-		"description": "full 'container' resource"
+		"description": "shipyard full 'container' resource"
 	},
 	"shipyard resource 'container' - common": {
 		"prefix": ["shipyard-resource-container-common"],
@@ -154,7 +152,7 @@
 			"}",
 			"$0"
 		],
-		"description": "common 'container' resource"
+		"description": "shipyard common 'container' resource"
 	},
 	"shipyard container parameter 'depends_on'": {
 		"prefix": ["shipyard-container-parameter-depends-on"],
@@ -176,7 +174,7 @@
 			"  }",
 			"$0"
 		],
-		"description": "templated 'network' parameter of resource 'container'"
+		"description": "shipyard templated 'network' parameter of resource 'container'"
 	},
 	"shipyard container parameter 'image'": {
 		"prefix": ["shipyard-container-parameter-image"],
@@ -189,7 +187,7 @@
 			"  }",
 			"$0"
 		],
-		"description": "templated 'image' parameter of resource 'container'"
+		"description": "shipyard templated 'image' parameter of resource 'container'"
 	},
 	"shipyard container parameter 'command'": {
 		"prefix": ["shipyard-container-parameter-command"],
@@ -202,7 +200,7 @@
 			"  ]",
 			"$0"
 		],
-		"description": "templated 'command' parameter of resource 'container'"
+		"description": "shipyard templated 'command' parameter of resource 'container'"
 	},
 	"shipyard container parameter 'env'": {
 		"prefix": ["shipyard-container-parameter-env"],
@@ -214,7 +212,7 @@
 			"  }",
 			"$0"
 		],
-		"description": "templated 'env' parameter of resource 'container'"
+		"description": "shipyard templated 'env' parameter of resource 'container'"
 	},
 	"shipyard container parameter 'volume'": {
 		"prefix": ["shipyard-container-parameter-volume"],
@@ -227,7 +225,7 @@
 			"  }",
 			"$0"
 		],
-		"description": "templated 'volume' parameter of resource 'container'"
+		"description": "shipyard templated 'volume' parameter of resource 'container'"
 	},
 	"shipyard container parameter 'port'": {
 		"prefix": ["shipyard-container-parameter-port"],
@@ -240,7 +238,7 @@
 			"  }",
 			"$0"
 		],
-		"description": "templated 'port' parameter of resource 'container'"
+		"description": "shipyard templated 'port' parameter of resource 'container'"
 	},
 	"shipyard container parameter 'port_range'": {
 		"prefix": ["shipyard-container-parameter-port-range"],
@@ -252,7 +250,7 @@
 			"  }",
 			"$0"
 		],
-		"description": "templated 'port_range' parameter of resource 'container'"
+		"description": "shipyard templated 'port_range' parameter of resource 'container'"
 	},
 	"shipyard container parameter 'privileged'": {
 		"prefix": ["shipyard-container-parameter-privileged"],
@@ -261,7 +259,7 @@
 			"  privileged = ${1:<privileged>} # (true|false)",
 			"$0"
 		],
-		"description": "templated 'privileged' parameter of resource 'container'"
+		"description": "shipyard templated 'privileged' parameter of resource 'container'"
 	},
 	"shipyard container parameter 'health_check'": {
 		"prefix": ["shipyard-container-parameter-health-check"],
@@ -274,7 +272,7 @@
 			"  }",
 			"$0"
 		],
-		"description": "templated 'health_check' parameter of resource 'container'"
+		"description": "shipyard templated 'health_check' parameter of resource 'container'"
 	},
 	"shipyard container parameter 'resources'": {
 		"prefix": ["shipyard-container-parameter-resources"],
@@ -287,7 +285,7 @@
 			"  }",
 			"$0"
 		],
-		"description": "templated 'resources' parameter of resource 'container'"
+		"description": "shipyard templated 'resources' parameter of resource 'container'"
 	},
 	"shipyard container parameter 'max_restart_count'": {
 		"prefix": ["shipyard-container-parameter-max-restart-count"],
@@ -298,7 +296,6 @@
 		],
 		"description": "templated 'max_restart_count' parameter of resource 'container'"
 	},
-	// [docs]
 	"shipyard resource 'docs' - empty": {
 		"prefix": ["shipyard-resource-docs-empty"],
 		"body": [
@@ -308,7 +305,7 @@
 			"}",
 			""
 		],
-		"description": "empty 'docs' resource"
+		"description": "shipyard empty 'docs' resource"
 	},
 	"shipyard resource 'docs' - full": {
 		"prefix": ["shipyard-resource-docs-full"],
@@ -336,7 +333,7 @@
 			"}",
 			"$0"
 		],
-		"description": "full 'docs' resource"
+		"description": "shipyard full 'docs' resource"
 	},
 	"shipyard resource 'docs' - common": {
 		"prefix": ["shipyard-resource-docs-common"],
@@ -361,7 +358,7 @@
 			"}",
 			"$0"
 		],
-		"description": "common 'docs' resource"
+		"description": "shipyard common 'docs' resource"
 	},
 	"shipyard docs parameter 'port'": {
 		"prefix": ["shipyard-docs-parameter-port"],
@@ -370,7 +367,7 @@
 			"  port = ${1:<port>}",
 			"$0"
 		],
-		"description": "templated 'port' parameter of resource 'docs'"
+		"description": "shipyard templated 'port' parameter of resource 'docs'"
 	},
 	"shipyard docs parameter 'open_in_browser'": {
 		"prefix": ["shipyard-docs-parameter-open-in-browser"],
@@ -379,7 +376,7 @@
 			"  open_in_browser = ${1:<open-in-browser>} # (true|false)",
 			"$0"
 		],
-		"description": "templated 'open_in_browser' parameter of resource 'docs'"
+		"description": "shipyard templated 'open_in_browser' parameter of resource 'docs'"
 	},
 	"shipyard docs parameter 'path'": {
 		"prefix": ["shipyard-docs-parameter-path"],
@@ -388,7 +385,7 @@
 			"  path = \"${1:<path-to-md-files>}\"",
 			"$0"
 		],
-		"description": "templated 'path' parameter of resource 'docs'"
+		"description": "shipyard templated 'path' parameter of resource 'docs'"
 	},
 	"shipyard docs parameter 'index_title'": {
 		"prefix": ["shipyard-docs-parameter-index-title"],
@@ -397,7 +394,7 @@
 			"  index_title = \"${1:<index-title>}\"",
 			"$0"
 		],
-		"description": "templated 'index_title' parameter of resource 'docs'"
+		"description": "shipyard templated 'index_title' parameter of resource 'docs'"
 	},
 	"shipyard docs parameter 'index_pages'": {
 		"prefix": ["shipyard-docs-parameter-index-pages"],
@@ -410,9 +407,8 @@
 			"  ]",
 			"$0"
 		],
-		"description": "templated 'index_title' parameter of resource 'docs'"
+		"description": "shipyard templated 'index_title' parameter of resource 'docs'"
 	},
-	// [remote exec]
 	"shipyard resource 'exec_remote' - empty": {
 		"prefix": ["shipyard-resource-exec-remote-empty"],
 		"body": [
@@ -422,7 +418,7 @@
 			"}",
 			""
 		],
-		"description": "empty 'exec_remote' resource"
+		"description": "shipyard empty 'exec_remote' resource"
 	},
 	"shipyard resource 'exec_remote' - full": {
 		"prefix": ["shipyard-resource-exec-remote-full"],
@@ -477,7 +473,7 @@
 			"}",
 			"$0"
 		],
-		"description": "full 'exec-remote' resource"
+		"description": "shipyard full 'exec-remote' resource"
 	},
 	"shipyard resource 'exec_remote' - common": {
 		"prefix": ["shipyard-resource-exec-remote-common"],
@@ -509,7 +505,7 @@
 			"}",
 			"$0"
 		],
-		"description": "common 'exec-remote' resource"
+		"description": "shipyard common 'exec-remote' resource"
 	},
 	"shipyard exec_remote parameter 'depends_on'": {
 		"prefix": ["shipyard-exec-remote-parameter-depends-on"],
@@ -518,7 +514,7 @@
 			"  depends_on = [\"${1:<depends-on>}\"]",
 			"$0"
 		],
-		"description": "templated 'depends_on' parameter of resource 'exec_remote'"
+		"description": "shipyard templated 'depends_on' parameter of resource 'exec_remote'"
 	},
 	"shipyard exec_remote parameter 'target'": {
 		"prefix": ["shipyard-exec-remote-parameter-target"],
@@ -527,7 +523,7 @@
 			"  target = \"${1:<target>}\"",
 			"$0"
 		],
-		"description": "templated 'target' parameter of resource 'exec_remote'"
+		"description": "shipyard templated 'target' parameter of resource 'exec_remote'"
 	},
 	"shipyard exec_remote parameter 'network'": {
 		"prefix": ["shipyard-exec-remote-parameter-network"],
@@ -539,7 +535,7 @@
 			"  }",
 			"$0"
 		],
-		"description": "templated 'network' parameter of resource 'exec_remote'"
+		"description": "shipyard templated 'network' parameter of resource 'exec_remote'"
 	},
 	"shipyard exec_remote parameter 'image'": {
 		"prefix": ["shipyard-exec-remote-parameter-image"],
@@ -553,7 +549,7 @@
 			"  }",
 			"$0"
 		],
-		"description": "templated 'image' parameter of resource 'exec_remote'"
+		"description": "shipyard templated 'image' parameter of resource 'exec_remote'"
 	},
 	"shipyard exec_remote parameter 'cmd'": {
 		"prefix": ["shipyard-exec-remote-parameter-cmd"],
@@ -562,7 +558,7 @@
 			"  cmd = \"${1:<command>}\"",
 			"$0"
 		],
-		"description": "templated 'cmd' parameter of resource 'exec_remote'"
+		"description": "shipyard templated 'cmd' parameter of resource 'exec_remote'"
 	},
 	"shipyard exec_remote parameter 'args'": {
 		"prefix": ["shipyard-exec-remote-parameter-args"],
@@ -575,7 +571,7 @@
 			"  ]",
 			"$0"
 		],
-		"description": "templated 'args' parameter of resource 'exec_remote'"
+		"description": "shipyard templated 'args' parameter of resource 'exec_remote'"
 	},
 	"shipyard exec_remote parameter 'working_directory'": {
 		"prefix": ["shipyard-exec-remote-parameter-working-directory"],
@@ -584,7 +580,7 @@
 			"  working_directory = \"${1:<working-directory>}\"",
 			"$0"
 		],
-		"description": "templated 'working_directory' parameter of resource 'exec_remote'"
+		"description": "shipyard templated 'working_directory' parameter of resource 'exec_remote'"
 	},
 	"shipyard exec_remote parameter 'env'": {
 		"prefix": ["shipyard-exec-remote-parameter-env"],
@@ -596,7 +592,7 @@
 			"  }",
 			"$0"
 		],
-		"description": "templated 'env' parameter of resource 'exec_remote'"
+		"description": "shipyard templated 'env' parameter of resource 'exec_remote'"
 	},
 	"shipyard exec_remote parameter 'volume'": {
 		"prefix": ["shipyard-exec-remote-parameter-volume"],
@@ -611,9 +607,8 @@
 			"  }",
 			"$0"
 		],
-		"description": "templated 'volume' parameter of resource 'exec_remote'"
+		"description": "shipyard templated 'volume' parameter of resource 'exec_remote'"
 	},
-	// [local exec]
 	"shipyard resource 'exec_local' - empty": {
 		"prefix": ["shipyard-resource-exec-local-empty"],
 		"body": [
@@ -623,7 +618,7 @@
 			"}",
 			""
 		],
-		"description": "empty 'exec_local' resource"
+		"description": "shipyard empty 'exec_local' resource"
 	},
 	"shipyard resource 'exec_local' - full": {
 		"prefix": ["shipyard-resource-exec-local-full"],
@@ -665,7 +660,7 @@
 			"}",
 			"$0"
 		],
-		"description": "full 'exec-local' resource"
+		"description": "shipyard full 'exec-local' resource"
 	},
 	"shipyard resource 'exec_local' - common": {
 		"prefix": ["shipyard-resource-exec-local-common"],
@@ -701,7 +696,7 @@
 			"}",
 			"$0"
 		],
-		"description": "common 'exec-local' resource"
+		"description": "shipyard common 'exec-local' resource"
 	},
 	"shipyard exec_local parameter 'depends_on'": {
 		"prefix": ["shipyard-exec-local-parameter-depends-on"],
@@ -710,7 +705,7 @@
 			"  depends_on = [\"${1:<depends-on>}\"]",
 			"$0"
 		],
-		"description": "templated 'depends_on' parameter of resource 'exec_local'"
+		"description": "shipyard templated 'depends_on' parameter of resource 'exec_local'"
 	},
 	"shipyard exec_local parameter 'cmd'": {
 		"prefix": ["shipyard-exec-local-parameter-cmd"],
@@ -719,7 +714,7 @@
 			"  cmd = \"${1:<command>}\"",
 			"$0"
 		],
-		"description": "templated 'cmd' parameter of resource 'exec_local'"
+		"description": "shipyard templated 'cmd' parameter of resource 'exec_local'"
 	},
 	"shipyard exec_local parameter 'args'": {
 		"prefix": ["shipyard-exec-local-parameter-args"],
@@ -732,7 +727,7 @@
 			"  ]",
 			"$0"
 		],
-		"description": "templated 'args' parameter of resource 'exec_local'"
+		"description": "shipyard templated 'args' parameter of resource 'exec_local'"
 	},
 	"shipyard exec_local parameter 'working_directory'": {
 		"prefix": ["shipyard-exec-local-parameter-working-directory"],
@@ -741,7 +736,7 @@
 			"  working_directory = \"${1:<working-directory>}\"",
 			"$0"
 		],
-		"description": "templated 'working_directory' parameter of resource 'exec_local'"
+		"description": "shipyard templated 'working_directory' parameter of resource 'exec_local'"
 	},
 	"shipyard exec_local parameter 'env'": {
 		"prefix": ["shipyard-exec-local-parameter-env"],
@@ -753,7 +748,7 @@
 			"  }",
 			"$0"
 		],
-		"description": "templated 'env' parameter of resource 'exec_local'"
+		"description": "shipyard templated 'env' parameter of resource 'exec_local'"
 	},
 	"shipyard exec_local parameter 'env_var'": {
 		"prefix": ["shipyard-exec-local-parameter-env-var"],
@@ -766,7 +761,7 @@
 			"  }",
 			"$0"
 		],
-		"description": "templated 'env_var' parameter of resource 'exec_local'"
+		"description": "shipyard templated 'env_var' parameter of resource 'exec_local'"
 	},
 	"shipyard exec_local parameter 'timeout'": {
 		"prefix": ["shipyard-exec-local-parameter-timeout"],
@@ -776,7 +771,7 @@
 			"  timeout = \"${1:<timeout>}\" # default 30s",
 			"$0"
 		],
-		"description": "templated 'timeout' parameter of resource 'exec_local'"
+		"description": "shipyard templated 'timeout' parameter of resource 'exec_local'"
 	},
 	"shipyard exec_local parameter 'daemon'": {
 		"prefix": ["shipyard-exec-local-parameter-daemon"],
@@ -785,9 +780,8 @@
 			"  daemon = \"${1:<daemon-mode>}\"",
 			"$0"
 		],
-		"description": "templated 'daemon' parameter of resource 'exec_local'"
+		"description": "shipyard templated 'daemon' parameter of resource 'exec_local'"
 	},
-	// [module]
 	"shipyard resource 'module' - empty": {
 		"prefix": ["shipyard-resource-module-empty"],
 		"body": [
@@ -797,7 +791,7 @@
 			"}",
 			""
 		],
-		"description": "empty 'module' resource"
+		"description": "shipyard empty 'module' resource"
 	},
 	"shipyard resource 'module' -  full": {
 		"prefix": ["shipyard-resource-module-full"],
@@ -811,7 +805,7 @@
 			"}",
 			"$0"
 		],
-		"description": "full 'module' resource"
+		"description": "shipyard full 'module' resource"
 	},
 	"shipyard resource 'module' -  common": {
 		"prefix": ["shipyard-resource-module-common"],
@@ -823,7 +817,7 @@
 			"}",
 			"$0"
 		],
-		"description": "common 'module' resource"
+		"description": "shipyard common 'module' resource"
 	},
 	"shipyard module parameter 'depends_on'": {
 		"prefix": ["shipyard-module-parameter-depends-on"],
@@ -832,7 +826,7 @@
 			"  depends_on = [\"${1:<depends-on>}\"]",
 			"$0"
 		],
-		"description": "templated 'depends_on' parameter of resource 'module'"
+		"description": "shipyard templated 'depends_on' parameter of resource 'module'"
 	},
 	"shipyard module parameter 'source'": {
 		"prefix": ["shipyard-module-parameter-source"],
@@ -841,9 +835,8 @@
 			"  source = [\"${1:<source-path>}\"]",
 			"$0"
 		],
-		"description": "templated 'source' parameter of resource 'module'"
+		"description": "shipyard templated 'source' parameter of resource 'module'"
 	},
-	// [network]
 	"shipyard resource 'network' - empty": {
 		"prefix": ["shipyard-resource-network-empty"],
 		"body": [
@@ -853,7 +846,7 @@
 			"}",
 			""
 		],
-		"description": "empty 'network' resource"
+		"description": "shipyard empty 'network' resource"
 	},
 	"shipyard resource 'network' -  full": {
 		"prefix": ["shipyard-resource-network-full"],
@@ -865,7 +858,7 @@
 			"}",
 			"$0"
 		],
-		"description": "full 'network' resource"
+		"description": "shipyard full 'network' resource"
 	},
 	"shipyard resource 'network' -  common": {
 		"prefix": ["shipyard-resource-network-common"],
@@ -877,7 +870,7 @@
 			"}",
 			"$0"
 		],
-		"description": "common 'network' resource"
+		"description": "shipyard common 'network' resource"
 	},
 	"shipyard network parameter 'subnet'": {
 		"prefix": ["shipyard-network-parameter-subnet"],
@@ -886,9 +879,8 @@
 			"  subnet = \"${1:<subnet-cidr>}\"",
 			"$0"
 		],
-		"description": "templated 'subnet' parameter of resource 'network'"
+		"description": "shipyard templated 'subnet' parameter of resource 'network'"
 	},
-	// [output]
 	"shipyard resource 'output' - empty": {
 		"prefix": ["shipyard-resource-output-empty"],
 		"body": [
@@ -898,7 +890,7 @@
 			"}",
 			""
 		],
-		"description": "empty 'output' resource"
+		"description": "shipyard empty 'output' resource"
 	},
 	"shipyard resource 'output' -  full": {
 		"prefix": ["shipyard-resource-output-full"],
@@ -910,7 +902,7 @@
 			"}",
 			"$0"
 		],
-		"description": "full 'output' resource"
+		"description": "shipyard full 'output' resource"
 	},
 	"shipyard resource 'output' -  common": {
 		"prefix": ["shipyard-resource-output-common"],
@@ -922,7 +914,7 @@
 			"}",
 			"$0"
 		],
-		"description": "common 'output' resource"
+		"description": "shipyard common 'output' resource"
 	},
 	"shipyard output parameter 'value'": {
 		"prefix": ["shipyard-output-parameter-value"],
@@ -931,9 +923,8 @@
 			"  value = \"${1:<value>}\"",
 			"$0"
 		],
-		"description": "templated 'value' parameter of resource 'output'"
+		"description": "shipyard templated 'value' parameter of resource 'output'"
 	},
-	// [sidecar]
 	"shipyard resource 'sidecar' - empty": {
 		"prefix": ["shipyard-resource-sidecar-empty"],
 		"body": [
@@ -943,7 +934,7 @@
 			"}",
 			""
 		],
-		"description": "empty 'sidecar' resource"
+		"description": "shipyard empty 'sidecar' resource"
 	},
 	"shipyard resource 'sidecar' -  full": {
 		"prefix": ["shipyard-resource-sidecar-full"],
@@ -1004,7 +995,7 @@
 			"}",
 			"$0"
 		],
-		"description": "full 'sidecar' resource"
+		"description": "shipyard full 'sidecar' resource"
 	},
 	"shipyard resource 'sidecar' -  common": {
 		"prefix": ["shipyard-resource-sidecar-common"],
@@ -1033,7 +1024,7 @@
 			"}",
 			"$0"
 		],
-		"description": "common 'sidecar' resource"
+		"description": "shipyard common 'sidecar' resource"
 	},
 	"shipyard sidecar parameter 'depends_on'": {
 		"prefix": ["shipyard-sidecar-parameter-depends-on"],
@@ -1042,7 +1033,7 @@
 			"  depends_on = [\"${1:<depends-on>}\"]",
 			"$0"
 		],
-		"description": "templated 'depends_on' parameter of resource 'sidecar'"
+		"description": "shipyard templated 'depends_on' parameter of resource 'sidecar'"
 	},
 	"shipyard sidecar parameter 'target'": {
 		"prefix": ["shipyard-sidecar-parameter-target"],
@@ -1051,7 +1042,7 @@
 			"  target = \"${1:<target>}\"",
 			"$0"
 		],
-		"description": "templated 'target' parameter of resource 'sidecar'"
+		"description": "shipyard templated 'target' parameter of resource 'sidecar'"
 	},
 	"shipyard sidecar parameter 'image'": {
 		"prefix": ["shipyard-sidecar-parameter-image"],
@@ -1065,7 +1056,7 @@
 			"  }",
 			"$0"
 		],
-		"description": "templated 'image' parameter of resource 'sidecar'"
+		"description": "shipyard templated 'image' parameter of resource 'sidecar'"
 	},
 	"shipyard sidecar parameter 'entrypoint'": {
 		"prefix": ["shipyard-sidecar-parameter-entrypoint"],
@@ -1078,7 +1069,7 @@
 			"  ]",
 			"$0"
 		],
-		"description": "templated 'entrypoint' parameter of resource 'sidecar'"
+		"description": "shipyard templated 'entrypoint' parameter of resource 'sidecar'"
 	},
 	"shipyard sidecar parameter 'command'": {
 		"prefix": ["shipyard-sidecar-parameter-command"],
@@ -1091,7 +1082,7 @@
 			"  ]",
 			"$0"
 		],
-		"description": "templated 'command' parameter of resource 'sidecar'"
+		"description": "shipyard templated 'command' parameter of resource 'sidecar'"
 	},
 	"shipyard sidecar parameter 'env'": {
 		"prefix": ["shipyard-sidecar-parameter-env"],
@@ -1103,7 +1094,7 @@
 			"  }",
 			"$0"
 		],
-		"description": "templated 'env' parameter of resource 'sidecar'"
+		"description": "shipyard templated 'env' parameter of resource 'sidecar'"
 	},
 	"shipyard sidecar parameter 'volume'": {
 		"prefix": ["shipyard-sidecar-parameter-volume"],
@@ -1116,7 +1107,7 @@
 			"  }",
 			"$0"
 		],
-		"description": "templated 'volume' parameter of resource 'sidecar'"
+		"description": "shipyard templated 'volume' parameter of resource 'sidecar'"
 	},
 	"shipyard sidecar parameter 'privileged'": {
 		"prefix": ["shipyard-sidecar-parameter-privileged"],
@@ -1125,7 +1116,7 @@
 			"  privileged = ${1:<privileged>} # (true|false)",
 			"$0"
 		],
-		"description": "templated 'privileged' parameter of resource 'sidecar'"
+		"description": "shipyard templated 'privileged' parameter of resource 'sidecar'"
 	},
 	"shipyard sidecar parameter 'health_check'": {
 		"prefix": ["shipyard-sidecar-parameter-health-check"],
@@ -1138,7 +1129,7 @@
 			"  }",
 			"$0"
 		],
-		"description": "templated 'health_check' parameter of resource 'sidecar'"
+		"description": "shipyard templated 'health_check' parameter of resource 'sidecar'"
 	},
 	"shipyard sidecar parameter 'max_restart_count'": {
 		"prefix": ["shipyard-sidecar-parameter-max-restart-count"],
@@ -1147,9 +1138,8 @@
 			"  max_restart_count = ${1:<max-restart-count>}",
 			"$0"
 		],
-		"description": "templated 'max_restart_count' parameter of resource 'sidecar'"
+		"description": "shipyard templated 'max_restart_count' parameter of resource 'sidecar'"
 	},
-	// [template]
 	"shipyard resource 'template' - empty": {
 		"prefix": ["shipyard-resource-template-empty"],
 		"body": [
@@ -1159,7 +1149,7 @@
 			"}",
 			""
 		],
-		"description": "empty 'template' resource"
+		"description": "shipyard empty 'template' resource"
 	},
 	"shipyard resource 'template' -  full": {
 		"prefix": ["shipyard-resource-template-full"],
@@ -1183,7 +1173,7 @@
 			"}",
 			"$0"
 		],
-		"description": "full 'template' resource"
+		"description": "shipyard full 'template' resource"
 	},
 	"shipyard resource 'template' -  common": {
 		"prefix": ["shipyard-resource-template-common"],
@@ -1204,7 +1194,7 @@
 			"}",
 			"$0"
 		],
-		"description": "common 'template' resource"
+		"description": "shipyard common 'template' resource"
 	},
 	"shipyard resource 'template' -  heredoc": {
 		"prefix": ["shipyard-resource-template-heredoc"],
@@ -1227,7 +1217,7 @@
 			"}",
 			"$0"
 		],
-		"description": "heredoc 'template' resource"
+		"description": "shipyard heredoc 'template' resource"
 	},
 	"shipyard template parameter 'depends_on'": {
 		"prefix": ["shipyard-template-parameter-depends-on"],
@@ -1236,7 +1226,7 @@
 			"  depends_on = [\"${1:<depends-on>}\"]",
 			"$0"
 		],
-		"description": "templated 'depends_on' parameter of resource 'template'"
+		"description": "shipyard templated 'depends_on' parameter of resource 'template'"
 	},
 	"shipyard template parameter 'source'": {
 		"prefix": ["shipyard-template-parameter-source"],
@@ -1245,7 +1235,7 @@
 			"  source = \"${1:<source-path>}\"",
 			"$0"
 		],
-		"description": "templated 'source' parameter of resource 'template'"
+		"description": "shipyard templated 'source' parameter of resource 'template'"
 	},
 	"shipyard template parameter 'source' as heredoc": {
 		"prefix": ["shipyard-template-parameter-source-heredoc"],
@@ -1256,7 +1246,7 @@
 			"    EOF",
 			"$0"
 		],
-		"description": "templated 'source' as heredoc parameter of resource 'template'"
+		"description": "shipyard templated 'source' as heredoc parameter of resource 'template'"
 	},
 	"shipyard template parameter 'destination'": {
 		"prefix": ["shipyard-template-parameter-destination"],
@@ -1265,7 +1255,7 @@
 			"  destination = \"${1:<destination-path>}\"",
 			"$0"
 		],
-		"description": "templated 'destination' parameter of resource 'template'"
+		"description": "shipyard templated 'destination' parameter of resource 'template'"
 	},
 	"shipyard template parameter 'vars'": {
 		"prefix": ["shipyard-template-parameter-vars"],
@@ -1278,9 +1268,8 @@
 			"  }",
 			"$0"
 		],
-		"description": "templated 'vars' parameter of resource 'template'"
+		"description": "shipyard templated 'vars' parameter of resource 'template'"
 	},
-	// [variable]
 	"shipyard resource 'variable' -  simple": {
 		"prefix": ["shipyard-resource-variable-simple"],
 		"body": [
@@ -1290,7 +1279,7 @@
 			"}",
 			"$0",
 		],
-		"description": "simple 'variable' resource"
+		"description": "shipyard simple 'variable' resource"
 	},
 	"shipyard resource 'variable' -  map": {
 		"prefix": ["shipyard-resource-variable-map"],
@@ -1305,7 +1294,7 @@
 			"}",
 			"$0",
 		],
-		"description": "'variable' map resource"
+		"description": "shipyard 'variable' map resource"
 	},
 	"shipyard resource 'variable' -  array": {
 		"prefix": ["shipyard-resource-variable-array"],
@@ -1320,9 +1309,8 @@
 			"}",
 			"$0",
 		],
-		"description": "'variable' array resource"
+		"description": "shipyard 'variable' array resource"
 	},
-	// [meta]
 	"shipyard meta parameter 'depends_on'": {
 		"prefix": ["shipyard-meta-parameter-depends-on"],
 		"body": [
@@ -1330,7 +1318,7 @@
 			"  depends_on = [\"${1:<depends-on>}\"]",
 			"$0"
 		],
-		"description": "templated 'depends_on' parameter of resource 'x'"
+		"description": "shipyard templated 'depends_on' parameter of resource 'x'"
 	},
 	"shipyard meta parameter 'disabled'": {
 		"prefix": ["shipyard-meta-parameter-disabled"],
@@ -1339,9 +1327,8 @@
 			"  disabled = [\"${1:<disabled>}\"]",
 			"$0"
 		],
-		"description": "templated 'disabled' parameter of resource 'x'"
+		"description": "shipyard templated 'disabled' parameter of resource 'x'"
 	},
-	// [function]
 	"shipyard function 'env'": {
 		"prefix": ["shipyard-function-env"],
 		"body": [
@@ -1349,7 +1336,7 @@
 			"  ${1:<key>} = env(\"${2:<environment-variable>}\")",
 			"$0"
 		],
-		"description": "templated 'env' function"
+		"description": "shipyard templated 'env' function"
 	},
 	"shipyard function 'k8s_config'": {
 		"prefix": ["shipyard-function-k8s-config"],
@@ -1358,7 +1345,7 @@
 			"  ${1:<key>} = \"${k8s_config(\"${2:<cluster-name>}\")}\"",
 			"$0"
 		],
-		"description": "templated 'k8s_config' function"
+		"description": "shipyard templated 'k8s_config' function"
 	},
 	"shipyard function 'k8s_config_docker'": {
 		"prefix": ["shipyard-function-k8s-config-docker"],
@@ -1367,7 +1354,7 @@
 			"  ${1:<key>} = k8s_config_docker(\"${2:<cluster-name>}\")",
 			"$0"
 		],
-		"description": "templated 'k8s_config_docker' function"
+		"description": "shipyard templated 'k8s_config_docker' function"
 	},
 	"shipyard function 'home'": {
 		"prefix": ["shipyard-function-home"],
@@ -1376,7 +1363,7 @@
 			"  ${1:<key>} = home()",
 			"$0"
 		],
-		"description": "templated 'home' function"
+		"description": "shipyard templated 'home' function"
 	},
 	"shipyard function 'shipyard'": {
 		"prefix": ["shipyard-function-shipyard"],
@@ -1386,7 +1373,7 @@
 			"  ${1:<key>} = shipyard()",
 			"$0"
 		],
-		"description": "templated 'shipyard' function"
+		"description": "shipyard templated 'shipyard' function"
 	},
 	"shipyard function 'data'": {
 		"prefix": ["shipyard-function-data"],
@@ -1396,7 +1383,7 @@
 			"  ${1:<key>} = data()",
 			"$0"
 		],
-		"description": "templated 'data' function"
+		"description": "shipyard templated 'data' function"
 	},
 	"shipyard function 'file'": {
 		"prefix": ["shipyard-function-file"],
@@ -1406,7 +1393,7 @@
 			"  ${1:<key>} = file()",
 			"$0"
 		],
-		"description": "templated 'file' function"
+		"description": "shipyard templated 'file' function"
 	},
 	"shipyard function 'file_dir'": {
 		"prefix": ["shipyard-function-file-dir"],
@@ -1416,7 +1403,7 @@
 			"  ${1:<key>} = file_dir()",
 			"$0"
 		],
-		"description": "templated 'file_dir' function"
+		"description": "shipyard templated 'file_dir' function"
 	},
 	"shipyard function 'docker_ip'": {
 		"prefix": ["shipyard-function-docker-ip"],
@@ -1426,7 +1413,7 @@
 			"  ${1:<key>} = docker_ip()",
 			"$0"
 		],
-		"description": "templated 'docker_ip' function"
+		"description": "shipyard templated 'docker_ip' function"
 	},
 	"shipyard function 'docker_host'": {
 		"prefix": ["shipyard-function-docker-host"],
@@ -1436,7 +1423,7 @@
 			"  ${1:<key>} = docker_host()",
 			"$0"
 		],
-		"description": "templated 'docker_host' function"
+		"description": "shipyard templated 'docker_host' function"
 	},
 	"shipyard function 'shipyard_ip'": {
 		"prefix": ["shipyard-function-shipyard-ip"],
@@ -1446,7 +1433,7 @@
 			"  ${1:<key>} = shipyard_ip()",
 			"$0"
 		],
-		"description": "templated 'shipyard_ip' function"
+		"description": "shipyard templated 'shipyard_ip' function"
 	},
 	"shipyard function 'cluster_api'": {
 		"prefix": ["shipyard-function-cluster-api"],
@@ -1456,9 +1443,8 @@
 			"  ${1:<key>} = \"${cluster_api(\"${2:<cluster-name>}\")}\"",
 			"$0"
 		],
-		"description": "templated 'cluster_api' function"
+		"description": "shipyard templated 'cluster_api' function"
 	},
-	// [nomad cluster]
 	"shipyard resource 'nomad_cluster' - empty": {
 		"prefix": ["shipyard-resource-nomad-cluster-empty"],
 		"body": [
@@ -1468,7 +1454,7 @@
 			"}",
 			""
 		],
-		"description": "empty 'nomad_cluster' resource"
+		"description": "shipyard empty 'nomad_cluster' resource"
 	},
 	"shipyard resource 'nomad_cluster' -  full": {
 		"prefix": ["shipyard-resource-nomad-cluster-full"],
@@ -1482,7 +1468,7 @@
 			"}",
 			"$0"
 		],
-		"description": "full 'nomad_cluster' resource"
+		"description": "shipyard full 'nomad_cluster' resource"
 	},
 	"shipyard resource 'nomad_cluster' -  common": {
 		"prefix": ["shipyard-resource-nomad-cluster-common"],
@@ -1496,9 +1482,8 @@
 			"}",
 			"$0"
 		],
-		"description": "common 'nomad_cluster' resource"
+		"description": "shipyard common 'nomad_cluster' resource"
 	},
-	// [nomad ingress]
 	"shipyard resource 'nomad_ingress' - empty": {
 		"prefix": ["shipyard-resource-nomad-ingress-empty"],
 		"body": [
@@ -1508,7 +1493,7 @@
 			"}",
 			""
 		],
-		"description": "empty 'nomad_ingress' resource"
+		"description": "shipyard empty 'nomad_ingress' resource"
 	},
 	"shipyard resource 'nomad_ingress' -  full": {
 		"prefix": ["shipyard-resource-nomad-ingress-full"],
@@ -1543,7 +1528,7 @@
 			"}",
 			"$0"
 		],
-		"description": "full 'nomad_ingress' resource"
+		"description": "shipyard full 'nomad_ingress' resource"
 	},
 	"shipyard resource 'nomad_ingress' -  common": {
 		"prefix": ["shipyard-resource-nomad-ingress-common"],
@@ -1575,7 +1560,7 @@
 			"}",
 			"$0"
 		],
-		"description": "common 'nomad_ingress' resource"
+		"description": "shipyard common 'nomad_ingress' resource"
 	},
 	"shipyard nomad_ingress parameter 'depends_on'": {
 		"prefix": ["shipyard-nomad-ingress-parameter-depends-on"],
@@ -1584,7 +1569,7 @@
 			"  depends_on = [\"${1:<depends-on>}\"]",
 			"$0"
 		],
-		"description": "templated 'depends_on' parameter of resource 'nomad_ingress'"
+		"description": "shipyard templated 'depends_on' parameter of resource 'nomad_ingress'"
 	},
 	"shipyard nomad_ingress parameter 'network'": {
 		"prefix": ["shipyard-nomad-ingress-parameter-network"],
@@ -1596,7 +1581,7 @@
 			"  }",
 			"$0"
 		],
-		"description": "templated 'network' parameter of resource 'nomad_ingress'"
+		"description": "shipyard templated 'network' parameter of resource 'nomad_ingress'"
 	},
 	"shipyard nomad_ingress parameter 'cluster'": {
 		"prefix": ["shipyard-nomad-ingress-parameter-cluster"],
@@ -1605,7 +1590,7 @@
 			"  cluster = \"${1:<cluster-name>}\"",
 			"$0"
 		],
-		"description": "templated 'cluster' parameter of resource 'nomad_ingress'"
+		"description": "shipyard templated 'cluster' parameter of resource 'nomad_ingress'"
 	},
 	"shipyard nomad_ingress parameter 'job'": {
 		"prefix": ["shipyard-nomad-ingress-parameter-job"],
@@ -1614,7 +1599,7 @@
 			"  job = \"${1:<job-name>}\"",
 			"$0"
 		],
-		"description": "templated 'job' parameter of resource 'nomad_ingress'"
+		"description": "shipyard templated 'job' parameter of resource 'nomad_ingress'"
 	},
 	"shipyard nomad_ingress parameter 'group'": {
 		"prefix": ["shipyard-nomad-ingress-parameter-group"],
@@ -1623,7 +1608,7 @@
 			"  group = \"${1:<group-name>}\"",
 			"$0"
 		],
-		"description": "templated 'group' parameter of resource 'nomad_ingress'"
+		"description": "shipyard templated 'group' parameter of resource 'nomad_ingress'"
 	},
 	"shipyard nomad_ingress parameter 'task'": {
 		"prefix": ["shipyard-nomad-ingress-parameter-task"],
@@ -1632,7 +1617,7 @@
 			"  task = \"${1:<task-name>}\"",
 			"$0"
 		],
-		"description": "templated 'task' parameter of resource 'nomad_ingress'"
+		"description": "shipyard templated 'task' parameter of resource 'nomad_ingress'"
 	},
 	"shipyard nomad_ingress parameter 'port'": {
 		"prefix": ["shipyard-nomad-ingress-parameter-port"],
@@ -1645,9 +1630,8 @@
 			"  }",
 			"$0"
 		],
-		"description": "templated 'port' parameter of resource 'nomad_ingress'"
+		"description": "shipyard templated 'port' parameter of resource 'nomad_ingress'"
 	},
-	// [kubernetes cluster]
 	"shipyard resource 'k8s_cluster' - empty": {
 		"prefix": ["shipyard-resource-k8s-cluster-empty","shipyard-resource-kubernetes-cluster-empty"],
 		"body": [
@@ -1657,7 +1641,7 @@
 			"}",
 			""
 		],
-		"description": "empty 'k8s_cluster' resource"
+		"description": "shipyard empty 'k8s_cluster' resource"
 	},
 	"shipyard resource 'k8s_cluster' -  full": {
 		"prefix": ["shipyard-resource-k8s-cluster-full","shipyard-resource-kubernetes-cluster-full"],
@@ -1715,7 +1699,7 @@
 			"}",
 			"$0"
 		],
-		"description": "full 'k8s_cluster' resource"
+		"description": "shipyard full 'k8s_cluster' resource"
 	},
 	"shipyard resource 'k8s_cluster' -  common": {
 		"prefix": ["shipyard-resource-k8s-cluster-common","shipyard-resource-kubernetes-cluster-common"],
@@ -1733,7 +1717,7 @@
 			"}",
 			"$0"
 		],
-		"description": "common 'k8s_cluster' resource"
+		"description": "shipyard common 'k8s_cluster' resource"
 	},
 	"shipyard k8s_cluster parameter 'depends_on'": {
 		"prefix": ["shipyard-k8s-cluster-parameter-depends-on","shipyard-kubernetes-cluster-parameter-depends-on"],
@@ -1742,7 +1726,7 @@
 			"  depends_on = [\"${1:<depends-on>}\"]",
 			"$0"
 		],
-		"description": "templated 'depends_on' parameter of resource 'k8s_cluster'"
+		"description": "shipyard templated 'depends_on' parameter of resource 'k8s_cluster'"
 	},
 	"shipyard k8s_cluster parameter 'network'": {
 		"prefix": ["shipyard-k8s-cluster-parameter-network","shipyard-kubernetes-cluster-parameter-network"],
@@ -1753,7 +1737,7 @@
 			"  }",
 			"$0"
 		],
-		"description": "templated 'network' parameter of resource 'k8s_cluster'"
+		"description": "shipyard templated 'network' parameter of resource 'k8s_cluster'"
 	},
 	"shipyard k8s_cluster parameter 'driver'": {
 		"prefix": ["shipyard-k8s-cluster-parameter-driver","shipyard-kubernetes-cluster-parameter-driver"],
@@ -1763,7 +1747,7 @@
 			"  driver = \"${1:<k8s-cluster-driver>}\"",
 			"$0"
 		],
-		"description": "templated 'driver' parameter of resource 'k8s_cluster'"
+		"description": "shipyard templated 'driver' parameter of resource 'k8s_cluster'"
 	},
 	"shipyard k8s_cluster parameter 'version'": {
 		"prefix": ["shipyard-k8s-cluster-parameter-driver-version","shipyard-kubernetes-cluster-parameter-driver-version"],
@@ -1772,7 +1756,7 @@
 			"  version = \"${1:<k8s-cluster-driver-version>}\"",
 			"$0"
 		],
-		"description": "templated 'version' parameter of resource 'k8s_cluster'"
+		"description": "shipyard templated 'version' parameter of resource 'k8s_cluster'"
 	},
 	"shipyard k8s_cluster parameter 'nodes'": {
 		"prefix": ["shipyard-k8s-cluster-parameter-nodes","shipyard-kubernetes-cluster-parameter-nodes"],
@@ -1783,7 +1767,7 @@
 			"  nodes = ${1:<k8s-cluster-nodes-count>}",
 			"$0"
 		],
-		"description": "templated 'nodes' parameter of resource 'k8s_cluster'"
+		"description": "shipyard templated 'nodes' parameter of resource 'k8s_cluster'"
 	},
 	"shipyard k8s_cluster parameter 'image'": {
 		"prefix": ["shipyard-k8s-cluster-parameter-image","shipyard-kubernetes-cluster-parameter-image"],
@@ -1798,7 +1782,7 @@
 			"  }",
 			"$0"
 		],
-		"description": "templated 'image' parameter of resource 'k8s_cluster'"
+		"description": "shipyard templated 'image' parameter of resource 'k8s_cluster'"
 	},
 	"shipyard k8s_cluster parameter 'volume'": {
 		"prefix": ["shipyard-k8s-cluster-parameter-volume","shipyard-kubernetes-cluster-parameter-volume"],
@@ -1812,7 +1796,7 @@
 			"  }",
 			"$0"
 		],
-		"description": "templated 'volume' parameter of resource 'k8s_cluster'"
+		"description": "shipyard templated 'volume' parameter of resource 'k8s_cluster'"
 	},
 	"shipyard k8s_cluster parameter 'port'": {
 		"prefix": ["shipyard-k8s-cluster-parameter-port","shipyard-kubernetes-cluster-parameter-port"],
@@ -1825,7 +1809,7 @@
 			"  }",
 			"$0"
 		],
-		"description": "templated 'port' parameter of resource 'k8s_cluster'"
+		"description": "shipyard templated 'port' parameter of resource 'k8s_cluster'"
 	},
 	"shipyard k8s_cluster parameter 'port_range'": {
 		"prefix": ["shipyard-k8s-cluster-parameter-port-range","shipyard-kubernetes-cluster-parameter-port-range"],
@@ -1837,9 +1821,8 @@
 			"  }",
 			"$0"
 		],
-		"description": "templated 'port_range' parameter of resource 'k8s_cluster'"
+		"description": "shipyard templated 'port_range' parameter of resource 'k8s_cluster'"
 	},
-	// [kubernetes config]
 	"shipyard resource 'k8s_config' - empty": {
 		"prefix": ["shipyard-resource-k8s-config-empty","shipyard-resource-kubernetes-config-empty"],
 		"body": [
@@ -1849,7 +1832,7 @@
 			"}",
 			""
 		],
-		"description": "empty 'k8s_config' resource"
+		"description": "shipyard empty 'k8s_config' resource"
 	},
 	"shipyard resource 'k8s_config' -  full": {
 		"prefix": ["shipyard-resource-k8s-config-full","shipyard-resource-kubernetes-config-full"],
@@ -1880,7 +1863,7 @@
 			"}",
 			"$0"
 		],
-		"description": "full 'k8s_config' resource"
+		"description": "shipyard full 'k8s_config' resource"
 	},
 	"shipyard resource 'k8s_config' -  common": {
 		"prefix": ["shipyard-resource-k8s-config-common","shipyard-resource-kubernetes-config-common"],
@@ -1908,7 +1891,7 @@
 			"}",
 			"$0"
 		],
-		"description": "common 'k8s_config' resource"
+		"description": "shipyard common 'k8s_config' resource"
 	},
 	"shipyard k8s_config parameter 'depends_on'": {
 		"prefix": ["shipyard-k8s-config-parameter-depends-on","shipyard-kubernetes-config-parameter-depends-on"],
@@ -1917,7 +1900,7 @@
 			"  depends_on = [\"${1:<depends-on>}\"]",
 			"$0"
 		],
-		"description": "templated 'depends_on' parameter of resource 'k8s_config'"
+		"description": "shipyard templated 'depends_on' parameter of resource 'k8s_config'"
 	},
 	"shipyard k8s_config parameter 'cluster'": {
 		"prefix": ["shipyard-k8s-config-parameter-cluster","shipyard-kubernetes-config-parameter-cluster"],
@@ -1926,7 +1909,7 @@
 			"  cluster = \"${1:<k8s-cluster-name>}\"",
 			"$0"
 		],
-		"description": "templated 'cluster' parameter of resource 'k8s_config'"
+		"description": "shipyard templated 'cluster' parameter of resource 'k8s_config'"
 	},
 	"shipyard k8s_config parameter 'paths'": {
 		"prefix": ["shipyard-k8s-config-parameter-paths","shipyard-kubernetes-config-parameter-paths"],
@@ -1939,7 +1922,7 @@
 			"  ]",
 			"$0"
 		],
-		"description": "templated 'paths' parameter of resource 'k8s_config'"
+		"description": "shipyard templated 'paths' parameter of resource 'k8s_config'"
 	},
 	"shipyard k8s_config parameter 'wait_until_ready'": {
 		"prefix": ["shipyard-k8s-config-parameter-wait-until-ready","shipyard-kubernetes-config-parameter-wait-until-ready"],
@@ -1948,7 +1931,7 @@
 			"  wait_until_ready = ${1:<wait-until-ready>} # (true|false)",
 			"$0"
 		],
-		"description": "templated 'wait_until_ready' parameter of resource 'k8s_config'"
+		"description": "shipyard templated 'wait_until_ready' parameter of resource 'k8s_config'"
 	},
 	"shipyard k8s_config parameter 'health_check'": {
 		"prefix": ["shipyard-k8s-config-parameter-health-check","shipyard-kubernetes-config-parameter-health-check"],
@@ -1960,9 +1943,8 @@
 			"  }",
 			"$0"
 		],
-		"description": "templated 'health_check' parameter of resource 'k8s_config'"
+		"description": "shipyard templated 'health_check' parameter of resource 'k8s_config'"
 	},
-	// [helm]
 	"shipyard resource 'helm' - empty": {
 		"prefix": ["shipyard-resource-helm-empty"],
 		"body": [
@@ -1972,7 +1954,7 @@
 			"}",
 			""
 		],
-		"description": "empty 'helm' resource"
+		"description": "shipyard empty 'helm' resource"
 	},
 	"shipyard resource 'helm' -  full": {
 		"prefix": ["shipyard-resource-helm-full"],
@@ -2012,7 +1994,7 @@
 			"}",
 			"$0"
 		],
-		"description": "full 'helm' resource"
+		"description": "shipyard full 'helm' resource"
 	},
 	"shipyard resource 'helm' -  common": {
 		"prefix": ["shipyard-resource-helm-common"],
@@ -2037,7 +2019,7 @@
 			"}",
 			"$0"
 		],
-		"description": "common 'helm' resource"
+		"description": "shipyard common 'helm' resource"
 	},
 	"shipyard helm parameter 'depends_on'": {
 		"prefix": ["shipyard-helm-parameter-depends-on"],
@@ -2046,7 +2028,7 @@
 			"  depends_on = [\"${1:<depends-on>}\"]",
 			"$0"
 		],
-		"description": "templated 'depends_on' parameter of resource 'helm'"
+		"description": "shipyard templated 'depends_on' parameter of resource 'helm'"
 	},
 	"shipyard helm parameter 'cluster'": {
 		"prefix": ["shipyard-helm-parameter-cluster"],
@@ -2055,7 +2037,7 @@
 			"  cluster = \"${1:<k8s-cluster-name>}\"",
 			"$0"
 		],
-		"description": "templated 'cluster' parameter of resource 'helm'"
+		"description": "shipyard templated 'cluster' parameter of resource 'helm'"
 	},
 	"shipyard helm parameter 'chart'": {
 		"prefix": ["shipyard-helm-parameter-chart"],
@@ -2068,7 +2050,7 @@
 			"  chart = \"${1:<url-or-path-to-chart>}\"",
 			"$0"
 		],
-		"description": "templated 'chart' parameter of resource 'helm'"
+		"description": "shipyard templated 'chart' parameter of resource 'helm'"
 	},
 	"shipyard helm parameter 'values'": {
 		"prefix": ["shipyard-helm-parameter-values"],
@@ -2077,7 +2059,7 @@
 			"  values = \"${1:<path-to-values-file>}\"",
 			"$0"
 		],
-		"description": "templated 'values' parameter of resource 'helm'"
+		"description": "shipyard templated 'values' parameter of resource 'helm'"
 	},
 	"shipyard helm parameter 'values_string'": {
 		"prefix": ["shipyard-helm-parameter-values-string"],
@@ -2090,7 +2072,7 @@
 			"  }",
 			"$0"
 		],
-		"description": "templated 'values_string' parameter of resource 'helm'"
+		"description": "shipyard templated 'values_string' parameter of resource 'helm'"
 	},
 	"shipyard helm parameter 'namespace'": {
 		"prefix": ["shipyard-helm-parameter-namespace"],
@@ -2100,7 +2082,7 @@
 			"  namespace = \"${1:<namespace>}\"",
 			"$0"
 		],
-		"description": "templated 'namespace' parameter of resource 'helm'"
+		"description": "shipyard templated 'namespace' parameter of resource 'helm'"
 	},
 	"shipyard helm parameter 'health_check'": {
 		"prefix": ["shipyard-helm-parameter-health-check"],
@@ -2112,9 +2094,8 @@
 			"  }",
 			"$0"
 		],
-		"description": "templated 'health_check' parameter of resource 'helm'"
+		"description": "shipyard templated 'health_check' parameter of resource 'helm'"
 	},
-
 	//
 	// boundary (https://www.boundaryproject.io/)
 	//
@@ -2464,7 +2445,7 @@
 			"}",
 			""
 		],
-		"description": "empty 'listener' configuration"
+		"description": "vault empty 'listener' configuration"
 	},
 	"vault configuration 'listener' - full": {
 		"prefix": ["vault-configuration-listener-full"],
@@ -2577,7 +2558,7 @@
 			"}",
 			"$0"
 		],
-		"description": "full 'listener' configuration"
+		"description": "vault full 'listener' configuration"
 	},
 	"vault configuration 'listener' - common": {
 		"prefix": ["vault-configuration-listener-common"],
@@ -2603,7 +2584,7 @@
 			"}",
 			"$0"
 		],
-		"description": "common 'listener' configuration"
+		"description": "vault common 'listener' configuration"
 	},
 	"vault configuration 'listener' parameter 'address'": {
 		"prefix": ["vault-configuration-listener-parameter-address"],
@@ -2612,7 +2593,7 @@
 			"  address = \"${1:<listener-address>}\"",
 			"$0"
 		],
-		"description": "templated 'address' parameter of configuration 'listener'"
+		"description": "vault templated 'address' parameter of configuration 'listener'"
 	},
 	"vault configuration 'listener' parameter 'cluster_address'": {
 		"prefix": ["vault-configuration-listener-parameter-cluster-address"],
@@ -2621,7 +2602,7 @@
 			"  cluster_address = \"${2:<listener-cluster-address>}\"",
 			"$0"
 		],
-		"description": "templated 'cluster_address' parameter of configuration 'listener'"
+		"description": "vault templated 'cluster_address' parameter of configuration 'listener'"
 	},
 	"vault configuration 'listener' parameter 'http_idle_timeout'": {
 		"prefix": ["vault-configuration-listener-parameter-http-idle-timeout"],
@@ -2632,7 +2613,7 @@
 			"  http_idle_timeout = \"${2:<listener-http-timeout>}\"",
 			"$0"
 		],
-		"description": "templated 'http_idle_timeout' parameter of configuration 'listener'"
+		"description": "vault templated 'http_idle_timeout' parameter of configuration 'listener'"
 	},
 	"vault configuration 'listener' parameter 'http_read_header_timeout'": {
 		"prefix": ["vault-configuration-listener-parameter-http-read-header-timeout"],
@@ -2641,7 +2622,7 @@
 			"  http_read_header_timeout = \"${2:<listener-http-read-header-timeout>}\"",
 			"$0"
 		],
-		"description": "templated 'http_read_header_timeout' parameter of configuration 'listener'"
+		"description": "vault templated 'http_read_header_timeout' parameter of configuration 'listener'"
 	},
 	"vault configuration 'listener' parameter 'http_read_timeout'": {
 		"prefix": ["vault-configuration-listener-parameter-http-read-timeout"],
@@ -2650,7 +2631,7 @@
 			"  http_read_timeout = \"${2:<listener-http-read-timeout>}\"",
 			"$0"
 		],
-		"description": "templated 'http_read_timeout' parameter of configuration 'listener'"
+		"description": "vault templated 'http_read_timeout' parameter of configuration 'listener'"
 	},
 	"vault configuration 'listener' parameter 'http_write_timeout'": {
 		"prefix": ["vault-configuration-listener-parameter-http-write-timeout"],
@@ -2659,7 +2640,7 @@
 			"  http_write_timeout = \"${2:<listener-http-write-timeout>}\"",
 			"$0"
 		],
-		"description": "templated 'http_write_timeout' parameter of configuration 'listener'"
+		"description": "vault templated 'http_write_timeout' parameter of configuration 'listener'"
 	},
 	"vault configuration 'listener' parameter 'max_request_site'": {
 		"prefix": ["vault-configuration-listener-parameter-max-request-size"],
@@ -2668,7 +2649,7 @@
 			"  max_request_site = \"${2:<listener-max-request-size>}\"",
 			"$0"
 		],
-		"description": "templated 'max_request_site' parameter of configuration 'listener'"
+		"description": "vault templated 'max_request_site' parameter of configuration 'listener'"
 	},
 	"vault configuration 'listener' parameter 'max_request_duration'": {
 		"prefix": ["vault-configuration-listener-parameter-max-request-duration"],
@@ -2677,7 +2658,7 @@
 			"  max_request_duration = \"${2:<listener-max-request-duration>}\"",
 			"$0"
 		],
-		"description": "templated 'max_request_duration' parameter of configuration 'listener'"
+		"description": "vault templated 'max_request_duration' parameter of configuration 'listener'"
 	},
 	"vault configuration 'listener' parameter 'proxy_protocol_behavior'": {
 		"prefix": ["vault-configuration-listener-parameter-proxy-protocol-behavior"],
@@ -2692,7 +2673,7 @@
 			"  proxy_protocol_behavior = \"${2:<listener-proxy-protocol-behavior>}\"",
 			"$0"
 		],
-		"description": "templated 'proxy_protocol_behavior' parameter of configuration 'listener'"
+		"description": "vault templated 'proxy_protocol_behavior' parameter of configuration 'listener'"
 	},
 	"vault configuration 'listener' parameter 'proxy_protocol_authorized_addrs'": {
 		"prefix": ["vault-configuration-listener-parameter-proxy-protocol-authorized-addrs"],
@@ -2704,7 +2685,7 @@
 			"  proxy_protocol_authorized_addrs = \"${2:<listener-proxy-protocol-authorized-addrs>}\"",
 			"$0"
 		],
-		"description": "templated 'proxy_protocol_authorized_addrs' parameter of configuration 'listener'"
+		"description": "vault templated 'proxy_protocol_authorized_addrs' parameter of configuration 'listener'"
 	},
 	"vault configuration 'listener' parameter 'tls_disable'": {
 		"prefix": ["vault-configuration-listener-parameter-tls-disable"],
@@ -2713,7 +2694,7 @@
 			"  tls_disable = \"${2:<listener-tls-disable>}\"",
 			"$0"
 		],
-		"description": "templated 'tls_disable' parameter of configuration 'listener'"
+		"description": "vault templated 'tls_disable' parameter of configuration 'listener'"
 	},
 	"vault configuration 'listener' parameter 'tls_cert_file'": {
 		"prefix": ["vault-configuration-listener-parameter-tls-cert-file"],
@@ -2722,7 +2703,7 @@
 			"  tls_cert_file = \"${2:<path-to-tls-cert-file>}\"",
 			"$0"
 		],
-		"description": "templated 'tls_cert_file' parameter of configuration 'listener'"
+		"description": "vault templated 'tls_cert_file' parameter of configuration 'listener'"
 	},
 	"vault configuration 'listener' parameter 'tls_key_file'": {
 		"prefix": ["vault-configuration-listener-parameter-tls-key-file"],
@@ -2731,7 +2712,7 @@
 			"  tls_key_file = \"${2:<path-to-tls-key-file>}\"",
 			"$0"
 		],
-		"description": "templated 'tls_key_file' parameter of configuration 'listener'"
+		"description": "vault templated 'tls_key_file' parameter of configuration 'listener'"
 	},
 	"vault configuration 'listener' parameter 'tls_min_version'": {
 		"prefix": ["vault-configuration-listener-parameter-tls-min-version"],
@@ -2741,7 +2722,7 @@
 			"  tls_min_version = \"${2:<listener-tls-min-version>}\"",
 			"$0"
 		],
-		"description": "templated 'tls_min_version' parameter of configuration 'listener'"
+		"description": "vault templated 'tls_min_version' parameter of configuration 'listener'"
 	},
 	"vault configuration 'listener' parameter 'tls_cipher_suites'": {
 		"prefix": ["vault-configuration-listener-parameter-tls-cipher-suites"],
@@ -2750,7 +2731,7 @@
 			"  tls_cipher_suites = \"${2:<listener-tls-cipher-suites-comma-separated>}\"",
 			"$0"
 		],
-		"description": "templated 'tls_cipher_suites' parameter of configuration 'listener'"
+		"description": "vault templated 'tls_cipher_suites' parameter of configuration 'listener'"
 	},
 	"vault configuration 'listener' parameter 'tls_prefer_server_cipher_suites'": {
 		"prefix": ["vault-configuration-listener-parameter-tls-prefer-server-cipher-suites"],
@@ -2759,7 +2740,7 @@
 			"  tls_prefer_server_cipher_suites = \"${2:<listener-tls-prefer-server-cipher-suites>}\" # (true|false)",
 			"$0"
 		],
-		"description": "templated 'tls_prefer_server_cipher_suites' parameter of configuration 'listener'"
+		"description": "vault templated 'tls_prefer_server_cipher_suites' parameter of configuration 'listener'"
 	},
 	"vault configuration 'listener' parameter 'tls_require_and_verify_client_cert'": {
 		"prefix": ["vault-configuration-listener-parameter-tls-require-and-verify-client-cert"],
@@ -2768,7 +2749,7 @@
 			"  tls_require_and_verify_client_cert = \"${2:<listener-tls-require-and-verify-client-cert>}\" # (true|false)",
 			"$0"
 		],
-		"description": "templated 'tls_require_and_verify_client_cert' parameter of configuration 'listener'"
+		"description": "vault templated 'tls_require_and_verify_client_cert' parameter of configuration 'listener'"
 	},
 	"vault configuration 'listener' parameter 'tls_client_ca_file'": {
 		"prefix": ["vault-configuration-listener-parameter-tls-client-ca-file"],
@@ -2778,7 +2759,7 @@
 			"  tls_client_ca_file = \"${2:<path-to-tls-client-ca-file>}\"",
 			"$0"
 		],
-		"description": "templated 'tls_client_ca_file' parameter of configuration 'listener'"
+		"description": "vault templated 'tls_client_ca_file' parameter of configuration 'listener'"
 	},
 	"vault configuration 'listener' parameter 'tls_disable_client_certs'": {
 		"prefix": ["vault-configuration-listener-parameter-tls-client-ca-file"],
@@ -2787,7 +2768,7 @@
 			"  tls_disable_client_certs = \"${2:<listener-disable-client-certs>}\" # (true|false)",
 			"$0"
 		],
-		"description": "templated 'tls_disable_client_certs' parameter of configuration 'listener'"
+		"description": "vault templated 'tls_disable_client_certs' parameter of configuration 'listener'"
 	},
 	"vault configuration 'listener' parameter 'x_forwarded_for_authorized_addrs'": {
 		"prefix": ["vault-configuration-listener-parameter-x-forwarded-for-authorized-addrs"],
@@ -2799,7 +2780,7 @@
 			"  x_forwarded_for_authorized_addrs = \"${2:<listener-x-forwarded-for-authorized-addrs>}\"",
 			"$0"
 		],
-		"description": "templated 'x_forwarded_for_authorized_addrs' parameter of configuration 'listener'"
+		"description": "vault templated 'x_forwarded_for_authorized_addrs' parameter of configuration 'listener'"
 	},
 	"vault configuration 'listener' parameter 'x_forwarded_for_hop_skips'": {
 		"prefix": ["vault-configuration-listener-parameter-x-forwarded-for-hop-skips"],
@@ -2811,7 +2792,7 @@
 			"  x_forwarded_for_hop_skips = \"${2:<listener-x-forwarded-for-hop-skips>}\"",
 			"$0"
 		],
-		"description": "templated 'x_forwarded_for_hop_skips' parameter of configuration 'listener'"
+		"description": "vault templated 'x_forwarded_for_hop_skips' parameter of configuration 'listener'"
 	},
 	"vault configuration 'listener' parameter 'x_forwarded_for_reject_not_authorized'": {
 		"prefix": ["vault-configuration-listener-parameter-x-forwarded-for-reject-not-authorized"],
@@ -2822,7 +2803,7 @@
 			"  x_forwarded_for_reject_not_authorized = \"${2:<listener-x-forwarded-for-reject-not-authorized>}\" # (true|false)",
 			"$0"
 		],
-		"description": "templated 'x_forwarded_for_reject_not_authorized' parameter of configuration 'listener'"
+		"description": "vault templated 'x_forwarded_for_reject_not_authorized' parameter of configuration 'listener'"
 	},
 	"vault configuration 'listener' parameter 'x_forwarded_for_reject_not_present'": {
 		"prefix": ["vault-configuration-listener-parameter-x-forwarded-for-reject-not-present"],
@@ -2833,7 +2814,7 @@
 			"  x_forwarded_for_reject_not_present = \"${2:<listener-x-forwarded-for-reject-not-present>}\" # (true|false)",
 			"$0"
 		],
-		"description": "templated 'x_forwarded_for_reject_not_present' parameter of configuration 'listener'"
+		"description": "vault templated 'x_forwarded_for_reject_not_present' parameter of configuration 'listener'"
 	},
 	"vault configuration 'listener' parameter 'telemetry'": {
 		"prefix": ["vault-configuration-listener-parameter-telemetry"],
@@ -2844,7 +2825,7 @@
 			"  }",
 			"$0"
 		],
-		"description": "templated 'telemetry' parameter of configuration 'listener'"
+		"description": "vault templated 'telemetry' parameter of configuration 'listener'"
 	},
 	"vault configuration 'listener' parameter 'profiling'": {
 		"prefix": ["vault-configuration-listener-parameter-profiling"],
@@ -2855,7 +2836,7 @@
 			"  }",
 			"$0"
 		],
-		"description": "templated 'profiling' parameter of configuration 'listener'"
+		"description": "vault templated 'profiling' parameter of configuration 'listener'"
 	},
 	"vault configuration 'listener' parameter 'custom_response_headers'": {
 		"prefix": ["vault-configuration-listener-parameter-custom-response-headers"],
@@ -2880,7 +2861,7 @@
 			"  }",
 			"$0"
 		],
-		"description": "templated 'custom_response_headers' parameter of configuration 'listener'"
+		"description": "vault templated 'custom_response_headers' parameter of configuration 'listener'"
 	},
 	"vault configuration 'replication' - empty": {
 		"prefix": ["vault-configuration-replication-empty"],
@@ -2890,7 +2871,7 @@
 			"}",
 			""
 		],
-		"description": "empty 'replication' configuration"
+		"description": "vault empty 'replication' configuration"
 	},
 	"vault configuration 'replication' - full": {
 		"prefix": ["vault-configuration-replication-full"],
@@ -2923,7 +2904,7 @@
 			"}",
 			"$0",
 		],
-		"description": "full 'replication' configuration"
+		"description": "vault full 'replication' configuration"
 	},
 	"vault configuration 'replication' - common": {
 		"prefix": ["vault-configuration-replication-common"],
@@ -2956,7 +2937,7 @@
 			"}",
 			"$0",
 		],
-		"description": "common 'replication' configuration"
+		"description": "vault common 'replication' configuration"
 	},
 	"vault configuration 'replication' parameter 'resolver_discover_servers'": {
 		"prefix": ["vault-configuration-replication-parameter-resolver_discover_servers"],
@@ -2971,7 +2952,7 @@
 			"  resolver_discover_servers = ${1:<resolver-discover-servers>} # (true|false)",
 			"$0"
 		],
-		"description": "templated 'resolver_discover_servers' parameter of configuration 'replication'"
+		"description": "vault templated 'resolver_discover_servers' parameter of configuration 'replication'"
 	},
 	"vault configuration 'replication' parameter 'logshipper_buffer_length'": {
 		"prefix": ["vault-configuration-replication-parameter-logshipper-buffer-length"],
@@ -2982,7 +2963,7 @@
 			"  logshipper_buffer_length = ${1:<logshipper-buffer-length>}",
 			"$0"
 		],
-		"description": "templated 'logshipper_buffer_length' parameter of configuration 'replication'"
+		"description": "vault templated 'logshipper_buffer_length' parameter of configuration 'replication'"
 	},
 	"vault configuration 'replication' parameter 'logshipper_buffer_size'": {
 		"prefix": ["vault-configuration-replication-parameter-logshipper-buffer-size"],
@@ -2992,7 +2973,7 @@
 			"  logshipper_buffer_size = \"${1:<logshipper-buffer-size>}\"",
 			"$0"
 		],
-		"description": "templated 'logshipper_buffer_size' parameter of configuration 'replication'"
+		"description": "vault templated 'logshipper_buffer_size' parameter of configuration 'replication'"
 	},
 	"vault configuration 'replication' parameter 'allow_forwarding_via_header'": {
 		"prefix": ["vault-configuration-replication-parameter-allow-forwarding-via-header"],
@@ -3003,7 +2984,7 @@
 			"  allow_forwarding_via_header = ${1:<allow-forwarding-via-header>} # (true|false)",
 			"$0"
 		],
-		"description": "templated 'allow_forwarding_via_header' parameter of configuration 'replication'"
+		"description": "vault templated 'allow_forwarding_via_header' parameter of configuration 'replication'"
 	},
 	"vault configuration 'replication' parameter 'best_effort_wal_wait_duration'": {
 		"prefix": ["vault-configuration-replication-parameter-best-effort-wal-wait-duration"],
@@ -3015,7 +2996,7 @@
 			"  best_effort_wal_wait_duration = \"${1:<best-effort-wal-wait-duration>}\"",
 			"$0"
 		],
-		"description": "templated 'best_effort_wal_wait_duration' parameter of configuration 'replication'"
+		"description": "vault templated 'best_effort_wal_wait_duration' parameter of configuration 'replication'"
 	},
 	"vault configuration 'seal' alicloudkms - empty": {
 		"prefix": ["vault-configuration-seal-alicloudkms-empty"],
@@ -3025,7 +3006,7 @@
 			"}",
 			""
 		],
-		"description": "empty 'seal' configuration for seal wrapping mechanism 'alicloudkms'"
+		"description": "vault empty 'seal' configuration for seal wrapping mechanism 'alicloudkms'"
 	},
 	"vault configuration 'seal' alicloudkms - full": {
 		"prefix": ["vault-configuration-seal-alicloudkms-full"],
@@ -3055,7 +3036,7 @@
 			"}",
 			"$0"
 		],
-		"description": "full 'seal' configuration for seal wrapping mechanism 'alicloudkms'"
+		"description": "vault full 'seal' configuration for seal wrapping mechanism 'alicloudkms'"
 	},
 	"vault configuration 'seal' alicloudkms - common": {
 		"prefix": ["vault-configuration-seal-alicloudkms-common"],
@@ -3081,7 +3062,7 @@
 			"}",
 			"$0"
 		],
-		"description": "common 'seal' configuration for seal wrapping mechanism 'alicloudkms'"
+		"description": "vault common 'seal' configuration for seal wrapping mechanism 'alicloudkms'"
 	},
 	"vault configuration 'seal' alicloudkms parameter 'region'": {
 		"prefix": ["vault-configuration-seal-alicloudkms-parameter-region"],
@@ -3091,7 +3072,7 @@
 			"  region = \"${1:<alicloud-region>}\"",
 			"$0"
 		],
-		"description": "templated 'region' parameter of configuration 'seal' for seal wrapping mechanism 'alicloudkms'"
+		"description": "vault templated 'region' parameter of configuration 'seal' for seal wrapping mechanism 'alicloudkms'"
 	},
 	"vault configuration 'seal' alicloudkms parameter 'domain'": {
 		"prefix": ["vault-configuration-seal-alicloudkms-parameter-domain"],
@@ -3101,7 +3082,7 @@
 			"  domain = \"${1:<alicloud-domain>}\"",
 			"$0"
 		],
-		"description": "templated 'domain' parameter of configuration 'seal' for seal wrapping mechanism 'alicloudkms'"
+		"description": "vault templated 'domain' parameter of configuration 'seal' for seal wrapping mechanism 'alicloudkms'"
 	},
 	"vault configuration 'seal' alicloudkms parameter 'access_key'": {
 		"prefix": ["vault-configuration-seal-alicloudkms-parameter-access-key"],
@@ -3112,7 +3093,7 @@
 			"  access_key = \"${1:<alicloud-access-key>}\"",
 			"$0"
 		],
-		"description": "templated 'access_key' parameter of configuration 'seal' for seal wrapping mechanism 'alicloudkms'"
+		"description": "vault templated 'access_key' parameter of configuration 'seal' for seal wrapping mechanism 'alicloudkms'"
 	},
 	"vault configuration 'seal' alicloudkms parameter 'secret_key'": {
 		"prefix": ["vault-configuration-seal-alicloudkms-parameter-secret-key"],
@@ -3123,7 +3104,7 @@
 			"  secret_key = \"${1:<alicloud-secret-key>}\"",
 			"$0"
 		],
-		"description": "templated 'secret_key' parameter of configuration 'seal' for seal wrapping mechanism 'alicloudkms'"
+		"description": "vault templated 'secret_key' parameter of configuration 'seal' for seal wrapping mechanism 'alicloudkms'"
 	},
 	"vault configuration 'seal' alicloudkms parameter 'kms_key_id'": {
 		"prefix": ["vault-configuration-seal-alicloudkms-parameter-kms-key-id"],
@@ -3133,7 +3114,7 @@
 			"  kms_key_id = \"${1:<alicloud-kms-key-id>}\"",
 			"$0"
 		],
-		"description": "templated 'kms_key_id' parameter of configuration 'seal' for seal wrapping mechanism 'alicloudkms'"
+		"description": "vault templated 'kms_key_id' parameter of configuration 'seal' for seal wrapping mechanism 'alicloudkms'"
 	},
 	"vault configuration 'seal' awskms - empty": {
 		"prefix": ["vault-configuration-seal-awskms-empty"],
@@ -3143,7 +3124,7 @@
 			"}",
 			""
 		],
-		"description": "empty 'seal' configuration for seal wrapping mechanism 'awskms'"
+		"description": "vault empty 'seal' configuration for seal wrapping mechanism 'awskms'"
 	},
 	"vault configuration 'seal' awskms - full": {
 		"prefix": ["vault-configuration-seal-awskms-full"],
@@ -3183,7 +3164,7 @@
 			"}",
 			"$0"
 		],
-		"description": "full 'seal' configuration for seal wrapping mechanism 'awskms'"
+		"description": "vault full 'seal' configuration for seal wrapping mechanism 'awskms'"
 	},
 	"vault configuration 'seal' awskms - common": {
 		"prefix": ["vault-configuration-seal-awskms-common"],
@@ -3212,7 +3193,7 @@
 			"}",
 			"$0"
 		],
-		"description": "common 'seal' configuration for seal wrapping mechanism 'awskms'"
+		"description": "vault common 'seal' configuration for seal wrapping mechanism 'awskms'"
 	},
 	"vault configuration 'seal' awskms parameter 'region'": {
 		"prefix": ["vault-configuration-seal-awskms-parameter-region"],
@@ -3224,7 +3205,7 @@
 			"  region = \"${1:<aws-region>}\"",
 			"$0"
 		],
-		"description": "templated 'region' parameter of configuration 'seal' for seal wrapping mechanism 'awskms'"
+		"description": "vault templated 'region' parameter of configuration 'seal' for seal wrapping mechanism 'awskms'"
 	},
 	"vault configuration 'seal' awskms parameter 'access_key'": {
 		"prefix": ["vault-configuration-seal-awskms-parameter-access-key"],
@@ -3235,7 +3216,7 @@
 			"  access_key = \"${1:<aws-access-key>}\"",
 			"$0"
 		],
-		"description": "templated 'access_key' parameter of configuration 'seal' for seal wrapping mechanism 'awskms'"
+		"description": "vault templated 'access_key' parameter of configuration 'seal' for seal wrapping mechanism 'awskms'"
 	},
 	"vault configuration 'seal' awskms parameter 'session_token'": {
 		"prefix": ["vault-configuration-seal-awskms-parameter-session-token"],
@@ -3245,7 +3226,7 @@
 			"  session_token = \"${1:<aws-session-token>}\"",
 			"$0"
 		],
-		"description": "templated 'session_token' parameter of configuration 'seal' for seal wrapping mechanism 'awskms'"
+		"description": "vault templated 'session_token' parameter of configuration 'seal' for seal wrapping mechanism 'awskms'"
 	},
 	"vault configuration 'seal' awskms parameter 'secret_key'": {
 		"prefix": ["vault-configuration-seal-awskms-parameter-secret-key"],
@@ -3256,7 +3237,7 @@
 			"  secret_key = \"${1:<aws-secret-key>}\"",
 			"$0"
 		],
-		"description": "templated 'secret_key' parameter of configuration 'seal' for seal wrapping mechanism 'awskms'"
+		"description": "vault templated 'secret_key' parameter of configuration 'seal' for seal wrapping mechanism 'awskms'"
 	},
 	"vault configuration 'seal' awskms parameter 'kms_key_id'": {
 		"prefix": ["vault-configuration-seal-awskms-parameter-kms-key-id"],
@@ -3267,7 +3248,7 @@
 			"  kms_key_id = \"${1:<aws-kms-key-id>}\"",
 			"$0"
 		],
-		"description": "templated 'kms_key_id' parameter of configuration 'seal' for seal wrapping mechanism 'awskms'"
+		"description": "vault templated 'kms_key_id' parameter of configuration 'seal' for seal wrapping mechanism 'awskms'"
 	},
 	"vault configuration 'seal' awskms parameter 'endpoint'": {
 		"prefix": ["vault-configuration-seal-awskms-parameter-endpoint"],
@@ -3280,7 +3261,7 @@
 			"  endpoint = \"${1:<aws-endpoint>}\"",
 			"$0"
 		],
-		"description": "templated 'endpoint' parameter of configuration 'seal' for seal wrapping mechanism 'awskms'"
+		"description": "vault templated 'endpoint' parameter of configuration 'seal' for seal wrapping mechanism 'awskms'"
 	},
 	"vault configuration 'seal' azurekeyvault - empty": {
 		"prefix": ["vault-configuration-seal-azurekeyvault-empty"],
@@ -3290,7 +3271,7 @@
 			"}",
 			""
 		],
-		"description": "empty 'seal' configuration for seal wrapping mechanism 'azurekeyvault'"
+		"description": "vault empty 'seal' configuration for seal wrapping mechanism 'azurekeyvault'"
 	},
 	"vault configuration 'seal' azurekeyvault - full": {
 		"prefix": ["vault-configuration-seal-azurekeyvault-full"],
@@ -3322,7 +3303,7 @@
 			"}",
 			"$0"
 		],
-		"description": "full 'seal' configuration for seal wrapping mechanism 'azurekeyvault'"
+		"description": "vault full 'seal' configuration for seal wrapping mechanism 'azurekeyvault'"
 	},
 	"vault configuration 'seal' azurekeyvault - common": {
 		"prefix": ["vault-configuration-seal-azurekeyvault-common"],
@@ -3350,7 +3331,7 @@
 			"}",
 			"$0"
 		],
-		"description": "common 'seal' configuration for seal wrapping mechanism 'azurekeyvault'"
+		"description": "vault common 'seal' configuration for seal wrapping mechanism 'azurekeyvault'"
 	},
 	"vault configuration 'seal' azurekeyvault parameter 'tenant_id'": {
 		"prefix": ["vault-configuration-seal-azurekeyvault-parameter-tenant-id"],
@@ -3360,7 +3341,7 @@
 			"  tenant_id = \"${1:<azure-tenant-id>}\"",
 			"$0"
 		],
-		"description": "templated 'tenant_id' parameter of configuration 'seal' for seal wrapping mechanism 'azurekeyvault'"
+		"description": "vault templated 'tenant_id' parameter of configuration 'seal' for seal wrapping mechanism 'azurekeyvault'"
 	},
 	"vault configuration 'seal' azurekeyvault parameter 'client_id'": {
 		"prefix": ["vault-configuration-seal-azurekeyvault-parameter-client-id"],
@@ -3370,7 +3351,7 @@
 			"  client_id = \"${1:<azure-client-id>}\"",
 			"$0"
 		],
-		"description": "templated 'client_id' parameter of configuration 'seal' for seal wrapping mechanism 'azurekeyvault'"
+		"description": "vault templated 'client_id' parameter of configuration 'seal' for seal wrapping mechanism 'azurekeyvault'"
 	},
 	"vault configuration 'seal' azurekeyvault parameter 'client_secret'": {
 		"prefix": ["vault-configuration-seal-azurekeyvault-parameter-client-secret"],
@@ -3380,7 +3361,7 @@
 			"  client_secret = \"${1:<azure-client-secret>}\"",
 			"$0"
 		],
-		"description": "templated 'client_secret' parameter of configuration 'seal' for seal wrapping mechanism 'azurekeyvault'"
+		"description": "vault templated 'client_secret' parameter of configuration 'seal' for seal wrapping mechanism 'azurekeyvault'"
 	},
 	"vault configuration 'seal' azurekeyvault parameter 'environment'": {
 		"prefix": ["vault-configuration-seal-azurekeyvault-parameter-environment"],
@@ -3390,7 +3371,7 @@
 			"  environment = \"${1:<azure-environment>}\"",
 			"$0"
 		],
-		"description": "templated 'environment' parameter of configuration 'seal' for seal wrapping mechanism 'azurekeyvault'"
+		"description": "vault templated 'environment' parameter of configuration 'seal' for seal wrapping mechanism 'azurekeyvault'"
 	},
 	"vault configuration 'seal' azurekeyvault parameter 'vault_name'": {
 		"prefix": ["vault-configuration-seal-azurekeyvault-parameter-vault-name"],
@@ -3401,7 +3382,7 @@
 			"  vault_name = \"${1:<azure-vault-name>}\"",
 			"$0"
 		],
-		"description": "templated 'vault_name' parameter of configuration 'seal' for seal wrapping mechanism 'azurekeyvault'"
+		"description": "vault templated 'vault_name' parameter of configuration 'seal' for seal wrapping mechanism 'azurekeyvault'"
 	},
 	"vault configuration 'seal' azurekeyvault parameter 'key_name'": {
 		"prefix": ["vault-configuration-seal-azurekeyvault-parameter-key-name"],
@@ -3412,7 +3393,7 @@
 			"  key_name = \"${1:<azure-key-name>}\"",
 			"$0"
 		],
-		"description": "templated 'key_name' parameter of configuration 'seal' for seal wrapping mechanism 'azurekeyvault'"
+		"description": "vault templated 'key_name' parameter of configuration 'seal' for seal wrapping mechanism 'azurekeyvault'"
 	},
 	"vault configuration 'seal' gcpckms - empty": {
 		"prefix": ["vault-configuration-seal-gcpckms-empty"],
@@ -3422,7 +3403,7 @@
 			"}",
 			""
 		],
-		"description": "empty 'seal' configuration for seal wrapping mechanism 'gcpckms'"
+		"description": "vault empty 'seal' configuration for seal wrapping mechanism 'gcpckms'"
 	},
 	"vault configuration 'seal' gcpckms - full": {
 		"prefix": ["vault-configuration-seal-gcpckms-full"],
@@ -3452,7 +3433,7 @@
 			"}",
 			"$0"
 		],
-		"description": "full 'seal' configuration for seal wrapping mechanism 'gcpckms'"
+		"description": "vault full 'seal' configuration for seal wrapping mechanism 'gcpckms'"
 	},
 	"vault configuration 'seal' gcpckms - common": {
 		"prefix": ["vault-configuration-seal-gcpckms-common"],
@@ -3482,7 +3463,7 @@
 			"}",
 			"$0"
 		],
-		"description": "common 'seal' configuration for seal wrapping mechanism 'gcpckms'"
+		"description": "vault common 'seal' configuration for seal wrapping mechanism 'gcpckms'"
 	},
 	"vault configuration 'seal' gcpckms parameter 'credentials'": {
 		"prefix": ["vault-configuration-seal-gcpckms-parameter-credentials"],
@@ -3494,7 +3475,7 @@
 			"  credentials = \"${1:<gcp-cloud-credentials>}\"",
 			"$0"
 		],
-		"description": "templated 'credentials' parameter of configuration 'seal' for seal wrapping mechanism 'gcpckms'"
+		"description": "vault templated 'credentials' parameter of configuration 'seal' for seal wrapping mechanism 'gcpckms'"
 	},
 	"vault configuration 'seal' gcpckms parameter 'project'": {
 		"prefix": ["vault-configuration-seal-gcpckms-parameter-project"],
@@ -3504,7 +3485,7 @@
 			"  project = \"${1:<gcp-cloud-project>}\"",
 			"$0"
 		],
-		"description": "templated 'project' parameter of configuration 'seal' for seal wrapping mechanism 'gcpckms'"
+		"description": "vault templated 'project' parameter of configuration 'seal' for seal wrapping mechanism 'gcpckms'"
 	},
 	"vault configuration 'seal' gcpckms parameter 'region'": {
 		"prefix": ["vault-configuration-seal-gcpckms-parameter-region"],
@@ -3514,7 +3495,7 @@
 			"  region = \"${1:<gcp-cloud-region>}\"",
 			"$0"
 		],
-		"description": "templated 'region' parameter of configuration 'seal' for seal wrapping mechanism 'gcpckms'"
+		"description": "vault templated 'region' parameter of configuration 'seal' for seal wrapping mechanism 'gcpckms'"
 	},
 	"vault configuration 'seal' gcpckms parameter 'key_ring'": {
 		"prefix": ["vault-configuration-seal-gcpckms-parameter-key-ring"],
@@ -3524,7 +3505,7 @@
 			"  key_ring = \"${1:<gcp-cloud-key-ring>}\"",
 			"$0"
 		],
-		"description": "templated 'key_ring' parameter of configuration 'seal' for seal wrapping mechanism 'gcpckms'"
+		"description": "vault templated 'key_ring' parameter of configuration 'seal' for seal wrapping mechanism 'gcpckms'"
 	},
 	"vault configuration 'seal' gcpckms parameter 'crypto_key'": {
 		"prefix": ["vault-configuration-seal-gcpckms-parameter-crypto-ring"],
@@ -3534,7 +3515,7 @@
 			"  crypto_key = \"${1:<gcp-cloud-crypto-ring>}\"",
 			"$0"
 		],
-		"description": "templated 'crypto_key' parameter of configuration 'seal' for seal wrapping mechanism 'gcpckms'"
+		"description": "vault templated 'crypto_key' parameter of configuration 'seal' for seal wrapping mechanism 'gcpckms'"
 	},
 	"vault configuration 'seal' ocikms - empty": {
 		"prefix": ["vault-configuration-seal-ocikms-empty"],
@@ -3544,7 +3525,7 @@
 			"}",
 			""
 		],
-		"description": "empty 'seal' configuration for seal wrapping mechanism 'ocikms'"
+		"description": "vault empty 'seal' configuration for seal wrapping mechanism 'ocikms'"
 	},
 	"vault configuration 'seal' ocikms - full": {
 		"prefix": ["vault-configuration-seal-ocikms-full"],
@@ -3569,7 +3550,7 @@
 			"}",
 			"$0"
 		],
-		"description": "full 'seal' configuration for seal wrapping mechanism 'ocikms'"
+		"description": "vault full 'seal' configuration for seal wrapping mechanism 'ocikms'"
 	},
 	"vault configuration 'seal' ocikms - common": {
 		"prefix": ["vault-configuration-seal-ocikms-common"],
@@ -3589,7 +3570,7 @@
 			"}",
 			"$0"
 		],
-		"description": "common 'seal' configuration for seal wrapping mechanism 'ocikms'"
+		"description": "vault common 'seal' configuration for seal wrapping mechanism 'ocikms'"
 	},
 	"vault configuration 'seal' ocikms parameter 'key_id'": {
 		"prefix": ["vault-configuration-seal-ocikms-parameter-key-id"],
@@ -3599,7 +3580,7 @@
 			"  key_id = \"${1:<oci-key-id>}\"",
 			"$0"
 		],
-		"description": "templated 'key_id' parameter of configuration 'seal' for seal wrapping mechanism 'ocikms'"
+		"description": "vault templated 'key_id' parameter of configuration 'seal' for seal wrapping mechanism 'ocikms'"
 	},
 	"vault configuration 'seal' ocikms parameter 'crypto_endpoint'": {
 		"prefix": ["vault-configuration-seal-ocikms-parameter-crypto-endpoint"],
@@ -3609,7 +3590,7 @@
 			"  crypto_endpoint = \"${1:<oci-crypto-endpoint>}\"",
 			"$0"
 		],
-		"description": "templated 'crypto_endpoint' parameter of configuration 'seal' for seal wrapping mechanism 'ocikms'"
+		"description": "vault templated 'crypto_endpoint' parameter of configuration 'seal' for seal wrapping mechanism 'ocikms'"
 	},
 	"vault configuration 'seal' ocikms parameter 'management_endpoint'": {
 		"prefix": ["vault-configuration-seal-ocikms-parameter-management-endpoint"],
@@ -3619,7 +3600,7 @@
 			"  management_endpoint = \"${1:<oci-management-endpoint>}\"",
 			"$0"
 		],
-		"description": "templated 'management_endpoint' parameter of configuration 'seal' for seal wrapping mechanism 'ocikms'"
+		"description": "vault templated 'management_endpoint' parameter of configuration 'seal' for seal wrapping mechanism 'ocikms'"
 	},
 	"vault configuration 'seal' ocikms parameter 'auth_type_api_key'": {
 		"prefix": ["vault-configuration-seal-ocikms-parameter-auth-type-api-key"],
@@ -3630,7 +3611,7 @@
 			"  auth_type_api_key = \"${1:<oci-auth-type-api-key>}\"",
 			"$0"
 		],
-		"description": "templated 'auth_type_api_key' parameter of configuration 'seal' for seal wrapping mechanism 'ocikms'"
+		"description": "vault templated 'auth_type_api_key' parameter of configuration 'seal' for seal wrapping mechanism 'ocikms'"
 	},
 	"vault configuration 'seal' pkcs11 - empty": {
 		"prefix": ["vault-configuration-seal-pkcs11-empty"],
@@ -3640,7 +3621,7 @@
 			"}",
 			""
 		],
-		"description": "empty 'seal' configuration for seal wrapping mechanism 'pkcs11'"
+		"description": "vault empty 'seal' configuration for seal wrapping mechanism 'pkcs11'"
 	},
 	"vault configuration 'seal' pkcs11 - full": {
 		"prefix": ["vault-configuration-seal-pkcs11-full"],
@@ -3714,7 +3695,7 @@
 			"}",
 			"$0"
 		],
-		"description": "full 'seal' configuration for seal wrapping mechanism 'pkcs11'"
+		"description": "vault full 'seal' configuration for seal wrapping mechanism 'pkcs11'"
 	},
 	"vault configuration 'seal' pkcs11 - common": {
 		"prefix": ["vault-configuration-seal-pkcs11-common"],
@@ -3749,7 +3730,7 @@
 			"}",
 			"$0"
 		],
-		"description": "common 'seal' configuration for seal wrapping mechanism 'pkcs11'"
+		"description": "vault common 'seal' configuration for seal wrapping mechanism 'pkcs11'"
 	},
 	"vault configuration 'seal' pkcs11 parameter 'lib'": {
 		"prefix": ["vault-configuration-seal-pkcs11-parameter-lib"],
@@ -3759,7 +3740,7 @@
 			"  lib = \"${1:<path-to-pkcs11-lib>}\"",
 			"$0"
 		],
-		"description": "templated 'lib' parameter of configuration 'seal' for seal wrapping mechanism 'pkcs11'"
+		"description": "vault templated 'lib' parameter of configuration 'seal' for seal wrapping mechanism 'pkcs11'"
 	},
 	"vault configuration 'seal' pkcs11 parameter 'slot'": {
 		"prefix": ["vault-configuration-seal-pkcs11-parameter-slot"],
@@ -3769,7 +3750,7 @@
 			"  slot = \"${1:<hsm-slot-number>}\"",
 			"$0"
 		],
-		"description": "templated 'slot' parameter of configuration 'seal' for seal wrapping mechanism 'pkcs11'"
+		"description": "vault templated 'slot' parameter of configuration 'seal' for seal wrapping mechanism 'pkcs11'"
 	},
 	"vault configuration 'seal' pkcs11 parameter 'token_label'": {
 		"prefix": ["vault-configuration-seal-pkcs11-parameter-token-label"],
@@ -3779,7 +3760,7 @@
 			"  token_label = \"${1:<hsm-slot-token-label>}\"",
 			"$0"
 		],
-		"description": "templated 'token_label' parameter of configuration 'seal' for seal wrapping mechanism 'pkcs11'"
+		"description": "vault templated 'token_label' parameter of configuration 'seal' for seal wrapping mechanism 'pkcs11'"
 	},
 	"vault configuration 'seal' pkcs11 parameter 'pin'": {
 		"prefix": ["vault-configuration-seal-pkcs11-parameter-pin"],
@@ -3790,7 +3771,7 @@
 			"  pin = \"${1:<hsm-pin>}\"",
 			"$0"
 		],
-		"description": "templated 'pin' parameter of configuration 'seal' for seal wrapping mechanism 'pkcs11'"
+		"description": "vault templated 'pin' parameter of configuration 'seal' for seal wrapping mechanism 'pkcs11'"
 	},
 	"vault configuration 'seal' pkcs11 parameter 'key_label'": {
 		"prefix": ["vault-configuration-seal-pkcs11-parameter-key-label"],
@@ -3801,7 +3782,7 @@
 			"  key_label = \"${1:<hsm-key-label>}\"",
 			"$0"
 		],
-		"description": "templated 'key_label' parameter of configuration 'seal' for seal wrapping mechanism 'pkcs11'"
+		"description": "vault templated 'key_label' parameter of configuration 'seal' for seal wrapping mechanism 'pkcs11'"
 	},
 	"vault configuration 'seal' pkcs11 parameter 'default_key_label'": {
 		"prefix": ["vault-configuration-seal-pkcs11-parameter-default-key-label"],
@@ -3815,7 +3796,7 @@
 			"  default_key_label = \"${1:<hsm-default-key-label>}\"",
 			"$0"
 		],
-		"description": "templated 'default_key_label' parameter of configuration 'seal' for seal wrapping mechanism 'pkcs11'"
+		"description": "vault templated 'default_key_label' parameter of configuration 'seal' for seal wrapping mechanism 'pkcs11'"
 	},
 	"vault configuration 'seal' pkcs11 parameter 'hmac_key_label'": {
 		"prefix": ["vault-configuration-seal-pkcs11-parameter-hmac-key-label"],
@@ -3826,7 +3807,7 @@
 			"  hmac_key_label = \"${1:<hsm-hmac-key-label>}\"",
 			"$0"
 		],
-		"description": "templated 'hmac_key_label' parameter of configuration 'seal' for seal wrapping mechanism 'pkcs11'"
+		"description": "vault templated 'hmac_key_label' parameter of configuration 'seal' for seal wrapping mechanism 'pkcs11'"
 	},
 	"vault configuration 'seal' pkcs11 parameter 'default_hmac_key_label'": {
 		"prefix": ["vault-configuration-seal-pkcs11-parameter-default-hmac-key-label"],
@@ -3838,7 +3819,7 @@
 			"  default_hmac_key_label = \"${1:<hsm-default-hmac-key-label>}\"",
 			"$0"
 		],
-		"description": "templated 'default_hmac_key_label' parameter of configuration 'seal' for seal wrapping mechanism 'pkcs11'"
+		"description": "vault templated 'default_hmac_key_label' parameter of configuration 'seal' for seal wrapping mechanism 'pkcs11'"
 	},
 	"vault configuration 'seal' pkcs11 parameter 'mechanism'": {
 		"prefix": ["vault-configuration-seal-pkcs11-parameter-mechanism"],
@@ -3855,7 +3836,7 @@
 			"  mechanism = \"${1:<hsm-mechanism>}\"",
 			"$0"
 		],
-		"description": "templated 'mechanism' parameter of configuration 'seal' for seal wrapping mechanism 'pkcs11'"
+		"description": "vault templated 'mechanism' parameter of configuration 'seal' for seal wrapping mechanism 'pkcs11'"
 	},
 	"vault configuration 'seal' pkcs11 parameter 'hmac_mechanism'": {
 		"prefix": ["vault-configuration-seal-pkcs11-parameter-hmac-mechanism"],
@@ -3867,7 +3848,7 @@
 			"  hmac_mechanism = \"${1:<hsm-hmac-mechanism>}\"",
 			"$0"
 		],
-		"description": "templated 'hmac_mechanism' parameter of configuration 'seal' for seal wrapping mechanism 'pkcs11'"
+		"description": "vault templated 'hmac_mechanism' parameter of configuration 'seal' for seal wrapping mechanism 'pkcs11'"
 	},
 	"vault configuration 'seal' pkcs11 parameter 'generate_key'": {
 		"prefix": ["vault-configuration-seal-pkcs11-parameter-generate-key"],
@@ -3878,7 +3859,7 @@
 			"  generate_key = \"${1:<hsm-generate-key>}\" # (\"true\"|\"false\")",
 			"$0"
 		],
-		"description": "templated 'generate_key' parameter of configuration 'seal' for seal wrapping mechanism 'pkcs11'"
+		"description": "vault templated 'generate_key' parameter of configuration 'seal' for seal wrapping mechanism 'pkcs11'"
 	},
 	"vault configuration 'seal' pkcs11 parameter 'rsa_encrypt_local'": {
 		"prefix": ["vault-configuration-seal-pkcs11-parameter-rsa-encrypt-local"],
@@ -3888,7 +3869,7 @@
 			"  rsa_encrypt_local = \"${1:<hsm-rsa-encrypt-local>}\"",
 			"$0"
 		],
-		"description": "templated 'rsa_encrypt_local' parameter of configuration 'seal' for seal wrapping mechanism 'pkcs11'"
+		"description": "vault templated 'rsa_encrypt_local' parameter of configuration 'seal' for seal wrapping mechanism 'pkcs11'"
 	},
 	"vault configuration 'seal' pkcs11 parameter 'rsa_oaep_hash'": {
 		"prefix": ["vault-configuration-seal-pkcs11-parameter-rsa-oaep-hash"],
@@ -3900,7 +3881,7 @@
 			"  rsa_oaep_hash = \"${1:<hsm-rsa-oaep-hash>}\"",
 			"$0"
 		],
-		"description": "templated 'rsa_oaep_hash' parameter of configuration 'seal' for seal wrapping mechanism 'pkcs11'"
+		"description": "vault templated 'rsa_oaep_hash' parameter of configuration 'seal' for seal wrapping mechanism 'pkcs11'"
 	},
 	"vault configuration 'seal' transit - empty": {
 		"prefix": ["vault-configuration-seal-transit-empty"],
@@ -3910,7 +3891,7 @@
 			"}",
 			""
 		],
-		"description": "empty 'seal' configuration for seal wrapping mechanism 'transit'"
+		"description": "vault empty 'seal' configuration for seal wrapping mechanism 'transit'"
 	},
 	"vault configuration 'seal' transit - full": {
 		"prefix": ["vault-configuration-seal-transit-full"],
@@ -3959,7 +3940,7 @@
 			"}",
 			"$0"
 		],
-		"description": "full 'seal' configuration for seal wrapping mechanism 'transit'"
+		"description": "vault full 'seal' configuration for seal wrapping mechanism 'transit'"
 	},
 	"vault configuration 'seal' transit - common": {
 		"prefix": ["vault-configuration-seal-transit-common"],
@@ -3999,7 +3980,7 @@
 			"}",
 			"$0"
 		],
-		"description": "common 'seal' configuration for seal wrapping mechanism 'transit'"
+		"description": "vault common 'seal' configuration for seal wrapping mechanism 'transit'"
 	},
 	"vault configuration 'seal' transit parameter 'address'": {
 		"prefix": ["vault-configuration-seal-transit-parameter-address"],
@@ -4009,7 +3990,7 @@
 			"  address = \"${1:<vault-address>}\"",
 			"$0"
 		],
-		"description": "templated 'address' parameter of configuration 'seal' for seal wrapping mechanism 'transit'"
+		"description": "vault templated 'address' parameter of configuration 'seal' for seal wrapping mechanism 'transit'"
 	},
 	"vault configuration 'seal' transit parameter 'token'": {
 		"prefix": ["vault-configuration-seal-transit-parameter-token"],
@@ -4019,7 +4000,7 @@
 			"  token = \"${1:<vault-token>}\"",
 			"$0"
 		],
-		"description": "templated 'token' parameter of configuration 'seal' for seal wrapping mechanism 'transit'"
+		"description": "vault templated 'token' parameter of configuration 'seal' for seal wrapping mechanism 'transit'"
 	},
 	"vault configuration 'seal' transit parameter 'key_name'": {
 		"prefix": ["vault-configuration-seal-transit-parameter-key-name"],
@@ -4029,7 +4010,7 @@
 			"  key_name = \"${1:<vault-key-name>}\"",
 			"$0"
 		],
-		"description": "templated 'key_name' parameter of configuration 'seal' for seal wrapping mechanism 'transit'"
+		"description": "vault templated 'key_name' parameter of configuration 'seal' for seal wrapping mechanism 'transit'"
 	},
 	"vault configuration 'seal' transit parameter 'mount_path'": {
 		"prefix": ["vault-configuration-seal-transit-parameter-mount-path"],
@@ -4039,7 +4020,7 @@
 			"  mount_path = \"${1:<vault-secrets-engine-mount-path>}\"",
 			"$0"
 		],
-		"description": "templated 'mount_path' parameter of configuration 'seal' for seal wrapping mechanism 'transit'"
+		"description": "vault templated 'mount_path' parameter of configuration 'seal' for seal wrapping mechanism 'transit'"
 	},
 	"vault configuration 'seal' transit parameter 'namespace'": {
 		"prefix": ["vault-configuration-seal-transit-parameter-namespace"],
@@ -4049,7 +4030,7 @@
 			"  namespace = \"${1:<vault-namespace>}\"",
 			"$0"
 		],
-		"description": "templated 'namespace' parameter of configuration 'seal' for seal wrapping mechanism 'transit'"
+		"description": "vault templated 'namespace' parameter of configuration 'seal' for seal wrapping mechanism 'transit'"
 	},
 	"vault configuration 'seal' transit parameter 'disable_renewal'": {
 		"prefix": ["vault-configuration-seal-transit-parameter-disable-renewal"],
@@ -4060,7 +4041,7 @@
 			"  disable_renewal = \"${1:<vault-disable-renewal>}\" # (\"true\"|\"false\")",
 			"$0"
 		],
-		"description": "templated 'disable_renewal' parameter of configuration 'seal' for seal wrapping mechanism 'transit'"
+		"description": "vault templated 'disable_renewal' parameter of configuration 'seal' for seal wrapping mechanism 'transit'"
 	},
 	"vault configuration 'seal' transit parameter 'tls_ca_cert'": {
 		"prefix": ["vault-configuration-seal-transit-parameter-tls-ca-cert"],
@@ -4070,7 +4051,7 @@
 			"  tls_ca_cert = \"${1:<path-to-tls-ca-cert>}\"",
 			"$0"
 		],
-		"description": "templated 'tls_ca_cert' parameter of configuration 'seal' for seal wrapping mechanism 'transit'"
+		"description": "vault templated 'tls_ca_cert' parameter of configuration 'seal' for seal wrapping mechanism 'transit'"
 	},
 	"vault configuration 'seal' transit parameter 'tls_client_cert'": {
 		"prefix": ["vault-configuration-seal-transit-parameter-tls-client-cert"],
@@ -4080,7 +4061,7 @@
 			"  tls_client_cert = \"${1:<path-to-tls-client-cert>}\"",
 			"$0"
 		],
-		"description": "templated 'tls_client_cert' parameter of configuration 'seal' for seal wrapping mechanism 'transit'"
+		"description": "vault templated 'tls_client_cert' parameter of configuration 'seal' for seal wrapping mechanism 'transit'"
 	},
 	"vault configuration 'seal' transit parameter 'tls_client_key'": {
 		"prefix": ["vault-configuration-seal-transit-parameter-tls-client-key"],
@@ -4090,7 +4071,7 @@
 			"  tls_client_key = \"${1:<path-to-tls-client-key>}\"",
 			"$0"
 		],
-		"description": "templated 'tls_client_key' parameter of configuration 'seal' for seal wrapping mechanism 'transit'"
+		"description": "vault templated 'tls_client_key' parameter of configuration 'seal' for seal wrapping mechanism 'transit'"
 	},
 	"vault configuration 'seal' transit parameter 'tls_server_name'": {
 		"prefix": ["vault-configuration-seal-transit-parameter-tls-server-name"],
@@ -4100,7 +4081,7 @@
 			"  tls_server_name = \"${1:<vault-tls-server-name>}\"",
 			"$0"
 		],
-		"description": "templated 'tls_server_name' parameter of configuration 'seal' for seal wrapping mechanism 'transit'"
+		"description": "vault templated 'tls_server_name' parameter of configuration 'seal' for seal wrapping mechanism 'transit'"
 	},
 	"vault configuration 'seal' transit parameter 'tls_skip_verify'": {
 		"prefix": ["vault-configuration-seal-transit-parameter-tls-skip-verify"],
@@ -4110,7 +4091,7 @@
 			"  tls_skip_verify = \"${1:<vault-tls-skip-verify>}\" # (\"true\"|\"false\")",
 			"$0"
 		],
-		"description": "templated 'tls_skip_verify' parameter of configuration 'seal' for seal wrapping mechanism 'transit'"
+		"description": "vault templated 'tls_skip_verify' parameter of configuration 'seal' for seal wrapping mechanism 'transit'"
 	},
 	"vault configuration 'sentinel' - empty": {
 		"prefix": ["vault-configuration-sentinel-empty"],
@@ -4121,7 +4102,7 @@
 			"}",
 			""
 		],
-		"description": "empty 'sentinel' configuration"
+		"description": "vault empty 'sentinel' configuration"
 	},
 	"vault configuration 'sentinel' - full": {
 		"prefix": ["vault-configuration-sentinel-full"],
@@ -4133,7 +4114,7 @@
 			"}",
 			"$0"
 		],
-		"description": "full 'sentinel' configuration"
+		"description": "vault full 'sentinel' configuration"
 	},
 	"vault configuration 'sentinel' - common": {
 		"prefix": ["vault-configuration-sentinel-common"],
@@ -4145,7 +4126,7 @@
 			"}",
 			"$0"
 		],
-		"description": "common 'sentinel' configuration"
+		"description": "vault common 'sentinel' configuration"
 	},
 	"vault configuration 'sentinel' parameter 'additional_enabled_modules'": {
 		"prefix": ["vault-configuration-sentinel-parameter-additional-enabled-modules"],
@@ -4155,7 +4136,7 @@
 			"  additional_enabled_modules = [\"${1:<module1>}\",\"${2:<module2>}\",\"${3:<moduleN>}\"]",
 			"$0"
 		],
-		"description": "templated 'additional_enabled_modules' parameter of configuration 'sentinel'"
+		"description": "vault templated 'additional_enabled_modules' parameter of configuration 'sentinel'"
 	},
 	"vault configuration 'service_registration' consul - empty": {
 		"prefix": ["vault-configuration-service-registration-consul-empty"],
@@ -4165,7 +4146,7 @@
 			"}",
 			""
 		],
-		"description": "empty 'service_registration' configuration for registrar 'consul'"
+		"description": "vault empty 'service_registration' configuration for registrar 'consul'"
 	},
 	"vault configuration 'service_registration' consul - full": {
 		"prefix": ["vault-configuration-service-registration-consul-full"],
@@ -4215,7 +4196,7 @@
 			"}",
 			"$0"
 		],
-		"description": "full 'service_registration' configuration for registrar 'consul'"
+		"description": "vault full 'service_registration' configuration for registrar 'consul'"
 	},
 	"vault configuration 'service_registration' consul - common": {
 		"prefix": ["vault-configuration-service-registration-consul-common"],
@@ -4244,7 +4225,7 @@
 			"}",
 			"$0"
 		],
-		"description": "common 'service_registration' configuration for registrar 'consul'"
+		"description": "vault common 'service_registration' configuration for registrar 'consul'"
 	},
 	"vault configuration 'service_registration' consul parameter 'address'": {
 		"prefix": ["vault-configuration-service-registration-consul-parameter-address"],
@@ -4253,7 +4234,7 @@
 			"  address = \"${1:<consul-agent-address>}\"",
 			"$0"
 		],
-		"description": "templated 'address' parameter of configuration 'service_registration' for registrar 'consul'"
+		"description": "vault templated 'address' parameter of configuration 'service_registration' for registrar 'consul'"
 	},
 	"vault configuration 'service_registration' consul parameter 'check_timeout'": {
 		"prefix": ["vault-configuration-service-registration-consul-parameter-check-timeout"],
@@ -4263,7 +4244,7 @@
 			"  check_timeout = \"${1:<check-timeout>}\"",
 			"$0"
 		],
-		"description": "templated 'check_timeout' parameter of configuration 'service_registration' for registrar 'consul'"
+		"description": "vault templated 'check_timeout' parameter of configuration 'service_registration' for registrar 'consul'"
 	},
 	"vault configuration 'service_registration' consul parameter 'disable_registration'": {
 		"prefix": ["vault-configuration-service-registration-consul-parameter-disable-registration"],
@@ -4272,7 +4253,7 @@
 			"  disable_registration = ${1:<disable-registration>} # (true|false)",
 			"$0"
 		],
-		"description": "templated 'disable_registration' parameter of configuration 'service_registration' for registrar 'consul'"
+		"description": "vault templated 'disable_registration' parameter of configuration 'service_registration' for registrar 'consul'"
 	},
 	"vault configuration 'service_registration' consul parameter 'scheme'": {
 		"prefix": ["vault-configuration-service-registration-consul-parameter-scheme"],
@@ -4281,7 +4262,7 @@
 			"  scheme = \"${1:<scheme>}\" # (http|https)",
 			"$0"
 		],
-		"description": "templated 'scheme' parameter of configuration 'service_registration' for registrar 'consul'"
+		"description": "vault templated 'scheme' parameter of configuration 'service_registration' for registrar 'consul'"
 	},
 	"vault configuration 'service_registration' consul parameter 'service'": {
 		"prefix": ["vault-configuration-service-registration-consul-parameter-service"],
@@ -4291,7 +4272,7 @@
 			"  service = \"${1:<service>}\"",
 			"$0"
 		],
-		"description": "templated 'service' parameter of configuration 'service_registration' for registrar 'consul'"
+		"description": "vault templated 'service' parameter of configuration 'service_registration' for registrar 'consul'"
 	},
 	"vault configuration 'service_registration' consul parameter 'service_tags'": {
 		"prefix": ["vault-configuration-service-registration-consul-parameter-service-tags"],
@@ -4301,7 +4282,7 @@
 			"  service_tags = \"${1:<service-tags>}\"",
 			"$0"
 		],
-		"description": "templated 'service_tags' parameter of configuration 'service_registration' for registrar 'consul'"
+		"description": "vault templated 'service_tags' parameter of configuration 'service_registration' for registrar 'consul'"
 	},
 	"vault configuration 'service_registration' consul parameter 'service_address'": {
 		"prefix": ["vault-configuration-service-registration-consul-parameter-service-address"],
@@ -4314,7 +4295,7 @@
 			"  service_address = \"${1:<service-address>}\"",
 			"$0"
 		],
-		"description": "templated 'service_address' parameter of configuration 'service_registration' for registrar 'consul'"
+		"description": "vault templated 'service_address' parameter of configuration 'service_registration' for registrar 'consul'"
 	},
 	"vault configuration 'service_registration' consul parameter 'token'": {
 		"prefix": ["vault-configuration-service-registration-consul-parameter-token"],
@@ -4325,7 +4306,7 @@
 			"  token = \"${1:<consul-token>}\"",
 			"$0"
 		],
-		"description": "templated 'token' parameter of configuration 'service_registration' for registrar 'consul'"
+		"description": "vault templated 'token' parameter of configuration 'service_registration' for registrar 'consul'"
 	},
 	"vault configuration 'service_registration' consul parameter 'tls_ca_file'": {
 		"prefix": ["vault-configuration-service-registration-consul-parameter-tls-ca-file"],
@@ -4334,7 +4315,7 @@
 			"  tls_ca_file = \"${1:<path-to-ca-file>}\"",
 			"$0"
 		],
-		"description": "templated 'tls_ca_file' parameter of configuration 'service_registration' for registrar 'consul'"
+		"description": "vault templated 'tls_ca_file' parameter of configuration 'service_registration' for registrar 'consul'"
 	},
 	"vault configuration 'service_registration' consul parameter 'tls_cert_file'": {
 		"prefix": ["vault-configuration-service-registration-consul-parameter-tls-cert-file"],
@@ -4343,7 +4324,7 @@
 			"  tls_cert_file = \"${1:<path-to-cert-file>}\"",
 			"$0"
 		],
-		"description": "templated 'tls_cert_file' parameter of configuration 'service_registration' for registrar 'consul'"
+		"description": "vault templated 'tls_cert_file' parameter of configuration 'service_registration' for registrar 'consul'"
 	},
 	"vault configuration 'service_registration' consul parameter 'tls_key_file'": {
 		"prefix": ["vault-configuration-service-registration-consul-parameter-tls-key-file"],
@@ -4352,7 +4333,7 @@
 			"  tls_key_file = \"${1:<path-to-key-file>}\"",
 			"$0"
 		],
-		"description": "templated 'tls_key_file' parameter of configuration 'service_registration' for registrar 'consul'"
+		"description": "vault templated 'tls_key_file' parameter of configuration 'service_registration' for registrar 'consul'"
 	},
 	"vault configuration 'service_registration' consul parameter 'tls_min_version'": {
 		"prefix": ["vault-configuration-service-registration-consul-parameter-tls-min-version"],
@@ -4361,7 +4342,7 @@
 			"  tls_min_version = \"${1:<consul-tls-min-version>}\"",
 			"$0"
 		],
-		"description": "templated 'tls_min_version' parameter of configuration 'service_registration' for registrar 'consul'"
+		"description": "vault templated 'tls_min_version' parameter of configuration 'service_registration' for registrar 'consul'"
 	},
 	"vault configuration 'service_registration' consul parameter 'tls_skip_verify'": {
 		"prefix": ["vault-configuration-service-registration-consul-parameter-tls-skip-verify"],
@@ -4370,7 +4351,7 @@
 			"  tls_skip_verify = \"${1:<consul-tls-skip-verify>}\" # (true|false)",
 			"$0"
 		],
-		"description": "templated 'tls_skip_verify' parameter of configuration 'service_registration' for registrar 'consul'"
+		"description": "vault templated 'tls_skip_verify' parameter of configuration 'service_registration' for registrar 'consul'"
 	},
 	"vault configuration 'service_registration' kubernetes - empty": {
 		"prefix": ["vault-configuration-service-registration-k8s-empty","vault-configuration-service-registration-kubernetes-empty"],
@@ -4380,7 +4361,7 @@
 			"}",
 			""
 		],
-		"description": "empty 'service_registration' configuration for registrar 'kubernetes'"
+		"description": "vault empty 'service_registration' configuration for registrar 'kubernetes'"
 	},
 	"vault configuration 'service_registration' kubernetes - full": {
 		"prefix": ["vault-configuration-service-registration-k8s-full","vault-configuration-service-registration-kubernetes-full"],
@@ -4393,7 +4374,7 @@
 			"}",
 			"$0"
 		],
-		"description": "full 'service_registration' configuration for registrar 'kubernetes'"
+		"description": "vault full 'service_registration' configuration for registrar 'kubernetes'"
 	},
 	"vault configuration 'service_registration' kubernetes - common": {
 		"prefix": ["vault-configuration-service-registration-k8s-common","vault-configuration-service-registration-kubernetes-common"],
@@ -4406,7 +4387,7 @@
 			"}",
 			"$0"
 		],
-		"description": "common 'service_registration' configuration for registrar 'kubernetes'"
+		"description": "vault common 'service_registration' configuration for registrar 'kubernetes'"
 	},
 	"vault configuration 'service_registration' kubernetes parameter 'namespace'": {
 		"prefix": ["vault-configuration-service-registration-k8s-parameter-namespace","vault-configuration-service-registration-kubernetes-parameter-namespace"],
@@ -4415,7 +4396,7 @@
 			"  namespace = \"${1:<k8s-namespace>}\"",
 			"$0"
 		],
-		"description": "templated 'namespace' parameter of configuration 'service_registration' for registrar 'kubernetes'"
+		"description": "vault templated 'namespace' parameter of configuration 'service_registration' for registrar 'kubernetes'"
 	},
 	"vault configuration 'service_registration' kubernetes parameter 'pod_name'": {
 		"prefix": ["vault-configuration-service-registration-k8s-parameter-pod-name","vault-configuration-service-registration-kubernetes-parameter-pod-name"],
@@ -4424,7 +4405,7 @@
 			"  pod_name = \"${1:<pod-name>}\"",
 			"$0"
 		],
-		"description": "templated 'pod_name' parameter of configuration 'service_registration' for registrar 'kubernetes'"
+		"description": "vault templated 'pod_name' parameter of configuration 'service_registration' for registrar 'kubernetes'"
 	},
 	"vault configuration 'storage' consul - empty": {
 		"prefix": ["vault-configuration-storage-consul-empty"],
@@ -4434,7 +4415,7 @@
 			"}",
 			""
 		],
-		"description": "empty 'storage' configuration for storage backend 'consul'"
+		"description": "vault empty 'storage' configuration for storage backend 'consul'"
 	},
 	"vault configuration 'storage' consul - full": {
 		"prefix": ["vault-configuration-storage-consul-full"],
@@ -4507,7 +4488,7 @@
 			"}",
 			"$0"
 		],
-		"description": "full 'storage' configuration for storage backend 'consul'"
+		"description": "vault full 'storage' configuration for storage backend 'consul'"
 	},
 	"vault configuration 'storage' consul - common": {
 		"prefix": ["vault-configuration-storage-consul-common"],
@@ -4541,7 +4522,7 @@
 			"}",
 			"$0"
 		],
-		"description": "common 'storage' configuration for storage backend 'consul'"
+		"description": "vault common 'storage' configuration for storage backend 'consul'"
 	},
 	"vault configuration 'storage' consul parameter 'address'": {
 		"prefix": ["vault-configuration-storage-consul-parameter-address"],
@@ -4553,7 +4534,7 @@
 			"  address = \"${1:<consul-address>}\"",
 			"$0"
 		],
-		"description": "templated 'address' parameter of configuration 'storage' for storage backend 'consul'"
+		"description": "vault templated 'address' parameter of configuration 'storage' for storage backend 'consul'"
 	},
 	"vault configuration 'storage' consul parameter 'check_timeout'": {
 		"prefix": ["vault-configuration-storage-consul-parameter-check-timeout"],
@@ -4563,7 +4544,7 @@
 			"  check_timeout = \"${1:<consul-check-timeout>}\"",
 			"$0"
 		],
-		"description": "templated 'check_timeout' parameter of configuration 'storage' for storage backend 'consul'"
+		"description": "vault templated 'check_timeout' parameter of configuration 'storage' for storage backend 'consul'"
 	},
 	"vault configuration 'storage' consul parameter 'consistency_mode'": {
 		"prefix": ["vault-configuration-storage-consul-parameter-consistency-mode"],
@@ -4573,7 +4554,7 @@
 			"  consistency_mode = \"${1:<consul-consistency-mode>}\"",
 			"$0"
 		],
-		"description": "templated 'consistency_mode' parameter of configuration 'storage' for storage backend 'consul'"
+		"description": "vault templated 'consistency_mode' parameter of configuration 'storage' for storage backend 'consul'"
 	},
 	"vault configuration 'storage' consul parameter 'disable_registration'": {
 		"prefix": ["vault-configuration-storage-consul-parameter-disable-registration"],
@@ -4583,7 +4564,7 @@
 			"  disable_registration = \"${1:<consul-disable-registration>}\" # (\"true\"|\"false\")",
 			"$0"
 		],
-		"description": "templated 'disable_registration' parameter of configuration 'storage' for storage backend 'consul'"
+		"description": "vault templated 'disable_registration' parameter of configuration 'storage' for storage backend 'consul'"
 	},
 	"vault configuration 'storage' consul parameter 'max_parallel'": {
 		"prefix": ["vault-configuration-storage-consul-parameter-max-parallel"],
@@ -4594,7 +4575,7 @@
 			"  max_parallel = \"${1:<consul-max-parallel>}\"",
 			"$0"
 		],
-		"description": "templated 'max_parallel' parameter of configuration 'storage' for storage backend 'consul'"
+		"description": "vault templated 'max_parallel' parameter of configuration 'storage' for storage backend 'consul'"
 	},
 	"vault configuration 'storage' consul parameter 'path'": {
 		"prefix": ["vault-configuration-storage-consul-parameter-path"],
@@ -4604,7 +4585,7 @@
 			"  path = \"${1:<path-in-consul-key-value-store>}\"",
 			"$0"
 		],
-		"description": "templated 'path' parameter of configuration 'storage' for storage backend 'consul'"
+		"description": "vault templated 'path' parameter of configuration 'storage' for storage backend 'consul'"
 	},
 	"vault configuration 'storage' consul parameter 'scheme'": {
 		"prefix": ["vault-configuration-storage-consul-parameter-scheme"],
@@ -4613,7 +4594,7 @@
 			"  scheme = \"${1:<consul-scheme>}\") # (\"http\"|\"https\")",
 			"$0"
 		],
-		"description": "templated 'scheme' parameter of configuration 'storage' for storage backend 'consul'"
+		"description": "vault templated 'scheme' parameter of configuration 'storage' for storage backend 'consul'"
 	},
 	"vault configuration 'storage' consul parameter 'service'": {
 		"prefix": ["vault-configuration-storage-consul-parameter-service"],
@@ -4623,7 +4604,7 @@
 			"  service = \"${1:<consul-vault-service>}\"",
 			"$0"
 		],
-		"description": "templated 'scheme' parameter of configuration 'storage' for storage backend 'consul'"
+		"description": "vault templated 'scheme' parameter of configuration 'storage' for storage backend 'consul'"
 	},
 	"vault configuration 'storage' consul parameter 'service_tags'": {
 		"prefix": ["vault-configuration-storage-consul-parameter-service-tags"],
@@ -4632,7 +4613,7 @@
 			"  service_tags = \"${1:<consul-vault-service-tags>}\"",
 			"$0"
 		],
-		"description": "templated 'service_tags' parameter of configuration 'storage' for storage backend 'consul'"
+		"description": "vault templated 'service_tags' parameter of configuration 'storage' for storage backend 'consul'"
 	},
 	"vault configuration 'storage' consul parameter 'service_address'": {
 		"prefix": ["vault-configuration-storage-consul-parameter-service-address"],
@@ -4645,7 +4626,7 @@
 			"  service_address = \"${1:<consul-vault-service-address>}\"",
 			"$0"
 		],
-		"description": "templated 'service_address' parameter of configuration 'storage' for storage backend 'consul'"
+		"description": "vault templated 'service_address' parameter of configuration 'storage' for storage backend 'consul'"
 	},
 	"vault configuration 'storage' consul parameter 'token'": {
 		"prefix": ["vault-configuration-storage-consul-parameter-token"],
@@ -4655,7 +4636,7 @@
 			"  token = \"${1:<consul-acl-token>}\"",
 			"$0"
 		],
-		"description": "templated 'token' parameter of configuration 'storage' for storage backend 'consul'"
+		"description": "vault templated 'token' parameter of configuration 'storage' for storage backend 'consul'"
 	},
 	"vault configuration 'storage' consul parameter 'session_ttl'": {
 		"prefix": ["vault-configuration-storage-consul-parameter-session-ttl"],
@@ -4665,7 +4646,7 @@
 			"  session_ttl = \"${1:<consul-session-ttl>}\"",
 			"$0"
 		],
-		"description": "templated 'session_ttl' parameter of configuration 'storage' for storage backend 'consul'"
+		"description": "vault templated 'session_ttl' parameter of configuration 'storage' for storage backend 'consul'"
 	},
 	"vault configuration 'storage' consul parameter 'lock_wait_time'": {
 		"prefix": ["vault-configuration-storage-consul-parameter-lock-wait-time"],
@@ -4674,7 +4655,7 @@
 			"  lock_wait_time = \"${1:<consul-lock-wait-time>}\"",
 			"$0"
 		],
-		"description": "templated 'lock_wait_time' parameter of configuration 'storage' for storage backend 'consul'"
+		"description": "vault templated 'lock_wait_time' parameter of configuration 'storage' for storage backend 'consul'"
 	},
 	"vault configuration 'storage' consul parameter 'tls_ca_file'": {
 		"prefix": ["vault-configuration-storage-consul-parameter-tls-ca-file"],
@@ -4683,7 +4664,7 @@
 			"  tls_ca_file = \"${1:<path-to-ca-file>}\"",
 			"$0"
 		],
-		"description": "templated 'tls_ca_file' parameter of configuration 'storage' for storage backend 'consul'"
+		"description": "vault templated 'tls_ca_file' parameter of configuration 'storage' for storage backend 'consul'"
 	},
 	"vault configuration 'storage' consul parameter 'tls_cert_file'": {
 		"prefix": ["vault-configuration-storage-consul-parameter-tls-cert-file"],
@@ -4692,7 +4673,7 @@
 			"  tls_cert_file = \"${1:<path-to-cert-file>}\"",
 			"$0"
 		],
-		"description": "templated 'tls_cert_file' parameter of configuration 'storage' for storage backend 'consul'"
+		"description": "vault templated 'tls_cert_file' parameter of configuration 'storage' for storage backend 'consul'"
 	},
 	"vault configuration 'storage' consul parameter 'tls_key_file'": {
 		"prefix": ["vault-configuration-storage-consul-parameter-tls-key-file"],
@@ -4701,7 +4682,7 @@
 			"  tls_key_file = \"${1:<path-to-key-file>}\"",
 			"$0"
 		],
-		"description": "templated 'tls_key_file' parameter of configuration 'storage' for storage backend 'consul'"
+		"description": "vault templated 'tls_key_file' parameter of configuration 'storage' for storage backend 'consul'"
 	},
 	"vault configuration 'storage' consul parameter 'tls_min_version'": {
 		"prefix": ["vault-configuration-storage-consul-parameter-tls-min-version"],
@@ -4711,7 +4692,7 @@
 			"  tls_min_version = \"${1:<consul-tls-min-version>}\"",
 			"$0"
 		],
-		"description": "templated 'tls_min_version' parameter of configuration 'storage' for storage backend 'consul'"
+		"description": "vault templated 'tls_min_version' parameter of configuration 'storage' for storage backend 'consul'"
 	},
 	"vault configuration 'storage' consul parameter 'tls_skip_verify'": {
 		"prefix": ["vault-configuration-storage-consul-parameter-tls-skip-verify"],
@@ -4720,7 +4701,7 @@
 			"  tls_skip_verify = \"${1:<consul-tls-skip-verify>}\"",
 			"$0"
 		],
-		"description": "templated 'tls_skip_verify' parameter of configuration 'storage' for storage backend 'consul'"
+		"description": "vault templated 'tls_skip_verify' parameter of configuration 'storage' for storage backend 'consul'"
 	},
 	"vault configuration 'storage' file - empty": {
 		"prefix": ["vault-configuration-storage-file-empty"],
@@ -4730,7 +4711,7 @@
 			"}",
 			""
 		],
-		"description": "empty 'storage' configuration for storage backend 'file'"
+		"description": "vault empty 'storage' configuration for storage backend 'file'"
 	},
 	"vault configuration 'storage' file - full": {
 		"prefix": ["vault-configuration-storage-file-full"],
@@ -4741,7 +4722,7 @@
 			"}",
 			"$0"
 		],
-		"description": "full 'storage' configuration for storage backend 'file'"
+		"description": "vault full 'storage' configuration for storage backend 'file'"
 	},
 	"vault configuration 'storage' file - common": {
 		"prefix": ["vault-configuration-storage-file-common"],
@@ -4752,7 +4733,7 @@
 			"}",
 			"$0"
 		],
-		"description": "common 'storage' configuration for storage backend 'file'"
+		"description": "vault common 'storage' configuration for storage backend 'file'"
 	},
 	"vault configuration 'storage' file parameter 'path'": {
 		"prefix": ["vault-configuration-storage-file-parameter-path"],
@@ -4761,7 +4742,7 @@
 			"  path = \"${1:<path-to-vault-data>}\"",
 			"$0"
 		],
-		"description": "templated 'path' parameter of configuration 'storage' for storage backend 'file'"
+		"description": "vault templated 'path' parameter of configuration 'storage' for storage backend 'file'"
 	},
 	"vault configuration 'storage' raft - empty": {
 		"prefix": ["vault-configuration-storage-raft-empty","vault-configuration-storage-integrated-empty"],
@@ -4782,7 +4763,7 @@
 			"}",
 			""
 		],
-		"description": "empty 'storage' configuration for storage backend 'raft'"
+		"description": "vault empty 'storage' configuration for storage backend 'raft'"
 	},
 	"vault configuration 'storage' raft - full": {
 		"prefix": ["vault-configuration-storage-raft-full","vault-configuration-storage-integrated-full"],
@@ -4853,7 +4834,7 @@
 			"}",
 			"$0"
 		],
-		"description": "full 'storage' configuration for storage backend 'raft'"
+		"description": "vault full 'storage' configuration for storage backend 'raft'"
 	},
 	"vault configuration 'storage' raft - common": {
 		"prefix": ["vault-configuration-storage-raft-common","vault-configuration-storage-integrated-common"],
@@ -4916,7 +4897,7 @@
 			"}",
 			"$0"
 		],
-		"description": "common 'storage' configuration for storage backend 'raft'"
+		"description": "vault common 'storage' configuration for storage backend 'raft'"
 	},
 	"vault configuration 'storage' raft parameter 'path'": {
 		"prefix": ["vault-configuration-storage-raft-parameter-path","vault-configuration-storage-integrated-parameter-path"],
@@ -4926,7 +4907,7 @@
 			"  path = \"${1:<path-to-vault-data>}\"",
 			"$0"
 		],
-		"description": "templated 'path' parameter of configuration 'storage' for storage backend 'raft'"
+		"description": "vault templated 'path' parameter of configuration 'storage' for storage backend 'raft'"
 	},
 	"vault configuration 'storage' raft parameter 'node_id'": {
 		"prefix": ["vault-configuration-storage-raft-parameter-node-id"],
@@ -4936,7 +4917,7 @@
 			"  node_id = \"${1:<raft-node-id>}\"",
 			"$0"
 		],
-		"description": "templated 'node_id' parameter of configuration 'storage' for storage backend 'raft'"
+		"description": "vault templated 'node_id' parameter of configuration 'storage' for storage backend 'raft'"
 	},
 	"vault configuration 'storage' raft parameter 'performance_multiplier'": {
 		"prefix": ["vault-configuration-storage-raft-parameter-performance-multiplier","vault-configuration-storage-integrated-parameter-performance-multiplier"],
@@ -4955,7 +4936,7 @@
 			"  performance_multiplier = ${1:<raft-performance-multiplier>}",
 			"$0"
 		],
-		"description": "templated 'performance_multiplier' parameter of configuration 'storage' for storage backend 'raft'"
+		"description": "vault templated 'performance_multiplier' parameter of configuration 'storage' for storage backend 'raft'"
 	},
 	"vault configuration 'storage' raft parameter 'trailing_logs'": {
 		"prefix": ["vault-configuration-storage-raft-parameter-trailing-logs","vault-configuration-storage-integrated-parameter-trailing-logs"],
@@ -4965,7 +4946,7 @@
 			"  trailing_logs = ${1:<raft-performance-multiplier>}",
 			"$0"
 		],
-		"description": "templated 'trailing_logs' parameter of configuration 'storage' for storage backend 'raft'"
+		"description": "vault templated 'trailing_logs' parameter of configuration 'storage' for storage backend 'raft'"
 	},
 	"vault configuration 'storage' raft parameter 'snapshot_threshold'": {
 		"prefix": ["vault-configuration-storage-raft-parameter-snapshot-threshold","vault-configuration-storage-integrated-parameter-snapshot-threshold"],
@@ -4975,7 +4956,7 @@
 			"  snapshot_threshold = ${1:<raft-snapshot-threshold>}",
 			"$0"
 		],
-		"description": "templated 'snapshot_threshold' parameter of configuration 'storage' for storage backend 'raft'"
+		"description": "vault templated 'snapshot_threshold' parameter of configuration 'storage' for storage backend 'raft'"
 	},
 	"vault configuration 'storage' raft parameter 'retry_join'": {
 		"prefix": ["vault-configuration-storage-raft-parameter-retry-join","vault-configuration-storage-integrated-parameter-retry-join"],
@@ -5003,7 +4984,7 @@
 			"  }",
 			"$0"
 		],
-		"description": "templated 'retry_join' parameter of configuration 'storage' for storage backend 'raft'"
+		"description": "vault templated 'retry_join' parameter of configuration 'storage' for storage backend 'raft'"
 	},
 	"vault configuration 'telemetry' - empty": {
 		"prefix": ["vault-configuration-telemetry-empty"],
@@ -5013,7 +4994,7 @@
 			"}",
 			""
 		],
-		"description": "empty 'telemetry' configuration"
+		"description": "vault empty 'telemetry' configuration"
 	},
 	"vault configuration 'telemetry' - full": {
 		"prefix": ["vault-configuration-telemetry-full"],
@@ -5066,7 +5047,7 @@
 			"}",
 			"$0"
 		],
-		"description": "full 'telemetry' configuration"
+		"description": "vault full 'telemetry' configuration"
 	},
 	"vault configuration 'telemetry' - common": {
 		"prefix": ["vault-configuration-telemetry-common"],
@@ -5075,7 +5056,7 @@
 			"}",
 			"$0"
 		],
-		"description": "common 'telemetry' configuration"
+		"description": "vault common 'telemetry' configuration"
 	},
 	"vault configuration 'telemetry' parameter 'usage_gauge_period'": {
 		"prefix": ["vault-configuration-telemetry-parameter-usage-gauge-period"],
@@ -5084,7 +5065,7 @@
 			"  usage_gauge_period = \"${1:<usage-gauge-period>}\"",
 			"$0"
 		],
-		"description": "templated 'usage_gauge_period' parameter of configuration 'telemetry'"
+		"description": "vault templated 'usage_gauge_period' parameter of configuration 'telemetry'"
 	},
 	"vault configuration 'telemetry' parameter 'maximum_gauge_cardinality'": {
 		"prefix": ["vault-configuration-telemetry-parameter-maximum-gauge-cardinality"],
@@ -5093,7 +5074,7 @@
 			"  maximum_gauge_cardinality = ${1:<maximum-gauge-cardinality>}",
 			"$0"
 		],
-		"description": "templated 'maximum_gauge_cardinality' parameter of configuration 'telemetry'"
+		"description": "vault templated 'maximum_gauge_cardinality' parameter of configuration 'telemetry'"
 	},
 	"vault configuration 'telemetry' parameter 'disable_hostname'": {
 		"prefix": ["vault-configuration-telemetry-parameter-disable-hostname"],
@@ -5102,7 +5083,7 @@
 			"  disable_hostname = ${1:<disable-hostname>} # (true|false)",
 			"$0"
 		],
-		"description": "templated 'disable_hostname' parameter of configuration 'telemetry'"
+		"description": "vault templated 'disable_hostname' parameter of configuration 'telemetry'"
 	},
 	"vault configuration 'telemetry' parameter 'enable_hostname_label'": {
 		"prefix": ["vault-configuration-telemetry-parameter-enable-hostname-label"],
@@ -5111,7 +5092,7 @@
 			"  enable_hostname_label = ${1:<enable-hostname-label>} # (true|false)",
 			"$0"
 		],
-		"description": "templated 'enable_hostname_label' parameter of configuration 'telemetry'"
+		"description": "vault templated 'enable_hostname_label' parameter of configuration 'telemetry'"
 	},
 	"vault configuration 'telemetry' parameter 'lease_metrics_epsilon'": {
 		"prefix": ["vault-configuration-telemetry-parameter-lease-metrics-epsilon"],
@@ -5120,7 +5101,7 @@
 			"  lease_metrics_epsilon = \"${1:<lease-metrics-epsilon>}\"",
 			"$0"
 		],
-		"description": "templated 'lease_metrics_epsilon' parameter of configuration 'telemetry'"
+		"description": "vault templated 'lease_metrics_epsilon' parameter of configuration 'telemetry'"
 	},
 	"vault configuration 'telemetry' parameter 'num_lease_metrics_buckets'": {
 		"prefix": ["vault-configuration-telemetry-parameter-num-lease-metrics-buckets"],
@@ -5129,7 +5110,7 @@
 			"  num_lease_metrics_buckets = ${1:<num-lease-metrics-buckets>}",
 			"$0"
 		],
-		"description": "templated 'num_lease_metrics_buckets' parameter of configuration 'telemetry'"
+		"description": "vault templated 'num_lease_metrics_buckets' parameter of configuration 'telemetry'"
 	},
 	"vault configuration 'telemetry' parameter 'add_lease_metrics_namespace_labels'": {
 		"prefix": ["vault-configuration-telemetry-parameter-add-lease-metrics-namespace-labels"],
@@ -5138,7 +5119,7 @@
 			"  add_lease_metrics_namespace_labels = ${1:<add-lease-metrics-namespace-labels>} # (true|false)",
 			"$0"
 		],
-		"description": "templated 'add_lease_metrics_namespace_labels' parameter of configuration 'telemetry'"
+		"description": "vault templated 'add_lease_metrics_namespace_labels' parameter of configuration 'telemetry'"
 	},
 	"vault configuration 'telemetry' parameter 'filter_default'": {
 		"prefix": ["vault-configuration-telemetry-parameter-filter-default"],
@@ -5147,7 +5128,7 @@
 			"  filter_default = ${1:<filter-default>} # (true|false)",
 			"$0"
 		],
-		"description": "templated 'filter_default' parameter of configuration 'telemetry'"
+		"description": "vault templated 'filter_default' parameter of configuration 'telemetry'"
 	},
 	"vault configuration 'telemetry' parameter 'prefix_filter'": {
 		"prefix": ["vault-configuration-telemetry-parameter-prefix-filter"],
@@ -5156,7 +5137,7 @@
 			"  prefix_filter = [\"${1:+<prefix-filter1>}\",\"${2:-<prefix-filter1>}\",\"${3:+<prefix-filterN>}\"]",
 			"$0"
 		],
-		"description": "templated 'prefix_filter' parameter of configuration 'telemetry'"
+		"description": "vault templated 'prefix_filter' parameter of configuration 'telemetry'"
 	},
 	"vault configuration 'telemetry' parameter 'statsite_address'": {
 		"prefix": ["vault-configuration-telemetry-parameter-statsite-address"],
@@ -5165,7 +5146,7 @@
 			"  statsite_address = \"${1:<statsite-address>}\"",
 			"$0"
 		],
-		"description": "templated 'statsite_address' parameter of configuration 'telemetry'"
+		"description": "vault templated 'statsite_address' parameter of configuration 'telemetry'"
 	},
 	"vault configuration 'telemetry' parameter 'statsd_address'": {
 		"prefix": ["vault-configuration-telemetry-parameter-statsd-address"],
@@ -5174,7 +5155,7 @@
 			"  statsd_address = \"${1:<statsd-address>}\"",
 			"$0"
 		],
-		"description": "templated 'statsd_address' parameter of configuration 'telemetry'"
+		"description": "vault templated 'statsd_address' parameter of configuration 'telemetry'"
 	},
 	"vault configuration 'telemetry' parameter 'dogstatsd_addr'": {
 		"prefix": ["vault-configuration-telemetry-parameter-dogstatsd-addr"],
@@ -5183,7 +5164,7 @@
 			"  dogstatsd_addr = \"${1:<dogstatsd-address>}\"",
 			"$0"
 		],
-		"description": "templated 'dogstatsd_addr' parameter of configuration 'telemetry'"
+		"description": "vault templated 'dogstatsd_addr' parameter of configuration 'telemetry'"
 	},
 	"vault configuration 'telemetry' parameter 'dogstatsd_tags'": {
 		"prefix": ["vault-configuration-telemetry-parameter-dogstatsd-tags"],
@@ -5192,7 +5173,7 @@
 			"  dogstatsd_tags = [\"${1:<dogstatsd-tag-name1:dogstatsd-tag-value1>}\",\"${2:<dogstatsd-tag-name2:dogstatsd-tag-value2>}\",\"${3:<dogstatsd-tag-nameN:dogstatsd-tag-valueN>}\"]",
 			"$0"
 		],
-		"description": "templated 'dogstatsd_tags' parameter of configuration 'telemetry'"
+		"description": "vault templated 'dogstatsd_tags' parameter of configuration 'telemetry'"
 	},
 	"vault configuration 'telemetry' parameter 'prometheus_retention_time'": {
 		"prefix": ["vault-configuration-telemetry-parameter-prometheus-retention-time"],
@@ -5201,7 +5182,7 @@
 			"  prometheus_retention_time = \"${1:<prometheus-retention-time>}\"",
 			"$0"
 		],
-		"description": "templated 'prometheus_retention_time' parameter of configuration 'telemetry'"
+		"description": "vault templated 'prometheus_retention_time' parameter of configuration 'telemetry'"
 	},
 	"vault configuration 'telemetry' parameter 'stackdriver_project_id'": {
 		"prefix": ["vault-configuration-telemetry-parameter-stackdriver-project-id"],
@@ -5210,7 +5191,7 @@
 			"  stackdriver_project_id = \"${1:<stackdriver-project-id>}\"",
 			"$0"
 		],
-		"description": "templated 'stackdriver_project_id' parameter of configuration 'telemetry'"
+		"description": "vault templated 'stackdriver_project_id' parameter of configuration 'telemetry'"
 	},
 	"vault configuration 'telemetry' parameter 'stackdriver_location'": {
 		"prefix": ["vault-configuration-telemetry-parameter-stackdriver-location"],
@@ -5219,7 +5200,7 @@
 			"  stackdriver_location = \"${1:<stackdriver-location>}\"",
 			"$0"
 		],
-		"description": "templated 'stackdriver_location' parameter of configuration 'telemetry'"
+		"description": "vault templated 'stackdriver_location' parameter of configuration 'telemetry'"
 	},
 	"vault configuration 'telemetry' parameter 'stackdriver_namespace'": {
 		"prefix": ["vault-configuration-telemetry-parameter-stackdriver-namespace"],
@@ -5228,7 +5209,7 @@
 			"  stackdriver_namespace = \"${1:<stackdriver-namespace>}\"",
 			"$0"
 		],
-		"description": "templated 'stackdriver_namespace' parameter of configuration 'telemetry'"
+		"description": "vault templated 'stackdriver_namespace' parameter of configuration 'telemetry'"
 	},
 	"vault configuration 'telemetry' parameter 'stackdriver_debug_logs'": {
 		"prefix": ["vault-configuration-telemetry-parameter-stackdriver-debug-logs"],
@@ -5237,7 +5218,7 @@
 			"  stackdriver_debug_logs = ${1:<stackdriver-debug-logs>} # (true|false)",
 			"$0"
 		],
-		"description": "templated 'stackdriver_debug_logs' parameter of configuration 'telemetry'"
+		"description": "vault templated 'stackdriver_debug_logs' parameter of configuration 'telemetry'"
 	},
 	"vault configuration 'ui'": {
 		"prefix": ["vault-configuration-ui"],
@@ -5245,9 +5226,8 @@
 			"ui = ${1:<enable-ui>} # (true|false)",
 			"$0"
 		],
-		"description": "templated 'ui' configuration"
+		"description": "vault templated 'ui' configuration"
 	},
-	// [policy]
 	"vault policy - empty": {
 		"prefix": ["vault-policy-empty"],
 		"body": [
@@ -5256,7 +5236,7 @@
 			"}",
 			""
 		],
-		"description": "empty policy"
+		"description": "vault empty policy"
 	},
 	"vault policy - admin": {
 		"prefix": ["vault-policy-admin"],
@@ -5317,7 +5297,7 @@
 			"}",
 			"$0"
 		],
-		"description": "admin policy"
+		"description": "vault admin policy"
 	},
 	"vault policy - another-root": {
 		"prefix": ["vault-policy-another-root"],
@@ -5373,7 +5353,7 @@
 			"}",
 			"$0"
 		],
-		"description": "another-root policy"
+		"description": "vault another-root policy"
 	},
 	"vault policy - audit": {
 		"prefix": ["vault-policy-audit"],
@@ -5389,7 +5369,7 @@
 			"}",
 			"$0"
 		],
-		"description": "audit policy"
+		"description": "vault audit policy"
 	},
 	"vault policy - metrics": {
 		"prefix": ["vault-policy-metrics"],
@@ -5434,7 +5414,7 @@
 			"}",
 			"$0"
 		],
-		"description": "metrics policy"
+		"description": "vault metrics policy"
 	},
 	"vault policy - provisioner": {
 		"prefix": ["vault-policy-provisioner"],
@@ -5478,7 +5458,7 @@
 			"}",
 			"$0"
 		],
-		"description": "provisioner policy"
+		"description": "vault provisioner policy"
 	},
 	"vault policy path 'create' capability": {
 		"prefix": ["vault-policy-path-capability-create"],
@@ -5492,7 +5472,7 @@
 			"",
 			"$0"
 		],
-		"description": "templated 'create' cabability of policy path"
+		"description": "vault templated 'create' cabability of policy path"
 	},
 	"vault policy path 'read' capability": {
 		"prefix": ["vault-policy-path-capability-read"],
@@ -5504,7 +5484,7 @@
 			"",
 			"$0"
 		],
-		"description": "templated 'read' cabability of policy path"
+		"description": "vault templated 'read' cabability of policy path"
 	},
 	"vault policy path 'update' capability": {
 		"prefix": ["vault-policy-path-capability-update"],
@@ -5517,7 +5497,7 @@
 			"",
 			"$0"
 		],
-		"description": "templated 'update' cabability of policy path"
+		"description": "vault templated 'update' cabability of policy path"
 	},
 	"vault policy path 'delete' capability": {
 		"prefix": ["vault-policy-path-capability-delete"],
@@ -5529,7 +5509,7 @@
 			"",
 			"$0"
 		],
-		"description": "templated 'delete' cabability of policy path"
+		"description": "vault templated 'delete' cabability of policy path"
 	},
 	"vault policy path 'list' capability": {
 		"prefix": ["vault-policy-path-capability-list"],
@@ -5543,7 +5523,7 @@
 			"",
 			"$0"
 		],
-		"description": "templated 'list' cabability of policy path"
+		"description": "vault templated 'list' cabability of policy path"
 	},
 	"vault policy path 'sudo' capability": {
 		"prefix": ["vault-policy-path-capability-sudo"],
@@ -5556,7 +5536,7 @@
 			"",
 			"$0"
 		],
-		"description": "templated 'sudo' cabability of policy path"
+		"description": "vault templated 'sudo' cabability of policy path"
 	},
 	"vault policy path 'deny' capability": {
 		"prefix": ["vault-policy-path-capability-deny"],
@@ -5568,7 +5548,7 @@
 			"",
 			"$0"
 		],
-		"description": "templated 'deny' cabability of policy path"
+		"description": "vault templated 'deny' cabability of policy path"
 	},
 	"vault policy path 'identity' parameter 'identity.entity.id'": {
 		"prefix": ["vault-policy-path-identity-parameter-identity-entity-id"],
@@ -5580,7 +5560,7 @@
 			"}",
 			""
 		],
-		"description": "templated 'identity.entity.id' parameter of policy path"
+		"description": "vault templated 'identity.entity.id' parameter of policy path"
 	},
 	"vault policy path 'identity' parameter 'identity.entity.name'": {
 		"prefix": ["vault-policy-path-identity-parameter-identity-entity-name"],
@@ -5592,7 +5572,7 @@
 			"}",
 			""
 		],
-		"description": "templated 'identity.entity.name' parameter of policy path"
+		"description": "vault templated 'identity.entity.name' parameter of policy path"
 	},
 	"vault policy path 'identity' parameter 'identity.entity.metadata.<metadata key>'": {
 		"prefix": ["vault-policy-path-identity-parameter-identity-entity-metadata"],
@@ -5604,7 +5584,7 @@
 			"}",
 			""
 		],
-		"description": "templated 'identity.entity.metadata.<metadata key>' parameter of policy path"
+		"description": "vault templated 'identity.entity.metadata.<metadata key>' parameter of policy path"
 	},
 	"vault policy path 'identity' parameter 'identity.entity.aliases.<mount accessor>.id'": {
 		"prefix": ["vault-policy-path-identity-parameter-identity-entity-aliases-mount-accessor-id"],
@@ -5616,7 +5596,7 @@
 			"}",
 			""
 		],
-		"description": "templated 'identity.entity.aliases.<mount accessor>.id' parameter of policy path"
+		"description": "vault templated 'identity.entity.aliases.<mount accessor>.id' parameter of policy path"
 	},
 	"vault policy path 'identity' parameter 'identity.entity.aliases.<mount accessor>.name'": {
 		"prefix": ["vault-policy-path-identity-parameter-identity-entity-aliases-mount-accessor-name"],
@@ -5628,7 +5608,7 @@
 			"}",
 			""
 		],
-		"description": "templated 'identity.entity.aliases.<mount accessor>.name' parameter of policy path"
+		"description": "vault templated 'identity.entity.aliases.<mount accessor>.name' parameter of policy path"
 	},
 	"vault policy path 'identity' parameter 'identity.entity.aliases.<mount accessor>.metadata.<metadata key>'": {
 		"prefix": ["vault-policy-path-identity-parameter-identity-entity-aliases-mount-accessor-metadata-metadata-key"],
@@ -5640,7 +5620,7 @@
 			"}",
 			""
 		],
-		"description": "templated 'identity.entity.aliases.<mount accessor>.metadata.<metadata key>' parameter of policy path"
+		"description": "vault templated 'identity.entity.aliases.<mount accessor>.metadata.<metadata key>' parameter of policy path"
 	},
 	"vault policy path 'identity' parameter 'identity.groups.ids.<group id>.name'": {
 		"prefix": ["vault-policy-path-identity-parameter-identity-groups-ids-group-id-name"],
@@ -5652,7 +5632,7 @@
 			"}",
 			""
 		],
-		"description": "templated 'identity.groups.ids.<group id>.name' parameter of policy path"
+		"description": "vault templated 'identity.groups.ids.<group id>.name' parameter of policy path"
 	},
 	"vault policy path 'identity' parameter 'identity.groups.ids.<group id>.metadata.<metadata key>'": {
 		"prefix": ["vault-policy-path-identity-parameter-identity-groups-ids-group-id-metadata-metadata-key"],
@@ -5664,7 +5644,7 @@
 			"}",
 			""
 		],
-		"description": "templated 'identity.groups.ids.<group id>.metadata.<metadata key>' parameter of policy path"
+		"description": "vault templated 'identity.groups.ids.<group id>.metadata.<metadata key>' parameter of policy path"
 	},
 	"vault policy path 'identity' parameter 'identity.groups.names.<group name>.id'": {
 		"prefix": ["vault-policy-path-identity-parameter-identity-groups-names-group-name-id"],
@@ -5676,7 +5656,7 @@
 			"}",
 			""
 		],
-		"description": "templated 'identity.groups.names.<group name>.id' parameter of policy path"
+		"description": "vault templated 'identity.groups.names.<group name>.id' parameter of policy path"
 	},
 	"vault policy path 'identity' parameter 'identity.groups.names.<group name>.metadata.<metadata key>'": {
 		"prefix": ["vault-policy-path-identity-parameter-identity-groups-names-group-name-metadata-metadata-key"],
@@ -5688,7 +5668,7 @@
 			"}",
 			""
 		],
-		"description": "templated 'identity.groups.names.<group name>.metadata.<metadata key>' parameter of policy path"
+		"description": "vault templated 'identity.groups.names.<group name>.metadata.<metadata key>' parameter of policy path"
 	},
 	"vault policy path 'required_parameters' constraint": {
 		"prefix": ["vault-policy-path-constraint-required-parameters"],
@@ -5698,7 +5678,7 @@
 			"",
 			"$0"
 		],
-		"description": "templated 'required_parameters' constraint of policy path"
+		"description": "vault templated 'required_parameters' constraint of policy path"
 	},
 	"vault policy path 'allowed_parameters' constraint": {
 		"prefix": ["vault-policy-path-constraint-allowed-parameters"],
@@ -5712,7 +5692,7 @@
 			"  }",
 			"$0"
 		],
-		"description": "templated 'allowed_parameters' constraint of policy path"
+		"description": "vault templated 'allowed_parameters' constraint of policy path"
 	},
 	"vault policy path 'denied_parameters' constraint": {
 		"prefix": ["vault-policy-path-constraint-denied-parameters"],
@@ -5729,7 +5709,7 @@
 			"  }",
 			"$0"
 		],
-		"description": "templated 'denied_parameters' constraint of policy path"
+		"description": "vault templated 'denied_parameters' constraint of policy path"
 	},
 	"vault policy path 'min_wrapping_ttl' response wrapping parameter": {
 		"prefix": ["vault-policy-path-repsonse-wrapping-parameter-min-wrapping-ttl"],
@@ -5740,7 +5720,7 @@
 			"  min_wrapping_ttl = \"${1:<minimum-wrapping-ttl>}\"",
 			"$0"
 		],
-		"description": "templated 'min_wrapping_ttl' response wrapping parameter of policy path"
+		"description": "vault templated 'min_wrapping_ttl' response wrapping parameter of policy path"
 	},
 	"vault policy path 'max_wrapping_ttl' response wrapping parameter": {
 		"prefix": ["vault-policy-path-repsonse-wrapping-parameter-max-wrapping-ttl"],
@@ -5749,9 +5729,8 @@
 			"  max_wrapping_ttl = \"${1:<maximum-wrapping-ttl>}\"",
 			"$0"
 		],
-		"description": "templated 'max_wrapping_ttl' response wrapping parameter of policy path"
+		"description": "vault templated 'max_wrapping_ttl' response wrapping parameter of policy path"
 	},
-	// [password policy]
 	"vault password policy - empty": {
 		"prefix": ["vault-password-policy-empty"],
 		"body": [
@@ -5764,7 +5743,7 @@
 			"}",
 			""
 		],
-		"description": "empty password policy"
+		"description": "vault empty password policy"
 	},
 	"vault password policy - full": {
 		"prefix": ["vault-password-policy-full"],
@@ -5788,7 +5767,7 @@
 			"}",
 			"$0"
 		],
-		"description": "full password policy"
+		"description": "vault full password policy"
 	},
 	"vault password policy - common": {
 		"prefix": ["vault-password-policy-common"],
@@ -5807,7 +5786,7 @@
 			"}",
 			"$0"
 		],
-		"description": "common password policy"
+		"description": "vault common password policy"
 	},
 	"vault password policy 'charset' parameter": {
 		"prefix": ["vault-password-policy-parameter-charset"],
@@ -5820,7 +5799,7 @@
 			"  charset = \"${1:<charset>}\"",
 			"$0"
 		],
-		"description": "templated 'charset' parameter of password policy"
+		"description": "vault templated 'charset' parameter of password policy"
 	},
 	"vault password policy 'min-chars' parameter": {
 		"prefix": ["vault-password-policy-parameter-min-chars"],
@@ -5831,9 +5810,8 @@
 			"  min-chars = ${1:<minimum-number-of-characters>}",
 			"$0"
 		],
-		"description": "templated 'min-chars' parameter of password policy"
+		"description": "vault templated 'min-chars' parameter of password policy"
 	},
-	// [vault agent]
 	"vault agent configuration - full": {
 		"prefix": ["vault-agent-configuration-full"],
 		"body": [
@@ -5916,6 +5894,75 @@
 			"  tls_key_file  = \"${17:<path-to-tls-key-file>}\"",
 			"  tls_cert_file = \"${18:<path-to-tls-cert-file>}\"",
 			"}",
+			"",
+			"template {",
+			"  // source",
+			"  // path on disk to use as the input template.",
+			"  // this option is required if not using the contents option.",
+			"  source = \"${1:<path-to-input-template>}\"",
+			"",
+			"  // contents",
+			"  // this option allows embedding the contents of a template in the configuration file",
+			"  // rather then supplying the source path to the template file.",
+			"  // this is useful for short templates.",
+			"  // this option is mutually exclusive with the source option.",
+			"  contents = \"${2:<embedded-template-content>}\"",
+			"",
+			"  // destination",
+			"  // path on disk where the rendered secrets should be created.",
+			"  // if the parent directories do not exist, Vault Agent will attempt to create them, unless 'create_dest_dirs' is false.",
+			"  destination = \"${3:<path-for-rendered-secrets>}\"",
+			"",
+			"  // create_dest_dirs",
+			"  // this option tells Vault Agent to create the parent directories of the destination path if they do not exist.",
+			"  create_dest_dirs = ${4:<create-destination-directories>} # (true|false)",
+			"",
+			"  // command",
+			"  // this is the optional command to run when the template is rendered.",
+			"  // the command will only run if the resulting template changes.",
+			"  // the command must return within 30s (configurable), and it must have a successful exit code.",
+			"  // Vault Agent is not a replacement for a process monitor or init system.",
+			"  command         = \"${5:<command-to-run-when-rendered>}\"",
+			"  // command_timeout",
+			"  // this is the maximum amount of time to wait for the optional command to return.",
+			"  command_timeout = \"${6:<command-timeout>}\"",
+			"",
+			"  // error_on_missing_key",
+			"  // exit with an error when accessing a struct or map field/key that does notexist.",
+			"  // the default behavior will print <no value> when accessing a field that does not exist.",
+			"  // it is highly recommended you set this to 'true'.",
+			"  error_on_missing_key = ${7:<error-on-missing-key>} # (true|false)",
+			"",
+			"  // perms",
+			"  // this is the permission to render the file.",
+			"  // if this option is left unspecified, Vault Agent will attempt to match the permissions of the file",
+			"  // that already exists at the destination path. If no file exists at that path, the permissions are 0644.",
+			"  perms = \"${8:<perms>}\"",
+			"",
+			"  // backup",
+			"  // this option backs up the previously rendered template at the destination path before writing a new one.",
+			"  // tt keeps exactly one backup. This option is useful for preventing accidental changes to the data without having a rollback strategy.",
+			"  backup = ${9:<backup-previously-rendered-template>} # (true|false)",
+			"",
+			"  // left_delimiter",
+			"  // delimiter to use in the template. The default is '\\{\\{' but for some templates,",
+			"  // it may be easier to use a different delimiter that does not conflict with the output file itself.",
+			"  left_delimiter  = \"${10:<left-delimiter>}\"",
+			"  // right_delimiter",
+			"  // delimiter to use in the template. The default is '}}' but for some templates,",
+			"  // it may be easier to use a different delimiter that does not conflict with the output file itself.",
+			"  right_delimiter = \"${11:<right-delimiter>}\"",
+			"",
+			"  // sandbox_path",
+			"  // if a sandbox path is provided, any path provided to the file function is checked that it falls within the sandbox path.",
+			"  // relative paths that try to traverse outside the sandbox path will exit with an error.",
+			"  sandbox_path = \"${12:<path-to-sandbox>}\"",
+			"",
+			"  // wait",
+			"  // this is the minimum(:maximum) to wait before rendering a new template to disk and triggering a command,",
+			"  // separated by a colon ( : ).",
+			"  wait = \"${13:<minimum(:maximum)-wait-before-rendering-new-template>}\"",
+			"}",
 			"$0"
 		],
 		"description": "full vault agent configuration"
@@ -5940,6 +5987,23 @@
 			"  tls_key_file  = \"${5:<path-to-tls-key-file>}\"",
 			"  tls_cert_file = \"${6:<path-to-tls-cert-file>}\"",
 			"}",
+			"",
+			"template {",
+			"  // source",
+			"  // path on disk to use as the input template.",
+			"  // this option is required if not using the contents option.",
+			"  source = \"${7:<path-to-input-template>}\"",
+			"",
+			"  // destination",
+			"  // path on disk where the rendered secrets should be created.",
+			"  // if the parent directories do not exist, Vault Agent will attempt to create them, unless 'create_dest_dirs' is false.",
+			"  destination = \"${8:<path-for-rendered-secrets>}\"",
+			"",
+			"  // wait",
+			"  // this is the minimum(:maximum) to wait before rendering a new template to disk and triggering a command,",
+			"  // separated by a colon ( : ).",
+			"  wait = \"${9:<minimum(:maximum)-wait-before-rendering-new-template>}\"",
+			"}",
 			"$0"
 		],
 		"description": "common vault agent configuration"
@@ -5951,7 +6015,7 @@
 			"pid_file = \"${1:<path-to-pid-file>}\"",
 			"$0"
 		],
-		"description": "templated 'pid_file' configuration"
+		"description": "vault agent templated 'pid_file' configuration"
 	},
 	"vault agent configuration 'vault' - empty": {
 		"prefix": ["vault-agent-configuration-vault-empty"],
@@ -5962,7 +6026,7 @@
 			"}",
 			""
 		],
-		"description": "empty 'vault' configuration"
+		"description": "vault agent empty 'vault' configuration"
 	},
 	"vault agent configuration 'vault' - full": {
 		"prefix": ["vault-agent-configuration-vault-full"],
@@ -6011,7 +6075,7 @@
 			"}",
 			"$0"
 		],
-		"description": "full 'vault' configuration"
+		"description": "vault agent full 'vault' configuration"
 	},
 	"vault agent configuration 'vault' - common": {
 		"prefix": ["vault-agent-configuration-vault-common"],
@@ -6051,7 +6115,7 @@
 			"}",
 			"$0"
 		],
-		"description": "common 'vault' configuration"
+		"description": "vault agent common 'vault' configuration"
 	},
 	"vault agent configuration 'vault' parameter 'address'": {
 		"prefix": ["vault-agent-configuration-vault-parameter-address"],
@@ -6063,7 +6127,7 @@
 			"  address = \"${1:<vault-server-address>}\"",
 			"$0"
 		],
-		"description": "templated 'address' parameter of configuration 'vault'"
+		"description": "vault agent templated 'address' parameter of configuration 'vault'"
 	},
 	"vault agent configuration 'vault' parameter 'ca_cert'": {
 		"prefix": ["vault-agent-configuration-vault-parameter-ca-cert"],
@@ -6074,7 +6138,7 @@
 			"  ca_cert = \"${1:<path-to-ca-cert-file>}\"",
 			"$0"
 		],
-		"description": "templated 'ca_cert' parameter of configuration 'vault'"
+		"description": "vault agent templated 'ca_cert' parameter of configuration 'vault'"
 	},
 	"vault agent configuration 'vault' parameter 'ca_path'": {
 		"prefix": ["vault-agent-configuration-vault-parameter-ca-path"],
@@ -6085,7 +6149,7 @@
 			"  ca_path = \"${1:<path-to-ca-cert-directory>}\"",
 			"$0"
 		],
-		"description": "templated 'ca_path' parameter of configuration 'vault'"
+		"description": "vault agent templated 'ca_path' parameter of configuration 'vault'"
 	},
 	"vault agent configuration 'vault' parameter 'client_cert'": {
 		"prefix": ["vault-agent-configuration-vault-parameter-client-cert"],
@@ -6095,7 +6159,7 @@
 			"  client_cert = \"${1:<path-to-client-cert>}\"",
 			"$0"
 		],
-		"description": "templated 'client_cert' parameter of configuration 'vault'"
+		"description": "vault agent templated 'client_cert' parameter of configuration 'vault'"
 	},
 	"vault agent configuration 'vault' parameter 'client_key'": {
 		"prefix": ["vault-agent-configuration-vault-parameter-client-key"],
@@ -6105,7 +6169,7 @@
 			"  client_key = \"${1:<path-to-client-key>}\"",
 			"$0"
 		],
-		"description": "templated 'client_key' parameter of configuration 'vault'"
+		"description": "vault agent templated 'client_key' parameter of configuration 'vault'"
 	},
 	"vault agent configuration 'vault' parameter 'tls_skip_verify'": {
 		"prefix": ["vault-agent-configuration-vault-parameter-tls-skip-verify"],
@@ -6115,7 +6179,7 @@
 			"  tls_skip_verify = \"${1:<tls-skip-verify>}\" # (\"true\"|\"false\")",
 			"$0"
 		],
-		"description": "templated 'tls_skip_verify' parameter of configuration 'vault'"
+		"description": "vault agent templated 'tls_skip_verify' parameter of configuration 'vault'"
 	},
 	"vault agent configuration 'vault' parameter 'tls_server_name'": {
 		"prefix": ["vault-agent-configuration-vault-parameter-tls-server-name"],
@@ -6126,7 +6190,7 @@
 			"  tls_server_name = \"${1:<tls-server-name>}\"",
 			"$0"
 		],
-		"description": "templated 'tls_server_name' parameter of configuration 'vault'"
+		"description": "vault agent templated 'tls_server_name' parameter of configuration 'vault'"
 	},
 	"vault agent configuration 'vault' parameter 'retry'": {
 		"prefix": ["vault-agent-configuration-vault-parameter-retry"],
@@ -6142,7 +6206,7 @@
 			"  }",
 			"$0"
 		],
-		"description": "templated 'retry' parameter of configuration 'vault'"
+		"description": "vault agent templated 'retry' parameter of configuration 'vault'"
 	},
 	"vault agent configuration 'auto_auth' - empty": {
 		"prefix": ["vault-agent-configuration-auto-auth-empty"],
@@ -6153,7 +6217,7 @@
 			"}",
 			""
 		],
-		"description": "empty 'auto_auth' configuration"
+		"description": "vault agent empty 'auto_auth' configuration"
 	},
 	"vault agent configuration 'auto_auth' - full": {
 		"prefix": ["vault-agent-configuration-auto-auth-full"],
@@ -6186,7 +6250,7 @@
 			"}",
 			"$0"
 		],
-		"description": "full 'auto_auth' configuration"
+		"description": "vault agent full 'auto_auth' configuration"
 	},
 	"vault agent configuration 'auto_auth' - common": {
 		"prefix": ["vault-agent-configuration-auto-auth-common"],
@@ -6219,7 +6283,7 @@
 			"}",
 			"$0"
 		],
-		"description": "common 'auto_auth' configuration"
+		"description": "vault agent common 'auto_auth' configuration"
 	},
 	"vault agent configuration 'auto_auth' parameter 'method' - empty": {
 		"prefix": ["vault-agent-configuration-auto-auth-parameter-method-empty"],
@@ -6230,7 +6294,7 @@
 			"  }",
 			""
 		],
-		"description": "empty 'method' parameter of configuration 'auto_auth'"
+		"description": "vault agent empty 'method' parameter of configuration 'auto_auth'"
 	},
 	"vault agent configuration 'auto_auth' parameter 'method' - full": {
 		"prefix": ["vault-agent-configuration-auto-auth-parameter-method-full"],
@@ -6260,7 +6324,7 @@
 			"  }",
 			"$0"
 		],
-		"description": "full 'method' parameter of configuration 'auto_auth'"
+		"description": "vault agent full 'method' parameter of configuration 'auto_auth'"
 	},
 	"vault agent configuration 'auto_auth' parameter 'method' - common": {
 		"prefix": ["vault-agent-configuration-auto-auth-parameter-method-common"],
@@ -6271,7 +6335,7 @@
 			"  }",
 			"$0"
 		],
-		"description": "common 'method' parameter of configuration 'auto_auth'"
+		"description": "vault agent common 'method' parameter of configuration 'auto_auth'"
 	},
 	"vault agent configuration 'auto_auth' parameter 'method' parameter 'mount_path'": {
 		"prefix": ["vault-agent-configuration-auto-auth-parameter-method-parameter-mount-path"],
@@ -6281,7 +6345,7 @@
 			"    mount_path = \"${1:<auto-auth-method-mount-path>}\"",
 			"$0"
 		],
-		"description": "templated 'mount_path' parameter of parameter 'method' of configuration 'auto_auth'"
+		"description": "vault agent templated 'mount_path' parameter of parameter 'method' of configuration 'auto_auth'"
 	},
 	"vault agent configuration 'auto_auth' parameter 'method' parameter 'namespace'": {
 		"prefix": ["vault-agent-configuration-auto-auth-parameter-method-parameter-namespace"],
@@ -6291,7 +6355,7 @@
 			"    namespace = \"${1:<auto-auth-method-namespace>}\"",
 			"$0"
 		],
-		"description": "templated 'namespace' parameter of parameter 'method' of configuration 'auto_auth'"
+		"description": "vault agent templated 'namespace' parameter of parameter 'method' of configuration 'auto_auth'"
 	},
 	"vault agent configuration 'auto_auth' parameter 'method' parameter 'max_backoff'": {
 		"prefix": ["vault-agent-configuration-auto-auth-parameter-method-parameter-max-backoff"],
@@ -6301,7 +6365,7 @@
 			"    max_backoff = \"${1:<auto-auth-method-max-backoff>}\"",
 			"$0"
 		],
-		"description": "templated 'max_backoff' parameter of parameter 'method' of configuration 'auto_auth'"
+		"description": "vault agent templated 'max_backoff' parameter of parameter 'method' of configuration 'auto_auth'"
 	},
 	"vault agent configuration 'auto_auth' parameter 'method' parameter 'config' - alicoud": {
 		"prefix": ["vault-agent-configuration-auto-auth-parameter-method-parameter-config-alicoud"],
@@ -6332,7 +6396,7 @@
 			"    }",
 			"$0"
 		],
-		"description": "alicloud 'config' parameter of parameter 'method' of configuration 'auto_auth'"
+		"description": "vault agent alicloud 'config' parameter of parameter 'method' of configuration 'auto_auth'"
 	},
 	"vault agent configuration 'auto_auth' parameter 'method' parameter 'config' - approle": {
 		"prefix": ["vault-agent-configuration-auto-auth-parameter-method-parameter-config-approle"],
@@ -6354,7 +6418,7 @@
 			"    }",
 			"$0"
 		],
-		"description": "approle 'config' parameter of parameter 'method' of configuration 'auto_auth'"
+		"description": "vault agent approle 'config' parameter of parameter 'method' of configuration 'auto_auth'"
 	},
 	"vault agent configuration 'auto_auth' parameter 'method' parameter 'config' - aws": {
 		"prefix": ["vault-agent-configuration-auto-auth-parameter-method-parameter-config-aws"],
@@ -6380,7 +6444,7 @@
 			"    }",
 			"$0"
 		],
-		"description": "aws 'config' parameter of parameter 'method' of configuration 'auto_auth'"
+		"description": "vault agent aws 'config' parameter of parameter 'method' of configuration 'auto_auth'"
 	},
 	"vault agent configuration 'auto_auth' parameter 'method' parameter 'config' - azure": {
 		"prefix": ["vault-agent-configuration-auto-auth-parameter-method-parameter-config-azure"],
@@ -6394,7 +6458,7 @@
 			"    }",
 			"$0"
 		],
-		"description": "azure 'config' parameter of parameter 'method' of configuration 'auto_auth'"
+		"description": "vault agent azure 'config' parameter of parameter 'method' of configuration 'auto_auth'"
 	},
 	"vault agent configuration 'auto_auth' parameter 'method' parameter 'config' - cert": {
 		"prefix": ["vault-agent-configuration-auto-auth-parameter-method-parameter-config-cert"],
@@ -6416,7 +6480,7 @@
 			"    }",
 			"$0"
 		],
-		"description": "cert 'config' parameter of parameter 'method' of configuration 'auto_auth'"
+		"description": "vault agent cert 'config' parameter of parameter 'method' of configuration 'auto_auth'"
 	},
 	"vault agent configuration 'auto_auth' parameter 'method' parameter 'config' - cloud-foundry": {
 		"prefix": ["vault-agent-configuration-auto-auth-parameter-method-parameter-config-cloud-foundry"],
@@ -6428,7 +6492,7 @@
 			"    }",
 			"$0"
 		],
-		"description": "cloud-foundry 'config' parameter of parameter 'method' of configuration 'auto_auth'"
+		"description": "vault agent cloud-foundry 'config' parameter of parameter 'method' of configuration 'auto_auth'"
 	},
 	"vault agent configuration 'auto_auth' parameter 'method' parameter 'config' - google-cloud": {
 		"prefix": ["vault-agent-configuration-auto-auth-parameter-method-parameter-config-google-cloud"],
@@ -6451,7 +6515,7 @@
 			"    }",
 			"$0"
 		],
-		"description": "google-cloud 'config' parameter of parameter 'method' of configuration 'auto_auth'"
+		"description": "vault agent google-cloud 'config' parameter of parameter 'method' of configuration 'auto_auth'"
 	},
 	"vault agent configuration 'auto_auth' parameter 'method' parameter 'config' - jwt": {
 		"prefix": ["vault-agent-configuration-auto-auth-parameter-method-parameter-config-jwt"],
@@ -6464,7 +6528,7 @@
 			"    }",
 			"$0"
 		],
-		"description": "jwt 'config' parameter of parameter 'method' of configuration 'auto_auth'"
+		"description": "vault agent jwt 'config' parameter of parameter 'method' of configuration 'auto_auth'"
 	},
 	"vault agent configuration 'auto_auth' parameter 'method' parameter 'config' - kerberos": {
 		"prefix": ["vault-agent-configuration-auto-auth-parameter-method-parameter-config-kerberos"],
@@ -6500,7 +6564,7 @@
 			"    }",
 			"$0"
 		],
-		"description": "kerberos 'config' parameter of parameter 'method' of configuration 'auto_auth'"
+		"description": "vault agent kerberos 'config' parameter of parameter 'method' of configuration 'auto_auth'"
 	},
 	"vault agent configuration 'auto_auth' parameter 'method' parameter 'config' - kubernetes": {
 		"prefix": ["vault-agent-configuration-auto-auth-parameter-method-parameter-config-kubernetes"],
@@ -6516,7 +6580,7 @@
 			"    }",
 			"$0"
 		],
-		"description": "kubernetes 'config' parameter of parameter 'method' of configuration 'auto_auth'"
+		"description": "vault agent kubernetes 'config' parameter of parameter 'method' of configuration 'auto_auth'"
 	},
 	// todo
 	// [ sinks ]
@@ -6531,7 +6595,7 @@
 			"}",
 			""
 		],
-		"description": "empty 'cache' configuration"
+		"description": "vault agent empty 'cache' configuration"
 	},
 	"vault agent configuration 'cache' - full": {
 		"prefix": ["vault-agent-configuration-cache-full"],
@@ -6567,7 +6631,7 @@
 			"}",
 			"$0"
 		],
-		"description": "full 'cache' configuration"
+		"description": "vault agent full 'cache' configuration"
 	},
 	"vault agent configuration 'cache' - common": {
 		"prefix": ["vault-agent-configuration-cache-common"],
@@ -6579,7 +6643,7 @@
 			"}",
 			"$0"
 		],
-		"description": "common 'cache' configuration"
+		"description": "vault agent common 'cache' configuration"
 	},
 	"vault agent configuration 'cache' parameter 'use_auto_auth_token'": {
 		"prefix": ["vault-agent-configuration-cache-parameter-use-auto-auth-token"],
@@ -6593,7 +6657,7 @@
 			"  use_auto_auth_token = ${1:<use-auto-auth-token>} # (true|false)",
 			"$0"
 		],
-		"description": "templated 'use_auto_auth_token' parameter of configuration 'cache'"
+		"description": "vault agent templated 'use_auto_auth_token' parameter of configuration 'cache'"
 	},
 	"vault agent configuration 'cache' parameter 'persist' - empty": {
 		"prefix": ["vault-agent-configuration-cache-parameter-persist-empty"],
@@ -6604,7 +6668,7 @@
 			"}",
 			""
 		],
-		"description": "full 'persist' parameter of configuration 'cache'"
+		"description": "vault agent full 'persist' parameter of configuration 'cache'"
 	},
 	"vault agent configuration 'cache' parameter 'persist' - full": {
 		"prefix": ["vault-agent-configuration-cache-parameter-persist-full"],
@@ -6627,7 +6691,7 @@
 			"}",
 			"$0"
 		],
-		"description": "full 'persist' parameter of configuration 'cache'"
+		"description": "vault agent full 'persist' parameter of configuration 'cache'"
 	},
 	"vault agent configuration 'cache' parameter 'persist' - common": {
 		"prefix": ["vault-agent-configuration-cache-parameter-persist-common"],
@@ -6640,7 +6704,7 @@
 			"}",
 			"$0"
 		],
-		"description": "common 'persist' parameter of configuration 'cache'"
+		"description": "vault agent common 'persist' parameter of configuration 'cache'"
 	},
 	"vault agent configuration 'cache' parameter 'persist' parameter 'path'": {
 		"prefix": ["vault-agent-configuration-cache-parameter-persist-parameter-path"],
@@ -6650,7 +6714,7 @@
 			"    path = \"${1:<path-to-persistent-cache-file>}\"",
 			"$0"
 		],
-		"description": "templated 'path' parameter of parameter 'persist' of configuration 'cache'"
+		"description": "vault agent templated 'path' parameter of parameter 'persist' of configuration 'cache'"
 	},
 	"vault agent configuration 'cache' parameter 'persist' parameter 'keep_after_import'": {
 		"prefix": ["vault-agent-configuration-cache-parameter-persist-parameter-keep-after-import"],
@@ -6661,7 +6725,7 @@
 			"    keep_after_import = ${1:<keep-after-import>} # (true|false)",
 			"$0"
 		],
-		"description": "templated 'keep_after_import' parameter of parameter 'persist' of configuration 'cache'"
+		"description": "vault agent templated 'keep_after_import' parameter of parameter 'persist' of configuration 'cache'"
 	},
 	"vault agent configuration 'cache' parameter 'persist' parameter 'exit_on_err'": {
 		"prefix": ["vault-agent-configuration-cache-parameter-persist-parameter-exit-on-err"],
@@ -6672,7 +6736,7 @@
 			"    exit_on_err = ${1:<exit-on-err>} # (true|false)",
 			"$0"
 		],
-		"description": "templated 'exit_on_err' parameter of parameter 'persist' of configuration 'cache'"
+		"description": "vault agent templated 'exit_on_err' parameter of parameter 'persist' of configuration 'cache'"
 	},
 	"vault agent configuration 'listener' - empty": {
 		"prefix": ["vault-agent-configuration-listener-empty"],
@@ -6685,7 +6749,7 @@
 			"}",
 			""
 		],
-		"description": "empty 'listener' configuration"
+		"description": "vault agent empty 'listener' configuration"
 	},
 	"vault agent configuration 'listener' - full": {
 		"prefix": ["vault-agent-configuration-listener-full"],
@@ -6706,7 +6770,7 @@
 			"}",
 			"$0"
 		],
-		"description": "full 'listener' configuration"
+		"description": "vault agent full 'listener' configuration"
 	},
 	"vault agent configuration 'listener' - common": {
 		"prefix": ["vault-agent-configuration-listener-common"],
@@ -6727,7 +6791,7 @@
 			"}",
 			"$0"
 		],
-		"description": "common 'listener' configuration"
+		"description": "vault agent common 'listener' configuration"
 	},
 	"vault agent configuration 'listener' parameter 'address'": {
 		"prefix": ["vault-agent-configuration-listener-parameter-address"],
@@ -6739,7 +6803,7 @@
 			"  address = \"${1:<listener-address>}\"",
 			"$0"
 		],
-		"description": "templated 'address' parameter of configuration 'listener'"
+		"description": "vault agent templated 'address' parameter of configuration 'listener'"
 	},
 	"vault agent configuration 'listener' parameter 'tls_disable'": {
 		"prefix": ["vault-agent-configuration-listener-parameter-tls-disable"],
@@ -6747,7 +6811,7 @@
 			"  tls_disable = ${1:<listener-address>} # (true|false)",
 			"$0"
 		],
-		"description": "templated 'tls_disable' parameter of configuration 'listener'"
+		"description": "vault agent templated 'tls_disable' parameter of configuration 'listener'"
 	},
 	"vault agent configuration 'listener' parameter 'tls_key_file'": {
 		"prefix": ["vault-agent-configuration-listener-parameter-tls-key-file"],
@@ -6755,7 +6819,7 @@
 			"  tls_key_file = \"${1:<path-to-tls-key-file>}\"",
 			"$0"
 		],
-		"description": "templated 'tls_key_file' parameter of configuration 'listener'"
+		"description": "vault agent templated 'tls_key_file' parameter of configuration 'listener'"
 	},
 	"vault agent configuration 'listener' parameter 'tls_cert_file'": {
 		"prefix": ["vault-agent-configuration-listener-parameter-tls-cert-file"],
@@ -6763,11 +6827,339 @@
 			"  tls_cert_file = \"${1:<path-to-tls-cert-file>}\"",
 			"$0"
 		],
-		"description": "templated 'tls_cert_file' parameter of configuration 'listener'"
+		"description": "vault agent templated 'tls_cert_file' parameter of configuration 'listener'"
+	},
+	"vault agent configuration 'template' - empty": {
+		"prefix": ["vault-agent-configuration-template-empty"],
+		"body": [
+			"template {",
+			"$0",
+			"}",
+			""
+		],
+		"description": "vault agent empty 'template' configuration"
+	},
+	"vault agent configuration 'template' - full": {
+		"prefix": ["vault-agent-configuration-template-full"],
+		"body": [
+			"template {",
+			"  // source",
+			"  // path on disk to use as the input template.",
+			"  // this option is required if not using the contents option.",
+			"  source = \"${1:<path-to-input-template>}\"",
+			"",
+			"  // contents",
+			"  // this option allows embedding the contents of a template in the configuration file",
+			"  // rather then supplying the source path to the template file.",
+			"  // this is useful for short templates.",
+			"  // this option is mutually exclusive with the source option.",
+			"  contents = \"${2:<embedded-template-content>}\"",
+			"",
+			"  // destination",
+			"  // path on disk where the rendered secrets should be created.",
+			"  // if the parent directories do not exist, Vault Agent will attempt to create them, unless 'create_dest_dirs' is false.",
+			"  destination = \"${3:<path-for-rendered-secrets>}\"",
+			"",
+			"  // create_dest_dirs",
+			"  // this option tells Vault Agent to create the parent directories of the destination path if they do not exist.",
+			"  create_dest_dirs = ${4:<create-destination-directories>} # (true|false)",
+			"",
+			"  // command",
+			"  // this is the optional command to run when the template is rendered.",
+			"  // the command will only run if the resulting template changes.",
+			"  // the command must return within 30s (configurable), and it must have a successful exit code.",
+			"  // Vault Agent is not a replacement for a process monitor or init system.",
+			"  command         = \"${5:<command-to-run-when-rendered>}\"",
+			"  // command_timeout",
+			"  // this is the maximum amount of time to wait for the optional command to return.",
+			"  command_timeout = \"${6:<command-timeout>}\"",
+			"",
+			"  // error_on_missing_key",
+			"  // exit with an error when accessing a struct or map field/key that does notexist.",
+			"  // the default behavior will print <no value> when accessing a field that does not exist.",
+			"  // it is highly recommended you set this to 'true'.",
+			"  error_on_missing_key = ${7:<error-on-missing-key>} # (true|false)",
+			"",
+			"  // perms",
+			"  // this is the permission to render the file.",
+			"  // if this option is left unspecified, Vault Agent will attempt to match the permissions of the file",
+			"  // that already exists at the destination path. If no file exists at that path, the permissions are 0644.",
+			"  perms = \"${8:<perms>}\"",
+			"",
+			"  // backup",
+			"  // this option backs up the previously rendered template at the destination path before writing a new one.",
+			"  // tt keeps exactly one backup. This option is useful for preventing accidental changes to the data without having a rollback strategy.",
+			"  backup = ${9:<backup-previously-rendered-template>} # (true|false)",
+			"",
+			"  // left_delimiter",
+			"  // delimiter to use in the template. The default is '\\{\\{' but for some templates,",
+			"  // it may be easier to use a different delimiter that does not conflict with the output file itself.",
+			"  left_delimiter  = \"${10:<left-delimiter>}\"",
+			"  // right_delimiter",
+			"  // delimiter to use in the template. The default is '}}' but for some templates,",
+			"  // it may be easier to use a different delimiter that does not conflict with the output file itself.",
+			"  right_delimiter = \"${11:<right-delimiter>}\"",
+			"",
+			"  // sandbox_path",
+			"  // if a sandbox path is provided, any path provided to the file function is checked that it falls within the sandbox path.",
+			"  // relative paths that try to traverse outside the sandbox path will exit with an error.",
+			"  sandbox_path = \"${12:<path-to-sandbox>}\"",
+			"",
+			"  // wait",
+			"  // this is the minimum(:maximum) to wait before rendering a new template to disk and triggering a command,",
+			"  // separated by a colon ( : ).",
+			"  wait = \"${13:<minimum(:maximum)-wait-before-rendering-new-template>}\"",
+			"}",
+			"$0"
+		],
+		"description": "vault agent full 'template' configuration"
+	},
+	"vault agent configuration 'template' - common": {
+		"prefix": ["vault-agent-configuration-template-common"],
+		"body": [
+			"template {",
+			"  // source",
+			"  // path on disk to use as the input template.",
+			"  // this option is required if not using the contents option.",
+			"  source = \"${1:<path-to-input-template>}\"",
+			"",
+			"  // destination",
+			"  // path on disk where the rendered secrets should be created.",
+			"  // if the parent directories do not exist, Vault Agent will attempt to create them, unless 'create_dest_dirs' is false.",
+			"  destination = \"${2:<path-for-rendered-secrets>}\"",
+			"",
+			"  // wait",
+			"  // this is the minimum(:maximum) to wait before rendering a new template to disk and triggering a command,",
+			"  // separated by a colon ( : ).",
+			"  wait = \"${3:<minimum(:maximum)-wait-before-rendering-new-template>}\"",
+			"}",
+			"$0"
+		],
+		"description": "vault agent common 'template' configuration"
+	},
+	"vault agent configuration 'template' parameter 'source'": {
+		"prefix": ["vault-agent-configuration-template-parameter-source"],
+		"body": [
+			"  // source",
+			"  // path on disk to use as the input template.",
+			"  // this option is required if not using the contents option.",
+			"  source = \"${1:<path-to-input-template>}\"",
+			"$0"
+		],
+		"description": "vault agent templated 'source' parameter of configuration 'template'"
+	},
+	"vault agent configuration 'template' parameter 'destination'": {
+		"prefix": ["vault-agent-configuration-template-parameter-destination"],
+		"body": [
+			"  // destination",
+			"  // path on disk where the rendered secrets should be created.",
+			"  // if the parent directories do not exist, Vault Agent will attempt to create them, unless 'create_dest_dirs' is false.",
+			"  destination = \"${1:<path-for-rendered-secrets>}\"",
+			"$0"
+		],
+		"description": "vault agent templated 'destination' parameter of configuration 'template'"
+	},
+	"vault agent configuration 'template' parameter 'create_dest_dirs'": {
+		"prefix": ["vault-agent-configuration-template-parameter-create-dest-dirs"],
+		"body": [
+			"  // create_dest_dirs",
+			"  // this option tells Vault Agent to create the parent directories of the destination path if they do not exist.",
+			"  create_dest_dirs = ${1:<create-destination-directories>} # (true|false)",
+			"$0"
+		],
+		"description": "vault agent templated 'create_dest_dirs' parameter of configuration 'template'"
+	},
+	"vault agent configuration 'template' parameter 'contents'": {
+		"prefix": ["vault-agent-configuration-template-parameter-contents"],
+		"body": [
+			"  // contents",
+			"  // this option allows embedding the contents of a template in the configuration file",
+			"  // rather then supplying the source path to the template file.",
+			"  // this is useful for short templates.",
+			"  // this option is mutually exclusive with the source option.",
+			"  contents = \"${1:<embedded-template-content>}\"",
+			"$0"
+		],
+		"description": "vault agent templated 'contents' parameter of configuration 'template'"
+	},
+	"vault agent configuration 'template' parameter 'command'": {
+		"prefix": ["vault-agent-configuration-template-parameter-command"],
+		"body": [
+			"  // command",
+			"  // this is the optional command to run when the template is rendered.",
+			"  // the command will only run if the resulting template changes.",
+			"  // the command must return within 30s (configurable), and it must have a successful exit code.",
+			"  // Vault Agent is not a replacement for a process monitor or init system.",
+			"  command = \"${1:<command-to-run-when-rendered>}\"",
+			"$0"
+		],
+		"description": "vault agent templated 'command' parameter of configuration 'template'"
+	},
+	"vault agent configuration 'template' parameter 'command_timeout'": {
+		"prefix": ["vault-agent-configuration-template-parameter-command-timeout"],
+		"body": [
+			"  // command_timeout",
+			"  // this is the maximum amount of time to wait for the optional command to return.",
+			"  command_timeout = \"${1:<command-timeout>}\"",
+			"$0"
+		],
+		"description": "vault agent templated 'command_timeout' parameter of configuration 'template'"
+	},
+	"vault agent configuration 'template' parameter 'error_on_missing_key'": {
+		"prefix": ["vault-agent-configuration-template-parameter-error-on-missing-key"],
+		"body": [
+			"  // error_on_missing_key",
+			"  // exit with an error when accessing a struct or map field/key that does notexist.",
+			"  // the default behavior will print <no value> when accessing a field that does not exist.",
+			"  // it is highly recommended you set this to 'true'.",
+			"  error_on_missing_key = ${1:<error-on-missing-key>} # (true|false)",
+			"$0"
+		],
+		"description": "vault agent templated 'error_on_missing_key' parameter of configuration 'template'"
+	},
+	"vault agent configuration 'template' parameter 'perms'": {
+		"prefix": ["vault-agent-configuration-template-parameter-perms"],
+		"body": [
+			"  // perms",
+			"  // this is the permission to render the file.",
+			"  // if this option is left unspecified, Vault Agent will attempt to match the permissions of the file",
+			"  // that already exists at the destination path. If no file exists at that path, the permissions are 0644.",
+			"  perms = \"${1:<perms>}\"",
+			"$0"
+		],
+		"description": "vault agent templated 'perms' parameter of configuration 'template'"
+	},
+	"vault agent configuration 'template' parameter 'backup'": {
+		"prefix": ["vault-agent-configuration-template-parameter-backup"],
+		"body": [
+			"  // backup",
+			"  // this option backs up the previously rendered template at the destination path before writing a new one.",
+			"  // tt keeps exactly one backup. This option is useful for preventing accidental changes to the data without having a rollback strategy.",
+			"  backup = ${1:<backup-previously-rendered-template>} # (true|false)",
+			"$0"
+		],
+		"description": "vault agent templated 'backup' parameter of configuration 'template'"
+	},
+	"vault agent configuration 'template' parameter 'left_delimiter'": {
+		"prefix": ["vault-agent-configuration-template-parameter-left-delimiter"],
+		"body": [
+			"  // left_delimiter",
+			"  // delimiter to use in the template. The default is '{{' but for some templates,",
+			"  // it may be easier to use a different delimiter that does not conflict with the output file itself.",
+			"  left_delimiter = \"${1:<left-delimiter>}\"",
+			"$0"
+		],
+		"description": "vault agent templated 'left_delimiter' parameter of configuration 'template'"
+	},
+	"vault agent configuration 'template' parameter 'right_delimiter'": {
+		"prefix": ["vault-agent-configuration-template-parameter-right-delimiter"],
+		"body": [
+			"  // right_delimiter",
+			"  // delimiter to use in the template. The default is '}}' but for some templates,",
+			"  // it may be easier to use a different delimiter that does not conflict with the output file itself.",
+			"  right_delimiter = \"${1:<right-delimiter>}\"",
+			"$0"
+		],
+		"description": "vault agent templated 'right_delimiter' parameter of configuration 'template'"
+	},
+	"vault agent configuration 'template' parameter 'sandbox_path'": {
+		"prefix": ["vault-agent-configuration-template-parameter-sandbox-path"],
+		"body": [
+			"  // sandbox_path",
+			"  // if a sandbox path is provided, any path provided to the file function is checked that it falls within the sandbox path.",
+			"  // relative paths that try to traverse outside the sandbox path will exit with an error.",
+			"  sandbox_path = \"${1:<path-to-sandbox>}\"",
+			"$0"
+		],
+		"description": "vault agent templated 'sandbox_path' parameter of configuration 'template'"
+	},
+	"vault agent configuration 'template' parameter 'wait'": {
+		"prefix": ["vault-agent-configuration-template-parameter-wait"],
+		"body": [
+			"  // wait",
+			"  // this is the minimum(:maximum) to wait before rendering a new template to disk and triggering a command,",
+			"  // separated by a colon ( : ).",
+			"  wait = \"${1:<minimum(:maximum)-wait-before-rendering-new-template>}\"",
+			"$0"
+		],
+		"description": "vault agent templated 'wait' parameter of configuration 'template'"
+	},
+	"vault agent configuration 'template_config' - empty": {
+		"prefix": ["vault-agent-configuration-template-config-empty"],
+		"body": [
+			"template_config {",
+			"  // the template_config stanza configures overall default behavior for the templating engine.",
+			"  // note that 'template_config' can only be defined once, and is different from the template stanza.",
+			"  // unlike template which focuses on where and how a specific secret is rendered, 'template_config'",
+			"  // contains parameters affecting how the templating engine as a whole behaves and its interaction with the rest of Agent.",
+			"  // this includes, but is not limited to, program exit behavior.",
+			"  // other parameters that apply to the templating engine as a whole may be added over time.",
+			"$0",
+			"}",
+			""
+		],
+		"description": "vault agent empty 'template_config' configuration"
+	},
+	"vault agent configuration 'template_config' - full": {
+		"prefix": ["vault-agent-configuration-template-config-full"],
+		"body": [
+			"template_config {",
+			"  // the template_config stanza configures overall default behavior for the templating engine.",
+			"  // note that 'template_config' can only be defined once, and is different from the template stanza.",
+			"  // unlike template which focuses on where and how a specific secret is rendered, 'template_config'",
+			"  // contains parameters affecting how the templating engine as a whole behaves and its interaction with the rest of Agent.",
+			"  // this includes, but is not limited to, program exit behavior.",
+			"  // other parameters that apply to the templating engine as a whole may be added over time.",
+			"",
+			"  // exit_on_retry_failure",
+			"  // this option configures Vault Agent to exit after it has exhausted its number of template retry attempts due to failures.",
+			"  exit_on_retry_failure = ${1:<exit-on-retry-failure>} # (true|false)",
+			"",
+			"  // static_secret_render_interval",
+			"  // if specified, configures how often Vault Agent Template should render non-leased secrets such as KV v2.",
+			"  // this setting will not change how often Vault Agent Templating renders leased secrets.",
+			"  static_secret_render_interval = \"${2:<static-secret-render-interval>}\"",
+			"}",
+			"$0"
+		],
+		"description": "vault agent full 'template_config' configuration"
+	},
+	"vault agent configuration 'template_config' - common": {
+		"prefix": ["vault-agent-configuration-template-config-common"],
+		"body": [
+			"template_config {",
+			"  // the template_config stanza configures overall default behavior for the templating engine.",
+			"  // note that 'template_config' can only be defined once, and is different from the template stanza.",
+			"  // unlike template which focuses on where and how a specific secret is rendered, 'template_config'",
+			"  // contains parameters affecting how the templating engine as a whole behaves and its interaction with the rest of Agent.",
+			"  // this includes, but is not limited to, program exit behavior.",
+			"  // other parameters that apply to the templating engine as a whole may be added over time.",
+			"}",
+			"$0"
+		],
+		"description": "vault agent common 'template_config' configuration"
+	},
+	"vault agent configuration 'template_config' parameter 'exit_on_retry_failure'": {
+		"prefix": ["vault-agent-configuration-template-config-parameter-exit-on-retry-failure"],
+		"body": [
+			"  // exit_on_retry_failure",
+			"  // this option configures Vault Agent to exit after it has exhausted its number of template retry attempts due to failures.",
+			"  exit_on_retry_failure = ${1:<exit-on-retry-failure>} # (true|false)",
+			"$0"
+		],
+		"description": "vault agent templated 'exit_on_retry_failure' parameter of configuration 'template_config'"
+	},
+	"vault agent configuration 'template_config' parameter 'static_secret_render_interval'": {
+		"prefix": ["vault-agent-configuration-template-config-parameter-static-secret-render-interval"],
+		"body": [
+			"  // static_secret_render_interval",
+			"  // if specified, configures how often Vault Agent Template should render non-leased secrets such as KV v2.",
+			"  // this setting will not change how often Vault Agent Templating renders leased secrets.",
+			"  static_secret_render_interval = \"${1:<static-secret-render-interval>}\"",
+			"$0"
+		],
+		"description": "vault agent templated 'static_secret_render_interval' parameter of configuration 'template_config'"
 	}
-	// todo:
-	// [ template ]
-	// [ template_config ]
 
 	//
 	// waypoint (https://www.waypointproject.io/)
