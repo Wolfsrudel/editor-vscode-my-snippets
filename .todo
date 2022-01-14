@@ -1,0 +1,2 @@
+# choices for "# (true|false)"
+variable = ${1|true,false|}
