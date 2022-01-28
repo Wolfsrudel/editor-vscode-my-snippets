@@ -2970,6 +2970,66 @@
 			"// this defaults to false in versions of Consul prior to 1.9.0, and defaults to true in Consul 1.9.0 and later.",
 			"enable_central_service_config = ${174|true,false|}",
 			"",
+			"// enable_debug",
+			"// when set, enables some additional debugging features.",
+			"// currently, this is only used to access runtime profiling HTTP endpoints, which are available with an operator:read ACL regardless of the value of enable_debug.",
+			"enable_debug = ${175|true,false|}",
+			"",
+			"// enable_script_checks",
+			"// ACLs must be enabled for agents and the enable_script_checks option must be set to true to enable script checks in Consul 0.9.0 and later.",
+			"// see \"Registering and Querying Node Information\" [https://www.consul.io/docs/security/acl/acl-rules#registering-and-querying-node-information] for related information.",
+			"// ! SECURITY WARNING !",
+			"//   enabling script checks in some configurations may introduce a known remote execution vulnerability targeted by malware.",
+			"//   we strongly recommend enable_local_script_checks instead.",
+			"//   refer to the following article for additional guidance: \"Protecting Consul from RCE Risk in Specific Configurations\"",
+			"//   [https://www.hashicorp.com/blog/protecting-consul-from-rce-risk-in-specific-configurations] for more details.",
+			"enable_script_checks = ${176|true,false|}",
+			"",
+			"// enable_local_script_checks",
+			"// like 'enable_script_checks', but only enable them when they are defined in the local configuration files.",
+			"// script checks defined in HTTP API registrations will still not be allowed.",
+			"enable_local_script_checks = ${177|true,false|}",
+			"",
+			"// enable_syslog",
+			"// this flag enables logging to syslog.",
+			"// this is only supported on Linux and OSX.",
+			"// it will result in an error if provided on Windows.",
+			"enable_syslog = ${178|true,false|}",
+			"",
+			"// encrypt",
+			"// specifies the secret key to use for encryption of Consul network traffic.",
+			"// this key must be 32-bytes that are Base64-encoded.",
+			"// the easiest way to create an encryption key is to use $( consul keygen ).",
+			"// all nodes within a cluster must share the same encryption key to communicate.",
+			"// the provided key is automatically persisted to the data directory and loaded automatically whenever the agent is restarted.",
+			"// this means that to encrypt Consul's gossip protocol, this option only needs to be provided once on each agent's initial startup sequence.",
+			"// if it is provided after Consul has been initialized with an encryption key, then the provided key is ignored and a warning will be displayed.",
+			"encrypt                 = ${179:<secret-key-using-consul-keygen>}",
+			"// encrypt_verify_incoming",
+			"// this is an optional parameter that can be used to disable enforcing encryption for incoming gossip",
+			"// in order to upshift from unencrypted to encrypted gossip on a running cluster.",
+			"// see this section [https://www.consul.io/docs/security/encryption#configuring-gossip-encryption-on-an-existing-cluster] for more information.",
+			"// defaults to true.",
+			"encrypt_verify_incoming = ${180|true,false|}",
+			"// encrypt_verify_outgoing",
+			"// this is an optional parameter that can be used to disable enforcing encryption for outgoing gossip",
+			"// in order to upshift from unencrypted to encrypted gossip on a running cluster.",
+			"// see this section [https://www.consul.io/docs/security/encryption#configuring-gossip-encryption-on-an-existing-cluster] for more information.",
+			"// defaults to true.",
+			"encrypt_verify_outgoing = ${181|true,false|}",
+			"",
+			"// disable_keyring_file",
+			"// if set, the keyring will not be persisted to a file.",
+			"// any installed keys will be lost on shutdown, and only the given '-encrypt' key will be available on startup.",
+			"// this defaults to false.",
+			"disable_keyring_file = ${182|true,false|}",
+			"",
+			"// disable_coordinates",
+			"// disables sending of network coordinates.",
+			"// when network coordinates are disabled the near query param will not work to sort the nodes,",
+			"// and the consul rtt command will not be able to provide round trip time between nodes.",
+			"disable_coordinates = ${183|true,false|}",
+			"",
 			"$0"
 		],
 		"description": "full consul configuration"
@@ -3074,6 +3134,35 @@
 			"",
 			"// data_dir",
 			"data_dir = \"${15:<path-to-data-dir>}\"",
+			"",
+			"// enable_syslog",
+			"// this flag enables logging to syslog.",
+			"// this is only supported on Linux and OSX.",
+			"// it will result in an error if provided on Windows.",
+			"enable_syslog = ${16|true,false|}",
+			"",
+			"// encrypt",
+			"// specifies the secret key to use for encryption of Consul network traffic.",
+			"// this key must be 32-bytes that are Base64-encoded.",
+			"// the easiest way to create an encryption key is to use $( consul keygen ).",
+			"// all nodes within a cluster must share the same encryption key to communicate.",
+			"// the provided key is automatically persisted to the data directory and loaded automatically whenever the agent is restarted.",
+			"// this means that to encrypt Consul's gossip protocol, this option only needs to be provided once on each agent's initial startup sequence.",
+			"// if it is provided after Consul has been initialized with an encryption key, then the provided key is ignored and a warning will be displayed.",
+			"encrypt                 = ${17:<secret-key-using-consul-keygen>}",
+			"// encrypt_verify_incoming",
+			"// this is an optional parameter that can be used to disable enforcing encryption for incoming gossip",
+			"// in order to upshift from unencrypted to encrypted gossip on a running cluster.",
+			"// see this section [https://www.consul.io/docs/security/encryption#configuring-gossip-encryption-on-an-existing-cluster] for more information.",
+			"// defaults to true.",
+			"encrypt_verify_incoming = ${18:true}",
+			"// encrypt_verify_outgoing",
+			"// this is an optional parameter that can be used to disable enforcing encryption for outgoing gossip",
+			"// in order to upshift from unencrypted to encrypted gossip on a running cluster.",
+			"// see this section [https://www.consul.io/docs/security/encryption#configuring-gossip-encryption-on-an-existing-cluster] for more information.",
+			"// defaults to true.",
+			"encrypt_verify_outgoing = ${19:true}",
+			"",
 			"$0"
 		],
 		"description": "common consul configuration"
@@ -6188,15 +6277,122 @@
 		],
 		"description": "consul templated 'enable_central_service_config' configuration"
 	},
-
-
-
-
-
-
-
-
-
+	"consul configuration 'enable_debug'": {
+		"prefix": ["consul-configuration-enable-debug"],
+		"body": [
+			"// enable_debug",
+			"// when set, enables some additional debugging features.",
+			"// currently, this is only used to access runtime profiling HTTP endpoints, which are available with an operator:read ACL regardless of the value of enable_debug.",
+			"enable_debug = ${1|true,false|}",
+			"$0"
+		],
+		"description": "consul templated 'enable_debug' configuration"
+	},
+	"consul configuration 'enable_script_checks'": {
+		"prefix": ["consul-configuration-enable-script-checks"],
+		"body": [
+			"// enable_script_checks",
+			"// ACLs must be enabled for agents and the enable_script_checks option must be set to true to enable script checks in Consul 0.9.0 and later.",
+			"// see \"Registering and Querying Node Information\" [https://www.consul.io/docs/security/acl/acl-rules#registering-and-querying-node-information] for related information.",
+			"// ! SECURITY WARNING !",
+			"//   enabling script checks in some configurations may introduce a known remote execution vulnerability targeted by malware.",
+			"//   we strongly recommend enable_local_script_checks instead.",
+			"//   refer to the following article for additional guidance: \"Protecting Consul from RCE Risk in Specific Configurations\"",
+			"//   [https://www.hashicorp.com/blog/protecting-consul-from-rce-risk-in-specific-configurations] for more details.",
+			"enable_script_checks = ${1|true,false|}",
+			"$0"
+		],
+		"description": "consul templated 'enable_script_checks' configuration"
+	},
+	"consul configuration 'enable_local_script_checks'": {
+		"prefix": ["consul-configuration-enable-local-script-checks"],
+		"body": [
+			"// enable_local_script_checks",
+			"// like 'enable_script_checks', but only enable them when they are defined in the local configuration files.",
+			"// script checks defined in HTTP API registrations will still not be allowed.",
+			"enable_local_script_checks = ${1|true,false|}",
+			"$0"
+		],
+		"description": "consul templated 'enable_local_script_checks' configuration"
+	},
+	"consul configuration 'enable_syslog'": {
+		"prefix": ["consul-configuration-enable-syslog"],
+		"body": [
+			"// enable_syslog",
+			"// this flag enables logging to syslog.",
+			"// this is only supported on Linux and OSX.",
+			"// it will result in an error if provided on Windows.",
+			"enable_syslog = ${1|true,false|}",
+			"$0"
+		],
+		"description": "consul templated 'enable_syslog' configuration"
+	},
+	"consul configuration 'encrypt'": {
+		"prefix": ["consul-configuration-encrypt"],
+		"body": [
+			"// encrypt",
+			"// specifies the secret key to use for encryption of Consul network traffic.",
+			"// this key must be 32-bytes that are Base64-encoded.",
+			"// the easiest way to create an encryption key is to use $( consul keygen ).",
+			"// all nodes within a cluster must share the same encryption key to communicate.",
+			"// the provided key is automatically persisted to the data directory and loaded automatically whenever the agent is restarted.",
+			"// this means that to encrypt Consul's gossip protocol, this option only needs to be provided once on each agent's initial startup sequence.",
+			"// if it is provided after Consul has been initialized with an encryption key, then the provided key is ignored and a warning will be displayed.",
+			"encrypt = ${1:<secret-key-using-consul-keygen>}",
+			"$0"
+		],
+		"description": "consul templated 'encrypt' configuration"
+	},
+	"consul configuration 'encrypt_verify_incoming'": {
+		"prefix": ["consul-configuration-encrypt-verify-incoming"],
+		"body": [
+			"// encrypt_verify_incoming",
+			"// this is an optional parameter that can be used to disable enforcing encryption for incoming gossip",
+			"// in order to upshift from unencrypted to encrypted gossip on a running cluster.",
+			"// see this section [https://www.consul.io/docs/security/encryption#configuring-gossip-encryption-on-an-existing-cluster] for more information.",
+			"// defaults to true.",
+			"encrypt_verify_incoming = ${1|true,false|}",
+			"$0"
+		],
+		"description": "consul templated 'encrypt_verify_incoming' configuration"
+	},
+	"consul configuration 'encrypt_verify_outgoing'": {
+		"prefix": ["consul-configuration-encrypt-verify-outgoing"],
+		"body": [
+			"// encrypt_verify_outgoing",
+			"// this is an optional parameter that can be used to disable enforcing encryption for outgoing gossip",
+			"// in order to upshift from unencrypted to encrypted gossip on a running cluster.",
+			"// see this section [https://www.consul.io/docs/security/encryption#configuring-gossip-encryption-on-an-existing-cluster] for more information.",
+			"// defaults to true.",
+			"encrypt_verify_outgoing = ${1|true,false|}",
+			"$0"
+		],
+		"description": "consul templated 'encrypt_verify_outgoing' configuration"
+	},
+	"consul configuration 'disable_keyring_file'": {
+		"prefix": ["consul-configuration-disable-keyring-file"],
+		"body": [
+			"// disable_keyring_file",
+			"// if set, the keyring will not be persisted to a file.",
+			"// any installed keys will be lost on shutdown, and only the given '-encrypt' key will be available on startup.",
+			"// this defaults to false.",
+			"disable_keyring_file = ${1|true,false|}",
+			"$0"
+		],
+		"description": "consul templated 'disable_keyring_file' configuration"
+	},
+	"consul configuration 'disable_coordinates'": {
+		"prefix": ["consul-configuration-disable-coordinates"],
+		"body": [
+			"// disable_coordinates",
+			"// disables sending of network coordinates.",
+			"// when network coordinates are disabled the near query param will not work to sort the nodes,",
+			"// and the consul rtt command will not be able to provide round trip time between nodes.",
+			"disable_coordinates = ${1|true,false|}",
+			"$0"
+		],
+		"description": "consul templated 'disable_coordinates' configuration"
+	},
 
 
 
@@ -12764,7 +12960,6 @@
 		],
 		"description": "envconsul templated 'wait' configuration"
 	},
-
 	//
 	// consul-terraform-sync (https://www.consul.io/docs/nia)
 	//
@@ -17823,7 +18018,7 @@
 			"$0"
 		],
 		"description": "vault agent templated 'static_secret_render_interval' parameter of configuration 'template_config'"
-	},
+	}
 
 	//
 	// waypoint (https://www.waypointproject.io/)
