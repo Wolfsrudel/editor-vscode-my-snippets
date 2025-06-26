@@ -5,6 +5,4 @@ plugins:
   - techdocs-core
 
 site_description: TechDocs
-site_dir: /tmp
 site_name: techdocs-test
-
