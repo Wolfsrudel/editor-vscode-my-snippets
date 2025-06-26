@@ -1,0 +1,6 @@
+site_name: techdocs-test
+site_description: TechDocs
+plugins:
+  - techdocs-core
+nav:
+  - Getting Started: index.md
